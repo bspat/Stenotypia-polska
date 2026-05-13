@@ -30,7 +30,7 @@ Wszystkie pliki mają swoją wersję w Latexu oraz .pdf.
 
 #### podrecznik
 
-Jest to nowy podręcznik, poświęcony specjalnie Systemowi Stenotypii Polskiej. Od powyższych podręczników różni się wyżej wymienionymi zmianami w systemie, jak również organizacją materiału oraz ćwiczenimi.
+Jest to nowy podręcznik, poświęcony specjalnie Polskiemu Systemowi Stenotypii. Od pozostałych zamieszczonych podręczników różni się wyżej wymienionymi zmianami w systemie, jak również organizacją materiału oraz ćwiczenimi.
 
 #### tlumaczenie
 
@@ -47,6 +47,7 @@ https://github.com/Jamers303/Steno_PL/tree/main/Errata
 W ramach repozytorium znajdują się również:
 * folder grafika, zawierający grafikę wykorzystywaną podczas kompilacji plików .tex
 * planMateriału.txt --- techniczny plik z planowanym rozkładem podręcznika, w przyszłości do usunięcia
+* foldeer cwiczenia, zawierający ćwiczenia przeznaczone do używania z programami typu Monkeytype i podobnymi
 
 ## Stopień ukończenia
 
