@@ -47,7 +47,7 @@ https://github.com/Jamers303/Steno_PL/tree/main/Errata
 W ramach repozytorium znajdują się również:
 * folder grafika, zawierający grafikę wykorzystywaną podczas kompilacji plików .tex
 * planMateriału.txt --- techniczny plik z planowanym rozkładem podręcznika, w przyszłości do usunięcia
-* foldeer cwiczenia, zawierający ćwiczenia przeznaczone do używania z programami typu Monkeytype i podobnymi
+* folder cwiczenia, zawierający ćwiczenia przeznaczone do używania z programami typu Monkeytype i podobnymi
 
 ## Stopień ukończenia
 
