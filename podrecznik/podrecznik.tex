@@ -17,6 +17,8 @@
 
 \newcommand{\stenoExc}[1]{\textbf{\textsf{\textcolor{red}{ #1}}}}
 
+\newcommand{\stenoErr}[1]{\textbf{\textsf{\textcolor{darkgray}{ #1}}}}
+
 \newenvironment{tabela2}
 	{
 		\rowcolors{1}{cyan}{Emerald}
@@ -82,11 +84,12 @@ Rdzenie najczęściej pokrywają się z semantycznymi rdzeniami wyrazów.
 
 Domyślnie rdzenie nie łączą się ze sobą.
 
-\subsubsection{Samogłoski}
-Samogłoski stanowią ośrodek prawie każdego rdzenia. Są zapisywane z wykorzystaniem kciuków. Samogłoski przyjmują dwie postacie --- podstawową i zmiękczającą --- w zależności od obecności klawisza \steno{J} w grupie spółgłosek początkowych. Szczegóły na temat zapisywania \hyperref[sec:samogloski]{samogłosek} można znaleźć wewnątrz rozdziału im poświęconego.
 
 \subsubsection{Spółgłoski początkowe}
 Bardzo często właśnie od spółgłosek początkowych zależy znaczenie wyrazu. Są to spółgłoski występujące \emph{przed} samogłoskami. Każdej możliwej grupie spółgłoskowej przypisana jest odpowiadająca jej kombinacja klawiszy po lewej stronie klawiatury. Ich listę, jak również szczegółowe zasady wykorzystywania można zobaczyć w rozdziale poświęconym \hyperref[sec:poczatkowe]{spółgłoskom początkowym}.
+
+\subsubsection{Samogłoski}
+Samogłoski stanowią ośrodek prawie każdego rdzenia. Są zapisywane z wykorzystaniem kciuków. Samogłoski przyjmują dwie postacie --- podstawową i zmiękczającą --- w zależności od obecności klawisza \steno{J} w grupie spółgłosek początkowych. Szczegóły na temat zapisywania \hyperref[sec:samogloski]{samogłosek} można znaleźć wewnątrz rozdziału im poświęconego.
 
 \subsubsection{Spółgłoski końcowe}
 Spółgłoski końcowe są zapisywane palcami prawej dłoni. Są to spółgłoski występujące \emph{po} samogłosce w danym akordzie. Lista poszczególnych kombinacji dostępna jest w rozdziale poświęconym \hyperref[sec:koncowe]{spółgłoskom końcowym}.
@@ -137,7 +140,7 @@ Należy być ostrożnym z tworzeniem przedrostków, gdyż istotna część z nic
 \subsection{Specjalne}
 Istnieją akordy o specjalnym znaczeniu:
 
-\begin{tabular}{| c | c |}
+\begin{tabular}{| c | p{6cm} |}
 	\hline
 	Akord & Znaczenie \\ \hline
 	\stenoExc{XF--OV} & Połączenie dwóch rdzeni bez spacji \\ \hline
@@ -149,6 +152,47 @@ Istnieją akordy o specjalnym znaczeniu:
 \label{sec:samogloski}
 Przez samogłoskę wewnątrz PSS są rozumiane wszystkie samogłoski, dyftongi, oraz ich połączenia z "i niezgłoskotwórczym". Każda samogłoska ma dwie wersje --- podstawową i udźwięczniającą. Udźwięczniająca jest wykorzystywana w połączeniu ze wszystkimi grupami spółgłosek początkowych zawierających klawisz \steno{J} (nazwa pochodzi od faktu, że w większości przypadków \steno{J} wewnątrz grupy spółgłosek początkowych oznacza udźwięcznienie w stosunku do grupy bez niego).
 
+\begin{tabular}{| c | c | c | c | p{4.5cm} |}
+	\hline
+	\multicolumn{2}{|c|}{Forma podstawowa} & \multicolumn{3}{|c|}{Forma udźwięczniająca} \\
+	\hline
+	Znaczenie & Akord & Znaczenie & Akord & Sposób \\ \hline
+	a & \steno{A} & ja & \steno{JA} & \steno{A} + \steno{J} $\rightarrow$ \steno{JA} \\ \hline
+	ia & \steno{IA} & jia & \steno{IYA} & \steno{IA} + \steno{J} $\rightarrow$ \stenoErr{JIA} (\steno{J}$\rightarrow$\steno{Y}) $\rightarrow$ \steno{IYA} \\ \hline
+	ą & \steno{EAU} & ją & \steno{JEAU} & \steno{EAU} + \steno{J} $\rightarrow$ \steno{JEAU} \\ \hline
+	ią & \steno{YA} & jią & \steno{JYA} & \steno{YA} + \steno{J} $\rightarrow$ \steno{JYA} \\ \hline
+	e & \steno{E} & je & \steno{JE} & \steno{E} + \steno{J} $\rightarrow$ \steno{JE} \\ \hline
+	ie & \steno{EI} & jie & \steno{EIY} & \steno{EI} + \steno{J} $\rightarrow$ \stenoErr{JEI} (\steno{J}$\rightarrow$\steno{Y}) $\rightarrow$ \steno{EIY} \\ \hline
+	ę & \steno{EYA} & ję & \steno{JEYA} & \steno{EYA} + \steno{J} $\rightarrow$ \steno{JEYA} \\ \hline
+	ię & \steno{EIA} & jię & \steno{EIYA} & \steno{EIA} + \steno{J} $\rightarrow$ \stenoErr{JEIA} (\steno{J}$\rightarrow$\steno{Y}) $\rightarrow$ \steno{EIYA} \\ \hline
+	o & \steno{AU} & jo & \steno{JAU} & \steno{AU} + \steno{J} $\rightarrow$ \steno{JAU} \\ \hline
+	io & \steno{IAU} & jio & \steno{EIAU} & \steno{IAU} + \steno{J} $\rightarrow$ \stenoErr{JIAU} (\steno{J}$\rightarrow$\steno{Y}) $\rightarrow$ \stenoErr{IYAU} (\steno{Y}$\rightarrow$\steno{E}) $\rightarrow$ \steno{EYAU} \\ \hline
+	u & \steno{U} & ju & \steno{JU} & \steno{U} + \steno{J} $\rightarrow$ \steno{JU} \\ \hline
+	iu & \steno{IU} & jiu & \steno{EIU} & \steno{IU} + \steno{J} $\rightarrow$ \stenoErr{JIU} (\steno{J}$\rightarrow$\steno{Y}) $\rightarrow$ \stenoErr{IYU} (\steno{Y}$\rightarrow$\steno{E}) $\rightarrow$ \steno{EIU} \\ \hline
+	ó & \steno{EY} & jó & \steno{JEY} & \steno{EY} + \steno{J} $\rightarrow$ \steno{JEY} \\ \hline
+	ió & \stenoExc{E\#Y} & jió & \stenoExc{JE\#Y} & \stenoExc{E\#Y} + \steno{J} $\rightarrow$ \stenoExc{JE\#Y} \\ \hline
+	i & \steno{I} & ji & \steno{IY} & \steno{I} + \steno{J} $\rightarrow$ \stenoErr{JI} (\steno{J}$\rightarrow$\steno{Y}) $\rightarrow$ \steno{IY} \\ \hline
+	y & \steno{Y} & jy & \steno{JY} & \steno{Y} + \steno{J} $\rightarrow$ \steno{JY} \\ \hline
+	au & \steno{EA} & jau & \steno{JEA} & \steno{EA} $\rightarrow$ \steno{JEA} \\ \hline
+	eu & \steno{EU} & jeu & \steno{JEU} & \steno{EU} $\rightarrow$ \steno{JEU} \\ \hline
+\end{tabular}
+
+\subsection{Zasady tworzenia wariantów zmiękczających}
+
+\begin{enumerate}
+	\item Do podstawowego akordu dokłada się klawisz \steno{J}
+	\item Jeżeli powstaje kombinacja niemożliwa do wciśnięcia (zawierająca \stenoErr{JI}) zamiast \steno{J} dokłada się \steno{Y}
+	\item Jeżeli powstaje kombinacja niemożliwa do wciśnięcia (zawierająca \stenoErr{YU}) zamiast \steno{Y} dokłada się \steno{E}
+\end{enumerate}
+
+\subsection{Przykłady wykorzystania}
+W poniższych przykładach wykorzystuje się spółgłoski początkowe: p --- \steno{P-} oraz b --- \steno{PJ}
+\begin{itemize}
+	\item pa --- \steno{PA}
+	\item pia --- \steno{PIA}
+	\item ba --- \steno{PJA}
+	\item bia --- \steno{PIYA}
+\end{itemize}
 
 \section{Spółgłoski początkowe}
 \label{sec:poczatkowe}
