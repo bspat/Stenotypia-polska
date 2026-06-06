@@ -5,6 +5,7 @@
 \usepackage[table, usenames, dvipsnames]{xcolor}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{longtable}
 \hypersetup{
     colorlinks=true, 
     linktoc=all,    
@@ -135,7 +136,7 @@ Przedrostki to akordy, które mają połączyć się z kolejnym podanym akordem 
 
 Tworzy się je, dodając do standardowego rdzenia znak \steno{*}.
 
-Należy być ostrożnym z tworzeniem przedrostków, gdyż istotna część z nich jest skróceniami.
+Należy być ostrożnym z tworzeniem przedrostków, gdyż istotna część z nich powinna być skróceniami.
 
 \subsection{Specjalne}
 Istnieją akordy o specjalnym znaczeniu:
@@ -196,15 +197,31 @@ W poniższych przykładach wykorzystuje się spółgłoski początkowe: p --- \s
 
 \section{Spółgłoski początkowe}
 \label{sec:poczatkowe}
+Poniżej stabelaryzowane są wszystkie na ten moment przewidywane przez system kombinacje spółgłosek, od których może rozpoczynać się akord.
+
+Korzystając z poniższej tabeli należy pamiętać o tym, że w przypadku akrodów umieszczonych tutaj, zawierających klawisz \steno{J}, należy korzystać z samogłosek w formie udźwięczniającej, zgodnie z tym, jak to zawarto w sekcji \hyperref[sec:samogloski]{samogłoski}. Może to skutkować "wypadnięciem" \steno{J} z akordu --- jest to zamierzony efekt, nie powodujący konfliktów.
+
+\begin{longtable}{|c|c|c|c|c|c|c|}
+	\hline \hline
+	Kombinacja & \multicolumn{2}{c|}{Akord} & \multicolumn{4}{c|}{Pokrewne kombinacje} \\
+	& Akord & Grafika & Podst & + \steno{*} & + \steno{J} & + \steno{J*} \\ \hline  \hline
+	\endhead
+	b & \steno{PJ} & \includegraphics[height=12pt]{grafika/PSS/lewa/PJ.jpg} & p & --- & \textcolor{gray}{b} & pj \\ \hline
+	bl & \steno{PLJ} & \includegraphics[height=12pt]{grafika/PSS/lewa/PLJ.jpg} & pl & pł & \textcolor{gray}{bl} & bł \\ \hline 
+\end{longtable}
 
 \section{Spółgłoski końcowe}
 \label{sec:koncowe}
 
+
 \section{Samogłoski dodatkowe}
 \label{sec:dodatkowe}
 
+
 \section{Samogłoski posiłkowe}
 \label{sec:posilkowe}
+
+
 \chapter{Przykłady}
 Poniżej dostarczone są przykładowe teksty z proponowanym podziałem na akordym, zapisem stenotypicznym prostym oraz ze skróceniami. Należy pamiętać, że jest to jedynie propozycja, aczkolwiek ściśle spójna z przedstawionym systemem. Pomimo to, w przypadku znalezienia szybszego sposobu zapisu należy się go trzymać.
 \section{Przykład 1 --- fragment deklaracji praw człowieka}
