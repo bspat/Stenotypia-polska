@@ -54,7 +54,7 @@ W ramach repozytorium znajdują się również:
 Stopień ukończenia poszczególnych elementów:
 * tlumaczenie --- rozpoczęte, ok. 10%
 * tlumaczenieErrata --- czeka na rozpoczęcie
-* podrecznik --- rozpoczęto, ok. 5%
+* podrecznik --- rozpoczęto, ok. 30%
 * plugin --- funkcjonalnie sprawny, modyfikacje będą wprowadzane w miarę rozwoju systemu
-* słowniki --- rozpoczęte, wystarczające do wykonania opublikowanych ćwiczeń
-* ćwiczenia --- rozpoczęto, ok. 5%
+* słowniki --- czeka na rozpoczęcie
+* ćwiczenia --- czeka na rozpoczęcie
