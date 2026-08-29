@@ -24,6 +24,8 @@ Repozytorium dzieli się na dwie części:
 
 ### System
 
+W ramach tej części dostępny jest funkcjonalny plugin do systemu. W przyszłości znajdą się tam tworzone słowniki.
+
 ### Podręczniki
 
 Wszystkie pliki mają swoją wersję w Latexu oraz .pdf.
@@ -56,5 +58,5 @@ Stopień ukończenia poszczególnych elementów:
 * tlumaczenieErrata --- czeka na rozpoczęcie
 * podrecznik --- rozpoczęto, ok. 30%
 * plugin --- funkcjonalnie sprawny, modyfikacje będą wprowadzane w miarę rozwoju systemu
-* słowniki --- czeka na rozpoczęcie
+* słowniki --- rozpoczęto
 * ćwiczenia --- czeka na rozpoczęcie
