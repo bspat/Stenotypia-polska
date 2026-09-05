@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{geometry}
+\usepackage{enumerate}
 \hypersetup{
     colorlinks=true, 
     linktoc=all,    
@@ -56,7 +57,7 @@ Wiedziony ciekawością interesowałem się tym systemem od 2022 roku. Po bardzo
 	\item 5 klawiszy dla samogłosek --- z powodu stosowania przez Autorkę maszyny Treal, system został zaprojektowany z wykorzystaniem 5 klawiszy dla samogłosek, jednakże zdaje się, że większość zainteresowanych stosuje (lub we względnie prosty sposób mogłaby zacząć stosować) układ z trzema oddzielnymi klawiszami dla każdego kciuka; 5 klawiszy dla samogłosek nie jest wystarczające i prowadzi do bardzo dziwnych rozwiązań i konfliktów (np. pióro vs biuro)
 	\item Brak spójności w obrębie zbitek spółgłoskowych - ponieważ źródłem dla systemu jest pojedyncza książka w pierwszym wydaniu, siłą rzeczy znajdują się w niej błędy - prowadzi to do częstych konfliktów i niejednoznaczności
 	\item Ujednolicenie z językiem czeskim i słowackim - pomimo iż te języki są bardzo zbliżone do języka polskiego, to jednak charakteryzują się dużo większą regularnością zasad. Ponieważ dotychczasowy system obejmuje trzy języki, prowadzi to do powstania bardzo dużej ilości zasad specjalnych dla języka polskiego, oraz rozwiązań, które w języku polskim mają sens tylko i wyłącznie etymologicznie, chociaż współczesna wymowa i ortografia ich nie oddają
-	\item Podejście lingwistyczno-fonetyczne - w sposobie podejścia do pewnych spółgłosek można poznać, że Autorka podchodzi do języka polskiego w sposób lingwistyczny, będący miejscami zaskakujący dla rodzimych użytkowników języka, np. 'c' w "ciebie" oraz c w "cud" są traktowane jako dwie odrębne jednostki. W niektórych miejscach, zwłaszcza spółgłoskach kończących cząstki, widać również naleciałości z fonetycznych systemów anglojęzycznych, w których akcent kładziony jest na wymowę w oderwaniu od zapisu; podczas gdy w języku angielskim jest to istotne, gdyż ortografia jest bardzo luźno powiązana z wymową, po polsku ten problem praktycznie nie występuje
+	\item Podejście lingwistyczno-fonetyczne - w sposobie podejścia do pewnych spółgłosek można poznać, że Autorka podchodzi do języka polskiego w sposób lingwistyczny, będący miejscami zaskakujący dla rodzimych użytkowników języka, np. 'c' w "ciebie" oraz c w "cud" są traktowane jako dwie zupełnie odrębne jednostki. W niektórych miejscach, zwłaszcza spółgłoskach kończących cząstki, widać również naleciałości z fonetycznych systemów anglojęzycznych, w których akcent kładziony jest na wymowę w oderwaniu od zapisu; podczas gdy w języku angielskim jest to istotne, gdyż ortografia jest bardzo luźno powiązana z wymową, po polsku ten problem praktycznie nie występuje
 \end{enumerate}
 Oprócz tego myślę, że można zauważyć, że system ten na dobrą sprawę nadal nie został praktycznie wdrożony --- zostały napisane tylko pojedyncze, instalowane ręcznie pluginy, oraz niewielka garść słowników -- najbardziej obszerny pokrywał wyłącznie ćwiczenia zaprezentowane w podręczniku. Aby zacząć stenotypować, należałoby utworzyć wszystkie te zasoby praktycznie od zera. Również sam podręcznik, choć bardzo cenny jako źródło wiedzy, był niesłychanie trudny w wykorzystaniu do samodzielnej nauki.
 
@@ -106,6 +107,7 @@ Akordy zapisuje się, wymieniając wykorzystane klawisze w następującym porzą
 \steno{X F Z S K T P V L R J E I \# * Y A U C R L B S G T W O V}
 
 W przypadku niewystąpienia wewnątrz akordu żadnego z klawiszy z części środkowej (tj. \steno{J, E, I, \#, *, Y, A} oraz \steno{U}) w jego miejsce wpisywany jest myślnik (\steno{--}).
+
 \subsection{Rdzenie}
 Rdzeń to najbardziej podstawowa forma akordu. Co do zasady składa się z trzech części:
 \begin{enumerate}
@@ -113,11 +115,41 @@ Rdzeń to najbardziej podstawowa forma akordu. Co do zasady składa się z trzec
 	\item Samogłoski
 	\item Spółgłoski końcowe
 \end{enumerate}
-Oprócz tego w wielu przypadkach (w celu zmniejszenia liczby akordów) będą wykorzystywane \hyperref[sec:dodatkowe]{samogłoski dodatkowe}, których zasady wykorzystywania są przedstawione w rozdziale im poświęconym.
+Oprócz tego w wielu przypadkach (w celu zmniejszenia liczby akordów) będą mogły być wykorzystywane \hyperref[sec:dodatkowe]{samogłoski dodatkowe}, których zasady wykorzystywania są przedstawione w rozdziale im poświęconym.
 
 Rdzenie najczęściej pokrywają się z semantycznymi rdzeniami wyrazów. 
 
 Domyślnie rdzenie nie łączą się ze sobą.
+
+\subsubsection{Skrócony opis znajdywania rdzeni w poszczególnych wyrazach}
+
+\emph{Uwaga! Poniższe zasady są znacznie bardziej szczegółowe niż wymaga tego 90 procent przypadków!
+Po dość szybkim czasie proces ten staje się intuicyjny, i nie wymaga "ręcznego" przechodzenia całego przedstawionego algorytmu!}
+\begin{enumerate}
+	\item Wyrazy jednosylabowe --- w przypadku wyrazów jednosylabowych,
+		można bezpiecznie założyć, że są one w całości rdzeniami.
+		\emph{Wyjątki} Istnieją rdzenie, w których ośrodkiem nie jest
+		samogłoska, tylko r lub rz. Są one opisane w
+		\hyperref[sec:rrz]{poświęconej im części}.
+	\item Ustalenie rdzenia gramatycznego --- pierwszym krokiem ustalenia 
+		rdzenia stenotypicznego jest ustalenie rdzenia gramatycznego.
+		Jest to ta część wyrazu, która pozostaje po "odcięciu"
+		gramatcznych końcówek, np. przy wyrazach będących częściami mowy
+		odmienianymi przez przypadki, jest to ta część wyrazu, która nie
+		ulega zmianie podczas odmiany. \emph{Wyjątki} W przypadku
+		wyrazów jednosylabowych cały ten wyraz należy potraktować jako
+		rdzeń gramatyczny.
+\end{enumerate}
+
+\begin{itemize}
+	\item Wyrazy jednosylabowe --- w przypadku wyrazów jednosylabowych,
+		można bezpiecznie założyć, że są one w całości rdzeniami.
+		\emph{Wyjątki} Istnieją rdzenie, w których ośrodkiem nie jest
+		samogłoska, tylko r lub rz. Są one opisane w
+		\hyperref[sec:rrz]{poświęconej im części}.
+	\item Wyrazy wielosylabowe --- w przypadku wyrazów wielosylabowych
+		należy przejść 
+\end{itemize}
 
 
 \subsubsection{Spółgłoski początkowe}
@@ -228,6 +260,9 @@ W poniższych przykładach wykorzystuje się spółgłoski początkowe: p --- \s
 	\item ba --- \steno{PJA}
 	\item bia --- \steno{PIYA}
 \end{itemize}
+
+\section{R oraz RZ jako ośrodki rdzeni}
+\label{sec:rrz}
 
 \newgeometry{left=2cm}
 
