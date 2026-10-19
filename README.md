@@ -3,6 +3,8 @@
 Niniejsze repozytorium stanowi zbiór podręczników do stenotypii, opracowanych dla języka polskiego.
 W tym miejscu można znaleźć podręcznik do Polskiego Systemu Stenotypii (systemu opartego na systemie autorstwa pani P. Trillo), jak również tłumaczenie na język polski oryginalnego podręcznika Zachodniosłowiańskiej Stenografii Maszynowej P. Trillo.
 
+Wszelkie pytania oraz uwagi proszę kierować na następujący adres mailowy: polskisystemstenotypii@gmail.com
+
 ## Czym jest stenotypia
 
 Stenotypia - lub innymi słowy, stenografia maszynowa - to sztuka szybkiego pisania z wykorzystaniem przystosowanych do tego klawiatur. Pozwala osiągać prędkości dochodzące do 300 sylab na sekundę. Korzysta z możliwości wciskania kilku klawiszy jednocześnie (tzw. akordów), jak również wielu skróceń. Choć powszechnie używana na Zachodzie (m. in. w sądownictwie), w Polsce dotychczas pozostaje praktycznie nieznana.
