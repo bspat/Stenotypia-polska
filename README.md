@@ -1,64 +1,39 @@
 # Stenotypia polska
 
 Niniejsze repozytorium stanowi zbiór podręczników do stenotypii, opracowanych dla języka polskiego.
-W tym miejscu można znaleźć podręcznik do Polskiego Systemu Stenotypii (systemu opartego na systemie autorstwa pani P. Trillo), jak również tłumaczenie na język polski oryginalnego podręcznika Zachodniosłowiańskiej Stenografii Maszynowej P. Trillo.
+W tym miejscu można znaleźć podręcznik do Polskiego Systemu Stenotypii (PSS), jak również tłumaczenie na język polski oryginalnego podręcznika Zachodniosłowiańskiej Stenografii Maszynowej P. Trillo.
 
 Wszelkie pytania oraz uwagi proszę kierować na następujący adres mailowy: polskisystemstenotypii@gmail.com
 
 ## Czym jest stenotypia
 
-Stenotypia - lub innymi słowy, stenografia maszynowa - to sztuka szybkiego pisania z wykorzystaniem przystosowanych do tego klawiatur. Pozwala osiągać prędkości dochodzące do 300 sylab na sekundę. Korzysta z możliwości wciskania kilku klawiszy jednocześnie (tzw. akordów), jak również wielu skróceń. Choć powszechnie używana na Zachodzie (m. in. w sądownictwie), w Polsce dotychczas pozostaje praktycznie nieznana.
+Stenotypia - lub też stenografia maszynowa - to sztuka szybkiego pisania z wykorzystaniem przystosowanych do tego klawiatur. Pozwala osiągać prędkości dochodzące do 300 sylab na minutę. Korzysta z możliwości wciskania kilku klawiszy jednocześnie (tzw. akordów), które mogą oznaczać dowolnie długi tekst (w przeciwieństwie do tradycyjnej klawiatury, gdzie jedna akcja = jeden znak). Choć powszechnie używana na Zachodzie (m. in. w sądownictwie), w Polsce dotychczas pozostaje praktycznie nieznana.
 
 ## Czym jest Polski System Stenotypii
 
-Polski System Stenotypii - jest to system stenotypii przeznaczony specjalnie dla języka polskiego, w znacznej mierze oparty na systemie autorstwa pani P. Trillo z 2023 roku. 
-Główne różnice w stosunku do pierwowzoru:
-* uregularyzowanie i uproszczenie zasad
-* zmiany w grupach spółgłoskowych celem zmniejszenia ilości konfliktów
-* spojrzenie na język z bardziej użytkowego, a mniej fonetycznego punktu widzenia
-* wykorzystanie możliwości używania zasad ortograficznych wewnątrz systemu
+Polski System Stenotypii - jest to system stenotypii przeznaczony specjalnie dla języka polskiego, w pewnej mierze oparty na systemie autorstwa pani P. Trillo z 2023 roku.
+
+Charakteryzuje się następującymi cechami:
+* regularne zasady
+* jasne sposoby unikania konfliktów pomiędzy akordami
+* spojrzenie na język z użytkowego punktu widzenia (w przeciwieństwie do systemów angielskich, skupiających się na fonetycznej stronie)
 
 ## Zawartość repozytorium
 
-Repozytorium dzieli się na dwie części:
-* system - zawierającą pliki umożliwiające rozpoczęcie korzystania z PSS
-* podręczniki - zawierającą podręczniki związane z PSS oraz systemem P. Trillo
-
-### System
+### [System](https://github.com/bspat/Stenotypia-polska/blob/main/system/README.md)
 
 W ramach tej części dostępny jest funkcjonalny plugin do systemu. W przyszłości znajdą się tam tworzone słowniki.
 
-### Podręczniki
+### [Podręczniki](https://github.com/bspat/Stenotypia-polska/tree/main/podrecznik/README.md)
 
-Wszystkie pliki mają swoją wersję w Latexu oraz .pdf.
-
-#### podrecznik
-
-Jest to nowy podręcznik, poświęcony specjalnie Polskiemu Systemowi Stenotypii. Od pozostałych zamieszczonych podręczników różni się wyżej wymienionymi zmianami w systemie, jak również organizacją materiału oraz ćwiczenimi.
-
-#### tlumaczenie
-
-Jest to tłumaczenie książki "West Slavic Machine Stenography" autorstwa p. P. Trillo. W tłumaczeniu pomijane są zbędne fragmenty poświęcone językom czeskiemu oraz słowackiemu. Oryginał książki można znaleźć tutaj:
-https://github.com/Plover-Trillo/WestSlavicStenography/releases
-
-#### tlumaczenieErrata
-
-Jest to tłumaczenie powyższej książki z uwzględnieniem większości zmian zawartych w Erracie zasugerowanej przez użytkownika Jamers303. Erratę można znaleźć tutaj:
-https://github.com/Jamers303/Steno_PL/tree/main/Errata
-
-#### inne
-
-W ramach repozytorium znajdują się również:
-* folder grafika, zawierający grafikę wykorzystywaną podczas kompilacji plików .tex
-* planMateriału.txt --- techniczny plik z planowanym rozkładem podręcznika, w przyszłości do usunięcia
-* folder cwiczenia, zawierający ćwiczenia przeznaczone do używania z programami typu Monkeytype i podobnymi
+Znajdują się tam podręczniki do nauki stenotypii w języku polskim, zarówno do Polskiego Systemu Stenotypii jak i do systemu p. Trillo.
 
 ## Stopień ukończenia
 
 Stopień ukończenia poszczególnych elementów:
 * tlumaczenie --- rozpoczęte, ok. 10%
 * tlumaczenieErrata --- czeka na rozpoczęcie
-* podrecznik --- rozpoczęto, ok. 30%
-* plugin --- funkcjonalnie sprawny, modyfikacje będą wprowadzane w miarę rozwoju systemu
-* słowniki --- rozpoczęto
+* podrecznik --- rozpoczęto, ok. 30%, prace trwają
+* plugin --- funkcjonalnie sprawny, modyfikacje będą wprowadzane w miarę rozwoju systemu, prace trwają
+* słowniki --- rozpoczęto, prace trwają
 * ćwiczenia --- czeka na rozpoczęcie
