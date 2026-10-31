@@ -1,6 +1,6 @@
 # Stenotypia polska
 
-![Static Badge](https://img.shields.io/badge/lang-en-red?link=https%3A%2F%2Fgithub.com%2Fbspat%2FStenotypia-polska%2Fblob%2Fmain%2FREADME.en.md)
+[![en](https://img.shields.io/badge/lang-en-red)](https://github.com/bspat/Stenotypia-polska/blob/main/README.en.md)
 
 
 Niniejsze repozytorium jest poświęcone Polskiemu Systemowi Stenotypii - systemowi stenotypii opracowanemu specjalnie dla języka polskiego.
