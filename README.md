@@ -1,9 +1,9 @@
 # Stenotypia polska
 
-Niniejsze repozytorium stanowi zbiór podręczników do stenotypii, opracowanych dla języka polskiego.
-W tym miejscu można znaleźć podręcznik do Polskiego Systemu Stenotypii (PSS), jak również tłumaczenie na język polski oryginalnego podręcznika Zachodniosłowiańskiej Stenografii Maszynowej P. Trillo.
+Niniejsze repozytorium jest poświęcone Polskiemu Systemowi Stenotypii - systemowi stenotypii opracowanemu specjalnie dla języka polskiego.
+W tym miejscu można znaleźć również tłumaczenie na język polski oryginalnego podręcznika Zachodniosłowiańskiej Stenografii Maszynowej P. Trillo.
 
-Wszelkie pytania oraz uwagi proszę kierować na następujący adres mailowy: polskisystemstenotypii@gmail.com
+Wszelkie pytania, prośby o uzupełnienia oraz uwagi proszę kierować na następujący adres mailowy: polskisystemstenotypii@gmail.com
 
 ## Czym jest stenotypia
 
@@ -24,16 +24,22 @@ Charakteryzuje się następującymi cechami:
 
 W ramach tej części dostępny jest funkcjonalny plugin do systemu. W przyszłości znajdą się tam tworzone słowniki.
 
-### [Podręczniki](https://github.com/bspat/Stenotypia-polska/tree/main/podrecznik/README.md)
+### [Podręcznik](https://github.com/bspat/Stenotypia-polska/blob/main/podrecznik/podrecznik.pdf)
 
-Znajdują się tam podręczniki do nauki stenotypii w języku polskim, zarówno do Polskiego Systemu Stenotypii jak i do systemu p. Trillo.
+Podręcznik do Polskiego Systemu Stenotypii (trwa reorganizacja materiałów).
+
+### [Podręcznik do systemu Trillo](https://github.com/bspat/Stenotypia-polska/tree/main/podrecznik/Trillo)
+
+W tej części repozytorium znajdują się tłumaczenia podręczników p. Priscilli Trillo "West Slavic Machine Stenography"
 
 ## Stopień ukończenia
 
 Stopień ukończenia poszczególnych elementów:
-* tlumaczenie --- rozpoczęte, ok. 10%
-* tlumaczenieErrata --- czeka na rozpoczęcie
 * podrecznik --- rozpoczęto, ok. 30%, prace trwają
-* plugin --- funkcjonalnie sprawny, modyfikacje będą wprowadzane w miarę rozwoju systemu, prace trwają
+* plugin --- zakończono
 * słowniki --- rozpoczęto, prace trwają
 * ćwiczenia --- czeka na rozpoczęcie
+* tlumaczenieErrata --- czeka na rozpoczęcie
+* tlumaczenie --- rozpoczęte, ok. 10%
+
+Tłumaczenia są odłożone na dalszy plan, do czasu ukończenia prac nad bazową częścią PSS.
