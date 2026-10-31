@@ -1,6 +1,6 @@
 # Polish Machine Stenography
 
-![Static Badge](https://img.shields.io/badge/lang-pl-green?link=https%3A%2F%2Fgithub.com%2Fbspat%2FStenotypia-polska%2Fblob%2Fmain%2FREADME.md)
+[![pl](https://img.shields.io/badge/lang-pl-green)](https://github.com/bspat/Stenotypia-polska/blob/main/README.md)
 
 This repository is dedicated to Polish Steno Theory (pl. Polski System Stenotypii - PSS) - steno theory made with polish language in mind. Here, one can also find the polish translation of coursebook "West Slavic Machnie Stenography" by Priscilla Trillo.
 
