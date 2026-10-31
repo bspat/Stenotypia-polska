@@ -307,3 +307,5 @@ TSWLatexianTemp*
 *.whl
 /system/plover-polish-pss/build
 /system/plover-polish-pss/plover_polish_pss.egg-info
+*.kra
+*.kra~
