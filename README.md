@@ -1,5 +1,8 @@
 # Stenotypia polska
 
+![Static Badge](https://img.shields.io/badge/lang-en-red?link=https%3A%2F%2Fgithub.com%2Fbspat%2FStenotypia-polska%2Fblob%2Fmain%2FREADME.en.md)
+
+
 Niniejsze repozytorium jest poświęcone Polskiemu Systemowi Stenotypii - systemowi stenotypii opracowanemu specjalnie dla języka polskiego.
 W tym miejscu można znaleźć również tłumaczenie na język polski oryginalnego podręcznika Zachodniosłowiańskiej Stenografii Maszynowej P. Trillo.
 
