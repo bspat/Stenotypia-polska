@@ -176,6 +176,11 @@ autor
 Już wkrótce
 
 \chapter{Pełny opis systemu}
+
+W tej części książki jest przedstawiony pełny, encyklopedyczny opis Polskiego Systemu Stenotypii. Jego celem jest zgromadzenie w jednym miejscu wszystkich podstawowych założeń systemu. \emph{Nie} jest zaprojektowana jako materiał służący do nauki systemu od podstaw, lecz raczej jako materiał odwoławczy dla aktywnych użytkowników w przypadku natknięcia się na jakiś problem.
+
+\newpage
+
 \section{Klawiatura}
 \includegraphics[width=12cm]{grafika/klawiatura.jpg}
 
@@ -197,6 +202,8 @@ jest podzielona na cztery części:
 \includegraphics[width=12cm]{grafika/pozycjepoczatkowe.jpg}
 Początkowe pozycje poszczególnych palców razem z obsługiwanymi przez nie
 klawiszami.
+
+\newpage
 
 \section{Budowa akordu}
 Akord --- jednoczesne wciśnięcie i puszczenie pewnej ilości klawiszy na
@@ -245,6 +252,8 @@ Spółgłoski końcowe są zapisywane palcami prawej dłoni. Są to spółgłosk
 występujące \emph{po} samogłosce w danym akordzie. Lista poszczególnych
 kombinacji dostępna jest w rozdziale poświęconym
 \hyperref[sec:koncowe]{spółgłoskom końcowym}.
+
+\newpage
 
 \subsubsection{Skrócony opis znajdywania rdzeni w poszczególnych wyrazach}
 
@@ -348,6 +357,8 @@ użytkownika powodujące powstawanie najmniejszej ilości konfliktów).}
 przedstawiony tam sposób budowania przyrostków jest najprostszy, najwolniejszy,
 i w docelowej postaci systemu będzie jedynie początkowym stadium.}
 
+\newpage
+
 \subsection{Przyrostki}
 
 Przyrostki to akordy, których przeznaczeniem jest połączyć się z poprzednim
@@ -394,6 +405,8 @@ kot + -ie $\rightarrow$ kocie
 Wyrazy, których nie dotyczy ta zasada (sympatia, apatia etc.) są uwzględnione w
 słowniku i nie podlegają temu zjawisku automatycznie.
 
+\newpage
+
 \subsection{Przedrostki}
 \label{ssec:przedrostki}
 Przedrostki to akordy, które mają połączyć się z kolejnym podanym akordem ---
@@ -413,18 +426,27 @@ powinna być skróceniami.
 Przykładowe przedrostki to prze (prze-/pych), od (od-/raz/-a), nad
 (nad-/bud/-ów/-ka).
 
+\newpage
+
 \subsection{Specjalne}
 Istnieją akordy o specjalnym znaczeniu:
 
 \begin{tabular}{| c | p{6cm} |}
 	\hline
 	Akord & Znaczenie \\ \hline
-	\stenoExc{XF--VD} & Połączenie dwóch rdzeni bez spacji \\ \hline
-	\stenoExc{XF}\hyperref[sec:samogloski]{samogłoska}\stenoExc{VD} &
+	\stenoExc{*} & Usunięcie poprzedniego akordu \\ \hline
+	\stenoExc{X} & Powtórzenie poprzedniego akordu \\ \hline
+	\stenoExc{\#*} & Połączenie dwóch rdzeni bez spacji \\ \hline
+	\stenoExc{\#} & Wymuszenie spacji \\ \hline
+	\stenoExc{XF}\hyperref[sec:samogloski]{samogłoska} (lub inna cząstka)
+	\stenoExc{VD} &
 	Połączenie dwóch rdzeni bez spacji, ze wstawieniem odpowiedniego wrostka
 	\\ \hline
-	\stenoExc{XF*VD} & Wymuszenie spacji \\ \hline
 \end{tabular}
+
+Oprócz nich, istnieją inne akordy skonstruowane poza schematem nagłos - samogłoska - wygłos. Służą one do wpisywania \hyperref[sec:liczby]{liczb i liczebników}, \hyperref[sec:interpunkcja]{interpunkcji i formatowania} oraz \hyperref[sec:komputer]{emulacji klawiatury komputerowej}. Są one przedstawione w odpowiednich sekcjach.
+
+\newpage
 
 \section{Samogłoski}
 \label{sec:samogloski}
@@ -480,6 +502,8 @@ W poniższych przykładach wykorzystuje się spółgłoski początkowe: p ---
 	\item ba --- \steno{PJA}
 	\item bia --- \steno{PIYA}
 \end{itemize}
+
+\newpage
 
 \newgeometry{left=2cm}
 
@@ -1173,13 +1197,17 @@ zż & \steno{ZTPJ} & \includegraphics[height=12pt]{grafika/lewa/ZTPJ.jpg} & \hyp
 
 \restoregeometry
 
+\newpage
 
 \section{Spółgłoski końcowe}
 \label{sec:koncowe}
 Obecnie spółgłoski końcowe nie zostały jeszcze w pełni opracowane. Ukażą się w
 przeciągu kilku tygodni.
 
+\newpage
+
 \section{Interpunkcja i formatowanie}
+\label{sec:interpunkcja}
 
 \subsection{Interpunkcja}
 
@@ -1202,19 +1230,75 @@ funkcji innej niż interpunkcja należy użyć znaków z części \hyperref
 	średnik ; & \steno{PW-MN} \\ \hline
 	apostrof ' & \steno{KT-CL} \\ \hline
 	kreska pionowa | & \steno{ZS-KW} \\ \hline
-	
+	tylda \~ & \steno{ZKP-MCK} \\ \hline
+	małpa @ & \steno{PWLR-CRLB} \\ \hline
+	podkreślnik \_ & \steno{STW-NLW} \\ \hline
+	myślnik --- & \steno{ST-LW} \\ \hline
+	wielokropek \ldots & \steno{ZK-CK} \\ \hline
+	prawy ukośnik / & \steno{WR-ZM} \\ \hline
+	lewy ukośnik \textbackslash & \steno{PL-MN} \\ \hline
+	nawias lewy ( & \steno{STWR-RNLW} \\ \hline
+	nawias prawy ) & \steno{ZKPL-ZMCK} \\ \hline
+	cudzysłów otwierający ,, & \steno{TWR-RNL} \\ \hline
+	cudzysłów zamykający '' & \steno{KPL-ZMC} \\ \hline
+	nawias kwadratowy lewy [ & \steno{KTPW-RNLW} \\ \hline
+	nawias kwadratowy prawy ] & \steno{KTPW-ZMCK} \\ \hline
+	nawias klamrowy lewy \{ & \steno{ZSKT-RNLW} \\ \hline
+	nawias klamrowy prawy \} & \steno{ZSJT-ZMCK} \\ \hline	
+\end{tabular}
+
+Następujące znaki są powiązane z liczbami, i dlatego ich akordy są 
+przedstawione na schemacie w części poświęconej \hyperref[sec:liczby]{liczbom i 
+liczebnikom}.
+
+\begin{tabular}{| c | c |}
+	\hline
+	Znak & Akord \\ \hline
+	asterysk * & \steno{XJRN} \\ \hline
+	plus + & \steno{XJZM} \\ \hline
+	minus/dywiz - & \steno{XJMC} \\ \hline
+	procent \% & \steno{XJCK} \\ \hline
+	et \& & \steno{XJLW} \\ \hline
+	dolar \$ & \steno{XJKV} \\ \hline
+	kratka \# & \steno{XJ} \\ \hline
+	karetka \^ & \steno{XJWD} \\ \hline
+	znak równości = & \steno{XJVD} \\ \hline
+	znak większości > & \steno{XJV} \\ \hline
+	znak mniejszości < & \steno{XJD} \\ \hline
 \end{tabular}
 
 \subsection{Formatowanie}
 
+Niektóre z akordów, choć nie skutkują wstawieniem widocznego znaku, wpływają na 
+tekst. Są one zgromadzone w poniższej tabeli.
+
+\begin{tabular}{| c | p{5cm} |}
+	\hline
+	Akord & Działanie \\ \hline
+	\steno{R-R} & Nowy akapit (z tabulacją i rozpoczęciem wielką literą)\\ 
+	\hline
+	\steno{R*R} & Nowa linia (bez tabulacji i rozpoczęcia wielką literą)\\ 
+	\hline
+	\steno{L-Z} & Tabulacja \\ \hline
+\end{tabular}
+
+PSS przewiduje możliwość operowania specjalnymi znacznikami dla mówców. Oznaczane one są jako \steno{ZSKTPWLR} oraz odpowiedni klawisz po prawej stronie klawiatury. Aby z nich korzystać, należy odpowiednio edytować pozycje w słowniku przed każdą sesją stenografowania.
+
+\newpage
+
 \section{Liczby i liczebniki}
+\label{sec:liczby}
 Liczby wpisuje się zgodnie z poniższym rysynkiem:
+
+\newpage
 
 \section{Użytkowanie komputera}
 \label{sec:komputer}
 Ponieważ niektóre programy mogą wymagać wywołania skrótów klawiszowych lub 
 konkretnych klawiszy, PSS umożliwia emulację standardowej klawiatury
 komputerowej.
+
+\newpage
 
 \section{Użytkowanie programu Plover}
 Ponieważ PSS jest przeznaczony do użytkowania z wykorzystaniem programu Plover,
@@ -1242,7 +1326,6 @@ Akord & Mnemonika & Angielska nazwa & Opis działania \\ \hline
  \steno{PWLR-W} & Wyjdź & Quit & Zamyka i wyłącza program Plover. \\ \hline
  \steno{PWLR-D} & Do okna & Focus & Przełącza na okno programu Plover. \\ \hline
 \end{tabular}
-
 
 \chapter{Przykłady}
 Poniżej dostarczone są przykładowe teksty z proponowanym podziałem na akordym,
@@ -1278,5 +1361,14 @@ znan / -ia / i / prze- / strzeg / -an / -ia / , / tak / po- / śród / lud / -ó
 Państw / Człon / -kowsk / -ich / , / jak / też / po- / śród / lud / -ów / ter /
 -yt / -or / -iów / znajd / -uj / -ąc / -ych / się / pod / ich / jur / -ysd /
 -yk / -cją / . 
+
+\section{Przykład 2 --- Ojcze nasz, tradycyjna próbka stenograficzna}
+
+\subsection{Tekst}
+Ojcze nasz, któryś jest w niebie, święć się Imię Twoje, przyjdź Królestwo Twoje, bądź wola Twoja, jako w niebie tak i na ziemi. Chleba naszego powszedniego daj nam dzisiaj i odpuść nam nasze winy jako i my odpuszczamy naszym winowajcom, i nie wódź nas na pokuszenie, ale nas zbaw ode złego.
+
+\subsection{Podział na akordy --- podstawowy}
+
+Ojcz / -e / nasz / , / któr/ -yś / jest / w / nieb/ -ie / , / święć / się / Im / -ię / Twoj / -e / , / przyjdź / Król / -estw / -o / Twoj / -e / , / bądź / wol / -a / Twoj / -a / , / jak / -o / w / nieb / -ie / tak / i / na / ziem / -i / . / Chleb / -a / nasz / -eg / -o / po- / wszed / -nieg / -o / daj / nam / dzis / -iaj / i / od- / puść / nam / nasz / -e / win / -y / jak / -o / i / my / od- / puszcz / -am / -y / nasz / -ym / win / -ow / -ajc / -om / , / i / nie / wódź / nas / na / po- / kusz / -en / -ie / , / al / -e / nas / zbaw / od / -e / złeg / -o / .
 
 \end{document}
