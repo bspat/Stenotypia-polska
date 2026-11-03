@@ -159,7 +159,11 @@ Nowy system charakteryzuje się następującymi cechami:
 \end{enumerate}
 Oczywiście nie jest to wyczerpująca lista --- dokładnemu wyjaśnieniu PSS jest
 poświęcona cała reszta książki. Wszystkie te cechy sprawiają, że choć nowy
-system jest podobny do starego, nie jest z nim kompatybilny. 
+system jest podobny do starego, nie jest z nim kompatybilny.
+
+Bez wątpienia szczególne podziękowania należą się użytkownikowi serwisu GitHub o nicku
+Jamers303 --- jemu zawdzięczam projekt systemu liczebników, jak również
+tą część systemu, która pozwala na emulowanie standardowej klawiatury.
 
 Mam nadzieję, że ktokolwiek sięgnie po tę książkę, znajdzie ją przyjemną oraz
 użyteczną.
@@ -219,8 +223,6 @@ części:
 Rdzenie najczęściej pokrywają się z semantycznymi rdzeniami wyrazów. 
 
 Domyślnie rdzenie nie łączą się ze sobą.
-
-
 
 \subsubsection{Spółgłoski początkowe}
 Bardzo często właśnie od spółgłosek początkowych zależy znaczenie wyrazu. Są to
@@ -1177,6 +1179,70 @@ zż & \steno{ZTPJ} & \includegraphics[height=12pt]{grafika/lewa/ZTPJ.jpg} & \hyp
 Obecnie spółgłoski końcowe nie zostały jeszcze w pełni opracowane. Ukażą się w
 przeciągu kilku tygodni.
 
+\section{Interpunkcja i formatowanie}
+
+\subsection{Interpunkcja}
+
+W poniższej tabeli są przedstawione akordy pozwalające wpisywać różne znaki 
+interpunkcyjne. Każdy ze znaków domyślnie zachowuje się jak znak 
+interpunkcyjny. Aby wymusić na nim brak wpływu na formatowanie sąsiednich 
+wyrazów oraz bezpośrednie łączenie z sąsiadami,należy dodać do akurdu klawisze 
+\steno{\#*}. W przypadku konieczności wykorzystania znaków specjalnych w 
+funkcji innej niż interpunkcja należy użyć znaków z części \hyperref
+[sec:komputer]{użytkowanie komputera}.
+
+\begin{tabular}{| c | c |}
+	\hline
+	Znak & Akord \\ \hline
+	przecinek , & \steno{W-N}\\ \hline
+	kropka . & \steno{P-M}\\ \hline
+	znak zapytania ? & \steno{W-M} \\ \hline
+	wykrzyknik ! & \steno{P-N} \\ \hline
+	dwukropek : & \steno{LR-ZM} \\ \hline
+	średnik ; & \steno{PW-MN} \\ \hline
+	apostrof ' & \steno{KT-CL} \\ \hline
+	kreska pionowa | & \steno{ZS-KW} \\ \hline
+	
+\end{tabular}
+
+\subsection{Formatowanie}
+
+\section{Liczby i liczebniki}
+Liczby wpisuje się zgodnie z poniższym rysynkiem:
+
+\section{Użytkowanie komputera}
+\label{sec:komputer}
+Ponieważ niektóre programy mogą wymagać wywołania skrótów klawiszowych lub 
+konkretnych klawiszy, PSS umożliwia emulację standardowej klawiatury
+komputerowej.
+
+\section{Użytkowanie programu Plover}
+Ponieważ PSS jest przeznaczony do użytkowania z wykorzystaniem programu Plover,
+istnieje grupa komend dotyczących bezpośredno  tego oprogramowania.
+Celem ułatwienia zapamiętania, wszystkie zaczynają się od \steno{PWLR}, 
+przypominajacego wymowę nazwy programu.
+
+\begin{tabular}{| c | c | c | p{5cm} |}
+\hline
+Akord & Mnemonika & Angielska nazwa & Opis działania \\ \hline
+ \steno{PWLR-Z} & Zawieś & Suspend & Zatrzymuje wypisywanie znaków przez
+ Plovera.\\ \hline
+ \steno{PWLR-R} & Rozpocznij & Resume & Przywraca działanie Plovera. Działa
+ również wtedy, kiedy Plover jest zatrzymany.\\ \hline
+ \steno{PWLR-M} & Migaj & Toggle & Przełącza między zatrzymaniem a działaniem
+ Plovera. Działa również wtedy, kiedy Plover jest zatrzymany. \\ \hline
+ \steno{PWLR-N} & Nowe & Add Translation & Otwiera okno pozwalające na wpisanie
+ nowej pozycji do słowników. \\ \hline
+ \steno{PWLR-C} & Co? & Suggestions & Otwiera okno sugestii z możliwymi
+ zamiennikami dla ostatnio wpisanych akordów. \\ \hline
+ \steno{PWLR-L} & Lupa & Lookup & Otwiera okno dialogowe pozwalające
+ przeszukiwać słowniki. \\ \hline
+ \steno{PWLR-K} & Konfiguracja & Configure & Otwiera okno konfiguracji Plovera.
+ \\ \hline
+ \steno{PWLR-W} & Wyjdź & Quit & Zamyka i wyłącza program Plover. \\ \hline
+ \steno{PWLR-D} & Do okna & Focus & Przełącza na okno programu Plover. \\ \hline
+\end{tabular}
+
 
 \chapter{Przykłady}
 Poniżej dostarczone są przykładowe teksty z proponowanym podziałem na akordym,
@@ -1197,20 +1263,20 @@ terytoriów znajdujących się pod ich jurysdykcją.
 
 \subsection{Podział na akordy --- podstawowy}
 Zgrom  /  -adz / -en / -ie / O- / gól / -ne / o- / głasz / -a / nin / -iej /
--szą / Po- / wszechn / -ą / De- / klar / -ac / -ję / Praw / Człow / -ie / -ka /
-jak / -o / wspól / -ny / stand / -ard / do / o- / siągn / -ięc / -ia / przez /
-wszystk / -ie / lud / -y / i / wszystk / -ie / nar / -od / -y / , / tak / ab /
--y / każd / -a / jedn / -o- / -stka / i / każd / -y / org / -an / społ / -ecz /
+-szą / Po- / wszech / -ną / De- / klar / -ac / -ję / Praw / Człow / -ie / -ka /
+jak / -o / wspól / -ny / stand / -ard / do / o- / siąg / -nięc / -ia / przez /
+wszyst / -kie / lud / -y / i / wszyst / -kie / nar / -od / -y / , / tak / ab /
+-y / każd / -a / jed / -nost / -ka / i / każd / -y / org / -an / społ / -ecz /
 -ny / , / maj / -ąc / stal / -e / na / względz / -ie / nin / -iej / -szą / De- /
 klar / -ac / -ję / , / dąż / -ył / -y / po- / przez / naucz / -an / -ie / i /
 wy- / chow / -an / -ie / do / za- / pew / -nie / -nia / po- / szan / -ow / -an /
--ia / tych / praw / i / woln / -ośc / -i / , / jak / rów / -nież / do / za- /
-bezp / -iecz / -eni / -a / , / po- / przez / rozw / -ój / środk / -ów / o /
-char / -a- / kterz / -e / kraj / -ow / -ym / i / międz / -y- / nar / -od / -ow /
--ym / , / ich / po- / wszechn / -eg / -o / i / skut / -eczn / -eg / -o / u- /
+-ia / tych / praw / i / wol / -nośc / -i / , / jak / rów / -nież / do / za- /
+bez- / piecz / -en / -ia / , / po- / przez / rozw / -ój / środ / -ków / o /
+char / -akt / -erz / -e / kraj / -ow / -ym / i / międz / -y- / nar / -od / -ow /
+-ym / , / ich / po- / wszech / -neg / -o / i / skut / -ecz / -neg / -o / u- /
 znan / -ia / i / prze- / strzeg / -an / -ia / , / tak / po- / śród / lud / -ów /
-Państw / Członk / -ow / -skich / , / jak / też / po- / śród / lud / -ów / ter /
--yt / -or / -iów / znajd / -uj / -ąc / -ych / się / pod / ich / jur / -ys- /
-dyk / -cją / . 
+Państw / Człon / -kowsk / -ich / , / jak / też / po- / śród / lud / -ów / ter /
+-yt / -or / -iów / znajd / -uj / -ąc / -ych / się / pod / ich / jur / -ysd /
+-yk / -cją / . 
 
 \end{document}
