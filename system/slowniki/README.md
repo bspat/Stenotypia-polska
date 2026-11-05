@@ -18,21 +18,23 @@ Wszystkie materiały dotyczące PSS zakładają używanie słowników poziomu 0,
 ### Poziom 0
 Na poziom 0 składają się słowniki, które są uważane za niezbędne do korzystania z PSS w najbardziej podstawowym zakresie.
 Poziom 0 zawiera następujące słowniki:
-* rdzenie_bazowe.json - rdzenie słów uzyskane na podstawie listy 10000 najczęściej używanych słów Jerzego Kazojcia
+* pss-rdzenie-bazowe.json - rdzenie słów uzyskane na podstawie listy 10000 najczęściej używanych słów Jerzego Kazojcia
 (https://pl.wiktionary.org/wiki/Indeks:Polski_-_Najpopularniejsze_s%C5%82owa_1-10000_wersja_Jerzego_Kazojcia), jak również niektóre inne rdzenie
 występujace w pospolitych, często występujących słowach
-* przyrostki_bazowe.json - proste przyrostki fleksyjne i przyrostki morfologiczne na podstawie listy Jerzego Kazojcia
-* przedrostki_bazowe.json - proste przedrostki na podstawie listy Jerzego Kazojcia
-* skroty_gramatyczne.json - zaimki (w tym wersje skrócone dla złożonych zaimków), spójniki, przyimki, partykuły
-* interpunkcja.json - znaki iterpunkcyjne i formatujące tekst
+* pss-przyrostki-bazowe.json - proste przyrostki fleksyjne i przyrostki morfologiczne na podstawie listy Jerzego Kazojcia
+* pss-przedrostki-bazowe.json - proste przedrostki na podstawie listy Jerzego Kazojcia
+* [](pss-skroty-gramatyczne.json) - zaimki (w tym wersje skrócone dla złożonych zaimków), spójniki, przyimki, partykuły
+* [https://github.com/bspat/Stenotypia-polska/blob/main/system/slowniki/poziom%200/pss-interpunkcja.json](pss-interpunkcja.json) - znaki iterpunkcyjne i formatujące tekst
+* [https://github.com/bspat/Stenotypia-polska/blob/main/system/slowniki/poziom%200/pss-komputer.json](pss-komputer.json) - emulacja klawiatury komputera
+* [https://github.com/bspat/Stenotypia-polska/blob/main/system/slowniki/poziom%200/pss-plover.json](pss-plover.json) - obsługa programu Plover
 
 ### Poziom 1
 Na poziom 1 składają się słowniki, które są uważane za niezbędne do korzystania z PSS w sposób wydajny, jednakże nie wychodzą one poza słownictwo
 zawarte w słownikach na poziomie 0.
 Poziom 1 zawiera następujące słowniki:
-* przedrostki_zlozone.json - praktyczne złożenia kilku prostych przedrostków w jeden
-* przyrostki_zlozone.json - złożone przyrostki fleksyjne, nie łączone z przyrostkami morfologicznymi
-* przyrostki_rozszerzone.json - najczęściej występujące przyrostki łączące przyrostki morfologiczne z przyrostkami złożonymi
+* przedrostki-zlozone.json - praktyczne złożenia kilku prostych przedrostków w jeden
+* przyrostki-zlozone.json - złożone przyrostki fleksyjne, nie łączone z przyrostkami morfologicznymi
+* przyrostki-rozszerzone.json - najczęściej występujące przyrostki łączące przyrostki morfologiczne z przyrostkami złożonymi
 * skrocenia.json - jednoakordowe skróty dla najczęstszych grup oraz słów
 
 ### Poziom 2
@@ -51,7 +53,7 @@ Na poziom 3 składać się będą przykładowo takie kategorie:
 
 ## Stan prac
 Na ten moment kształt prac nad słownikami wygląda następująco:
-* poziom 0 - trwają prace nad listą 10000 słów, celem wyekstrahowania rdzeni, przedrostków i przyrostków
+* poziom 0 - techniczne słowniki zakończono, trwają prace nad listą 10000 słów, celem wyekstrahowania rdzeni, przedrostków i przyrostków
 * poziom 1 - trwają prace nad listą 10000 słów, celem wyekstrahowania przyrostków i przedrostków, oraz wyznaczenia skróceń
 * poziom 2 - nierozpoczęte
 * poziom 3 - nierozpoczęte
