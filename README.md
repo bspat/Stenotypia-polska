@@ -40,7 +40,7 @@ W tej części repozytorium znajdują się tłumaczenia podręczników p. Prisci
 Stopień ukończenia poszczególnych elementów:
 * podrecznik --- rozpoczęto, ok. 30%, prace trwają
 * plugin --- zakończono
-* słowniki --- rozpoczęto, prace trwają
+* słowniki --- rozpoczęto, prace trwają, gotowe niektóre słowniki poziomu 0
 * ćwiczenia --- czeka na rozpoczęcie
 * tlumaczenieErrata --- czeka na rozpoczęcie
 * tlumaczenie --- rozpoczęte, ok. 10%
