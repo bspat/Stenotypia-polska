@@ -30,7 +30,7 @@ here one can find the translations of "West Slavic Machine Stenography"
 Completion level of various parts of the repository:
 * podrecznik (PSS coursebook) --- around 30%, work in progress
 * plugin --- done
-* słowniki (dictionaries) --- work in progress
+* słowniki (dictionaries) --- work in progress, some level 0 dictionaries done
 * ćwiczenia (exercises) --- not started yet
 * tlumaczeniaErrata (translation with errata) --- not started yet
 * tlumaczenie (translation) --- around 10%
