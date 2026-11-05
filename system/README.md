@@ -5,7 +5,7 @@
 W tym folderze znajdują się techniczne elementy potrzebne do korzystania z PSS.
 
 ## Słowniki
-Na ten moment dostępne są słowniki dotyczące technicznej obsługi komputera i systemu. Są one dostępne [https://github.com/bspat/Stenotypia-polska/blob/main/system/README.md](tutaj).
+Na ten moment dostępne są słowniki dotyczące technicznej obsługi komputera i systemu oraz interpunkcji. Są one dostępne [https://github.com/bspat/Stenotypia-polska/blob/main/system/README.md](tutaj).
 
 ## Plugin
 Plugin plover-polish-pss pozwala na korzystanie z [programu Plover](https://opensteno.org/plover/) z użyciem PSS.
