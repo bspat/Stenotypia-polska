@@ -5,7 +5,7 @@
 Here are technical parts needed in order to use PSS.
 
 ## Dictionaries
-For now, there available technical dictionaries regarding computer usage. They are [https://github.com/bspat/Stenotypia-polska/blob/main/system/README.md](here).
+For now, there available technical dictionaries regarding computer usage and interpunction. They are [https://github.com/bspat/Stenotypia-polska/blob/main/system/README.md](here).
 
 ## Plugin
 In order to use PSS inside of the [Plover software](https://opensteno.org/plover/) one needs plover-polish-pss plugin.
