@@ -173,7 +173,196 @@ Z poważaniem
 autor
 
 \chapter{Kurs}
-Już wkrótce
+
+\section{1. Wstęp do stenotypii}
+
+\textit{W tej lekcji pokazane zostaje czym jest stenotypia, oraz przeprowadzona jest konfiguracja programu Plover do działania z PSS.}
+
+Bardzo miło mi przywitać Czytelnika w niniejszym kursie stenotypii poświęconym Polskiemu Systemowi Stenotypicznemu. Choć z samego faktu, że ta książka znalazła się w Czytelnika rękach można wnioskować, że jest wstępnie zaznajomiony z przedstawionymi tutaj technikami, to uważam, że nadal dobrze byłoby rozpocząć od odpowiedzenia sobie na pytanie, o co tak naprawdę tutaj będzie chodzić.
+
+\subsection*{Czym jest stenotypia?}
+
+Stenotypia, zwana również przez niektórych stenografią maszynową, jest sztuką pisania na przeznaczonej do tego klawiaturze w tempie dorównującym, a nawet przewyższającym ludzką mowę.
+
+Próby ułatwienia sobie pracy przez ludzi postawionych wobec zadania zapisywania większych ilości informacji są praktycznie tak stare jak sama umiejętność pisania. Wystarczy spojrzeć na systematyczne upraszczanie się na przestrzeni czasu pisma egipskiego (od hieroglifów do demotyki), rzymskie noty tyrońskie, czy też wysiłki średniowiecznych skrybów, skracających praktycznie każdy często występujący wyraz. Nie bez znaczenia był również fakt, że mniejsza ilość tekstu do zapisania pozwalała rejestrować informację znacznie szybciej i mniejszym kosztem pracy.
+
+Jednym z najnowszych i najbardziej obiecujących pod tym kątem wynalazków jest właśnie stenografia maszynowa. Na świecie jest wykorzystywana przede wszystkim w Stanach Zjednoczonych do rejestrowania przebiegu rozpraw sądowych. W Polsce na razie pozostaje jeszcze nieobecna --- jednakże niniejsza książka ma na celu to zmienić.
+
+\subsection*{Jak to działa?}
+W dużym skrócie (gdyż szczegółowemu wyjaśnieniu jest poświęcona cała reszta tej książki) --- osoba stenotypująca, z wykorzystaniem przystosowanego do tego urządzenia, naciska jednocześnie kolejne grupy klawiszy, którym są przypisane odpowiednie fragmenty słów, całe słowa, lub nawet frazy. Zasady, według których owe grupy klawiszy są zamieniane na tekst nazywa się po polsku \emph{systemem}, a po angielsku \emph{theory} - teorią.
+
+\subsection*{Jak zacząć?}
+Do praktykowania stenotypii, niezbędne są następujące elementy:
+\begin{itemize}
+	\item System stenotypii
+	\item Maszyna stenotypiczna
+	\item Chęć nauki
+\end{itemize}
+
+\subsubsection{System stenotypii}
+Ten kurs jest poświęcony Polskiemu Systemowi Stenotypii. Jest to sposób zaprojektowany przez autora niniejszego podręcznika, ze szczególną uwagą poświęconą wygodnemu używaniu w języku polskim. Każdy system stenografii maszynowej ze swej natury jest przeznaczony do używania tylko z jednym, wybranym językiem (lub wąską, spokrewnioną między sobą grupą).
+
+Warto zaznaczyć, że PSS to nie jedyny istniejący system; dla języka polskiego istnieje również "Zachodniosłowiańska Stenografia Maszynowa", przeznaczona do użytku po polsku, czesku, oraz słowacku, autorstwa pani Priscilli Trillo (będący w pewnym stopniu pierwowzorem dla PSS). Dla języków obcych istnieje bardzo duża liczba rozmaitych systemów, z których na szczególną uwagę zasługuje angielskojęzyczny Lapwing.
+
+Rozbudowaną listę darmowo dostępnych systemów dla różnych języków można znaleźć pod \href{https://plover.wiki/index.php/Steno_layouts_and_supported_languages}{tym linkiem}.
+
+\subsubsection{Maszyna stenotypiczna}
+Do stenotypowania konieczne jest dostosowane do tego urządzenie. Takie urządzenia są najczęściej klasyfikowane w następujący sposób:
+\begin{itemize}
+	\item profesjonalna maszyna stenograficzna
+	\item hobbystyczna klawiatura stenograficzna
+	\item standardowa klawiatura komputerowa
+\end{itemize}
+
+Profesjonalni (tj. pracujący w ten sposób zaawodowo) stenografowie w Stanach Zjednoczonych najczęściej posługują się profesjonalnymi maszynami stenograficzymi. Są to urządzenia, które nie potrzebują żadnego dodatkowego zewnętrznego oprogramowania do działania. Najczęściej są bardzo dobrze dostosowane do potrzeb stenografów --- ich głównym minusem jest bardzo wysoki koszt (w momencie pisania tych słów koszt pojedynczego używanego, ale sprawnego urządzenia zaczyna się od kilku tysięcy złotych) oraz z polskiej perspektywy -- niska dostępność.
+
+Dużo łatwiejsze do dostania są hobbystyczne klawiatury stenograficzne. Są to klawiatury, które zostały zaprojektowane z myślą o wykorzystaniu w celu stenotypowania. Tak jak profesjonalne maszyny, ich klawiatury są rozłożone w sposób ułatwiający naciskanie kombinacji wykorzystywanych w stenografii. Do działania wymagają one zewnętrznego oprogramowania (takiego jak Plover)tłumaczącego znaczenie poszczególnych grup przycisków na docelowy tekst. Ich ceny oscylują w okolicach kilkuset złotych; dla osób obeznanych z elektroniką, wykonanie takiej klawiatury na podstawie dostępnych w sieci materiałów nie powinno stanowić dużego wyzwania.
+
+Co do zasady, stenotypowanie jest możliwe nawet na standardowej klawiaturze. Jest to dobr opcja dla osób, które chcą spróbować tej sztuki bez większych kosztów w wypadku szybkiej rezygnacji. Aby dowiedzieć się, czy dana klawiatura nadaje się do stenograficznego wykorzystania, warto mieć na uwadze następujące cechy:
+\begin{itemize}
+	\item NKRO --- z angielskiego N-Key Rollover; pojęcie to oznacza, że dana klawiatura będzie w stanie zarejestrować wszystkie naciśnięte naraz klawisze, niezależnie od ich liczby. Większość klawiatur biurowych nie jest niestety wykonana w taki sposób, i będzie występować na nich zjawisko nie rejestrowania naciśnięć niektórych klawiszy, tzw. ghosting. Uwaga - choć technicznie rzecz biorąc, możliwe jest stenografowanie na klawiaturze ghostującej (z wykorzystaniem funkcji tzw. arpeggio), jest to bardzo wolne oraz niewygodne, a zatem odradzane.
+	\item Ortogonalność --- niektóre klawiatury ergonomiczne mają ustawione klawisze w równych rzędach, bez charakterystycznego przesunięcia. Nadają się one dużo lepiej do stenografii niż te klasyczne, gdyż klasyczny układ klawiatury wymusza trzymanie rąk skosem w lewo i bardzo przeszkadza podczas stenotypowania. Pewnym sposobem na ominięcie tego problemu są stenograficzne nakładki na klawiaturę, któych wzory można za darmo znaleźć w internecie i wydrukować na drukarce 3D lub niskim kosztem nabyć.
+\end{itemize}
+
+Niniejszy kurs został napisany z założeniem, że Czytelnik dysponuje klawiaturą hobbystyczną lub klasyczną klawiaturą bez zjawiska ghostowania, oraz wykorzystuje oprogramowanie open-source Plover.
+
+\subsubsection{Chęć nauki}
+Stenografia maszynowa to ten rodzaj umiejętności, która \emph{KONIECZNIE} wymaga regularnego ćwiczenia. Największe zyski przychodzą nie z wielogodzinnych, acz rzadkich, punktowych sesji, a z regularnego powtarzania i przyswajania materiału w swoim tempie. Wynika to z faktu, że podobnie jak w bezwzrokowym pisaniu na klasycznej klawiaturze, największy nacisk jest położony na pamięć mięśniową, a ona wymaga czasu na wykształcenie.
+
+Ten kurs jest zorganizowany w taki sposób, aby kolejne lekcje serwowały małe porcje nowego materiału i korzystały z informacji już wcześniej przedstawionych. Powinno to pozwolić na szybkie przejście przez podręcznik. Zaleca się nie rozpoczynać kolejnej lekcji przed opanowaniem materiału z poprzedniej w stopniu wystarczającym na ćwiczenie bez sprawdzania dobrej odpowiedzi w podręczniku.
+
+% \subsection{Pojęcia stenotypiczne}
+% Ze stenotypią są związane pewne specyficzne pojęcia -- warto się z nimi zapoznać już w tym momencie, gdyż będą używane w dalszej części książki.
+% \begin{longtable}{|c|c|p{8cm}|}
+% 	\hline
+% 	Pojęcie & Angielskie & Znaczenie\\ \hline
+% 	\endhead
+% 	Stenotypia & Stenotype & Umiejętność szybkiego pisania z wykorzystaniem specjalnej klawiatury \\ \hline
+% 	Steno & Steno & Skrócone określenie na stenografię oraz stenotypię \\ \hline
+% 	Stenografia & Stenography & Umiejętność szybkiego pisania na papierze, w języku angielskim bardzo często obejmujące również stenotypię \\ \hline
+% 	Akord & Chord & Grupa klawiszy naciśniętych jednocześnie \\ \hline
+% 	System & Theory & Zbiór zasad mówiących, w jaki sposób stenografować / stenotypować \\ \hline
+% 	Słownik & Dictionary & Zbiór tłumaczeń akordów na tekst \\ \hline
+% 	Skrót & Brief & Akord, którego znaczenie wykracza poza standardowe zasady systemu \\ \hline
+
+% \end{longtable}
+
+\subsection*{Praktyka}
+W tej lekcji częścią praktyczną jest ściągnięcie oraz skonfigurowanie programu Plover, jak również przetestowanie klawiatury.
+
+\begin{enumerate}
+	\item Pobranie i instalacja programu --- należy pobrać najnowszą wersję programu Plover (dostępny na stronie projektu Open Steno --- do znalezienia przez wyszukiwarkę internetową lub pod \href{https://opensteno.org/plover/}{tym linkiem}) a następnie zainstalować go zgodnie z instrukcją i sposobem właściym dla systemu operacyjnego
+	\item Uruchomienie i pobranie pluginu --- po uruchomieniu programu należy otworzyć zakładkę Plugins Manager, i zainstalować z listy plugin plover-steno-pss (jest to dodatkowy fragment programu Plover przystosowujący go do użytkowania z PSS, autorstwa autora podręcznika), a następnie wejść w opcję Configure i w zakładce system wybrać PSS
+	\item Konfiguracja klawiatury --- należy podłączyć klawiaturę do komputera, wejść w opcję Machine, wybrać odpowiedni protokół (dla standardowych klawiatur Keyboard, dla pozostałych zależy od producenta, najczęściej GeminiPR), a następnie wybrać port COM, do którego została podłączona klawiatura. Następnie upewnić się, że klawiatura ma status Connected
+	\item Przetestowanie --- aby sprawdzić, czy wszystko działa, można otworzyć narzędzie Paper Tape i zacząć przyciskać różne klawisze --- jeżeli zaczną pokazywać się znaki, oznacza to, że konfiguracja się udała
+\end{enumerate}
+
+W razie potrzeby, zawsze można poprosić o pomoc z programem Plover na serwerze Discord wokół projektu OpenSteno (\url{https://discord.gg/Gzsdjn8BMq}). Większość komunikacji na serwerze odbywa się w języku angielskim, jednakże istnieje kanał przeznaczony dla języka polskiego.
+
+% ==============================================================================
+\newpage
+\section{2. Układ klawiatury}
+
+\textit{W tej lekcji zostaje przedstawiony układ klawiatury, ułożenie początkowe rąk, oraz konwencje dotyczące zapisu akordów}
+
+\subsection*{Układ klawiatury}
+
+Klawiatura w Polskim Systemie Stenotypii ma następujący układ klawiszy:
+
+\includegraphics[width=12cm]{grafika/klawiatura.jpg}
+
+Ten diagram jest bardzo ważny, i należy znać go z pamięci, gdyż klawiatury stenotypiczne nie mają opisanych klawiszy. Można go wydrukować i wspomagać się przez pierwsze kilka lekcji.
+
+Można zauważyć, że na przedstawionym schemacie nie znajdują się wszystkie litery występujące w języku polskim. O tym, jak uzyskiwać brakujące znaki, opowiada dalsza część kursu.
+
+\subsection*{Porządek stenotypiczny i konwencje zapisu}
+Podczas korzystania ze stenotypii, bardzo często wciskane klawisze (grupa kalwiszy naciśnięta jednocześnie nazywana jest \emph{akordem}, ze względu na podobieństwo do akordów na fortepianie) zapisuje się tekstem. Aby uniknąć zamieszania, przyjęło się stosować pewne konwencje.
+\begin{enumerate}
+	\item Porządek stenotypiczny --- klawisze zawsze zapisuje się w odpowiedniej kolejności: najpierw lewa ręka, potem lewy kciuk, następnie środek, prawy kciuk i prawa ręka. W przypadku Polskiego Systemu Stenotypii daje to następujący porządek:\\
+	\steno{X F Z S K T P V L R J E I \# * Y A U Z R M N C L K W V D}\\
+	Oznacza to, że akord składający się z K w lewej ręce, A, oraz Z i R w prawej musi zostać zapisany jako \steno{KAZR}, nigdy jako \stenoErr{KARZ}, \stenoErr{KZRA} itd.
+	\item Myślniki --- gdy akord nie zawiera klawiszy zawartych w części kciuków i środkowej (\steno{J, E, I, \#, *, Y, A, U}), należy dodać w ich miejscu myślnik. Pozwala to uniknąć niejednoznaczności --- każdy z tych akordów \steno{Z-K}, \steno{ZK-}, \steno{-ZK} jest inny, a wprowadzenie myślnika pozwala określić, o które klawisze K i Z chodzi.
+\end{enumerate}
+Nie stosowanie się do powyższych konwencji prowadzi w najlepszym wypadku do niezrozumiałego zapisu, w najgorszym wprost błędnego.
+
+Oprócz tego, w tej książce przyjęto kilka graficznych konwencji zapisu; choć nie są standardem, pozwalają ułatwić odczytywanie podręcznika.
+
+\begin{tabular}{|c|c|}
+	\hline
+	Zapis & Znaczenie \\ \hline
+	\steno{AKORD} & Poprawne akordy \\ \hline
+	\stenoErr{ZŁY\_AKORD} & Błędne akordy \\ \hline
+	\stenoExc{DZIWNY\_AKORD} & Akordy będące wyjątkami \\ \hline
+	kot / -a & Pseudosteno, zapis cząstkami, które mają \\ & bezpośrednie odpowiedniki w akordach \\ \hline
+	\steno{KAUND} / \steno{ZKPLA} & Zapis akordami \\ \hline
+\end{tabular}
+
+\subsection*{Ręce na klawiaturze}
+
+Na poniższym diagramie przedstawione kropkami są pozycje początkowe palców podczas korzystania z klawiatury.
+
+\includegraphics[width=12cm]{grafika/pozycjepoczatkowe.jpg}
+
+Każda grupa klawiszy ma przypisane sobie palce, i nie należy ich zmieniać.
+
+\begin{tabular}{|c|c||c|c|}
+	\hline
+	Lewa ręka & Klawisze & Prawa ręka & Klawisze \\ \hline
+	Mały palec & \steno{X- F- Z- S-} & Mały palec & \steno{-K -W -V -D} \\ \hline
+	Serdeczny & \steno{K- T-} & Serdeczny & \steno{-C -L} \\ \hline
+	Środkowy & \steno{P- W-} & Środkowy & \steno{-M -N} \\ \hline
+	Wskazujący & \steno{L- R- \# *} & Wskazujący & \steno{\# * -Z -R} \\ \hline
+	Kciuk & \steno{J E I} & Kciuk & \steno{Y A U} \\ \hline
+\end{tabular}
+
+Podczas stenografowania każdy z palców będzie maksymalnie dwa klawisze naraz. Oznacza to, że pewne grupy klawiszy nigdy nie wystąpią razem. Przykładowo, są to \stenoErr{JEI}, \stenoErr{XFZS-} lub \stenoErr{YAU}.
+
+Warto również zauważyć, że pewne kombinacje będą po prostu fizycznie niemożliwe do uzyskania. Są to \stenoErr{JI}, \stenoErr{YU} dla kciuków (ponieważ nie da się nacisnąć tych przycisków jednym palcem jednocześnie), jak też \stenoErr{XS-}, \stenoErr{FZ}, \stenoErr{-KD} oraz \stenoErr{-WV} dla małych palców.
+
+\subsection*{Praktyka}
+W ramach części praktycznej należy skonfigurować klawiaturę oraz wykonać przedstawione poniżej ćwiczenia.
+
+\subsubsection{Konfiguracja klawiatury}
+Należy upewnić się, że wszystkie klawisze działają w sposób zgodny z układem klawiatury przedstawionym w tej lekcji. Należy po kolei je naciskać, i jeżeli nie zachowują się zgodnie z układem, należy wejść w zakładkę Configure, zakładkę Machine i zmienić przypisania klawiszy.\footnote{W przypadku klawiatur Polyglot najprawdopodobniej konieczne będzie dokonanie zmiany oprogramowania samej klawiatury. Jest to możliwe do zrobienia w dość łatwy sposób - o pomoc należy zwrócić się na Discordzie lub mail projektu.}
+
+\subsubsection{Które akordy są poprawne?}
+Wskaż, które z pokazanych poniżej akordów są poprawne, oraz podaj poprawną formę, jeżeli to możliwe:
+
+\begin{tabular}{c c c c c c c c}
+	a - & \steno{KYM} & b - & \steno{KV} & c - & \steno{KAUND} & d - & \steno{E} \\
+	e - & \steno{RLIN} & f - & \steno{JEICLKW} & g - & \steno{NYAR} & h - & \steno{PREYAD} \\
+\end{tabular}
+
+\hyperref[odp:2]{Odpowiedzi} znajdują się na końcu książki.
+
+\subsubsection{Ćwiczenie}
+Uwaga - do tego ćwiczenia należy wyłączyć tłumaczenie akordów na tekst. Robi się to wyłączając wszystkie ściągnięte słowniki.
+
+Ćwiczenie polega na przepisaniu poniżej przedstawionych sekwencji bez sprawdzania na diagramie. Należy pamiętać o używaniu odpowiednich palców.
+
+\LARGE{
+\steno{
+	\begin{tabular}{c c c c c c c c c c}
+		X- & F- & Z- & S- & K- & W- & L- & R- & \# & *  \\
+		\# & J  & E  & I  & Y  & A  & U  & -Z & -R & -M \\
+		-N & -C & -L & -K & -W & -V & -D & -C & -N & -R \\
+		S- & F- & E  & W- & T- & -R & X- & Y  & S- & \# \\
+		W- & -C & U  & J  & F- & -W & -D & A  & -V & S- \\
+		Z- & -N & R- & *  & K- & -D & -N & I  & *  & -M \\
+		-Z & L- & P- & -L & T- & E  & A  & X- & -N & F- \\
+		L- & E  & K- & -K & L- & -N & R- & S- & -L & T- \\
+		\# & -Z & -C & -V & R- & T- & P- & -M & W- & I  \\
+		W- & -Z & U  & S- & X- & -C & E  & -W & J  & Y  \\
+		Z- & J  & L- & U  & *  & \# & -M & -N & T- & -V \\
+	\end{tabular}
+}}
+% ==============================================================================
+\newpage
+\section{Budowa akordu}
+
+% ==============================================================================
+\newpage
+\section{Przedrostek, przyrostek, rdzeń}
 
 \chapter{Pełny opis systemu}
 
@@ -1496,4 +1685,18 @@ Ojcze nasz, któryś jest w niebie, święć się Imię Twoje, przyjdź Królest
 
 Ojcz / -e / nasz / , / któr/ -yś / jest / w / nieb/ -ie / , / święć / się / Im / -ię / Twoj / -e / , / przyjdź / Król / -estw / -o / Twoj / -e / , / bądź / wol / -a / Twoj / -a / , / jak / -o / w / nieb / -ie / tak / i / na / ziem / -i / . / Chleb / -a / nasz / -eg / -o / po- / wszed / -nieg / -o / daj / nam / dzis / -iaj / i / od- / puść / nam / nasz / -e / win / -y / jak / -o / i / my / od- / puszcz / -am / -y / nasz / -ym / win / -ow / -ajc / -om / , / i / nie / wódź / nas / na / po- / kusz / -en / -ie / , / al / -e / nas / zbaw / od / -e / złeg / -o / .
 
+\chapter{Odpowiedzi do zadań}
+\section{Lekcja 2}
+\label{odp:2}
+\subsection*{Wybór prawidłowych akordów}
+\begin{tabular}{c p{9cm}}
+	a & OK \\
+	b & brak myślnika - poprawne wersje: \steno{K-V} lub \steno{-KV}, zależnie od znaczenia \\
+	c & OK \\
+	d & OK \\
+	e & zamienione L oraz R - poprawna wersja: \steno{LRIN} \\
+	f & grupa, która nie może wystąpić - \stenoErr{JEI} \\
+	g & N nie występuje po lewej stronie klawiatury \\
+	h & OK
+\end{tabular}
 \end{document}
