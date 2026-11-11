@@ -238,9 +238,9 @@ W razie potrzeby, zawsze można poprosić o pomoc z programem Plover na serwerze
 
 \begin{enumerate}
 	\item Pobranie i instalacja programu --- należy pobrać najnowszą wersję programu Plover (dostępny na stronie projektu Open Steno --- do znalezienia przez wyszukiwarkę internetową lub pod \href{https://opensteno.org/plover/}{tym linkiem}) a następnie zainstalować go zgodnie z instrukcją i sposobem właściwym dla systemu operacyjnego
-	\item Uruchomienie i pobranie pluginu --- po uruchomieniu programu należy otworzyć zakładkę Plugins Manager, i zainstalować z listy plugin plover-polish-pss (jest to dodatkowy fragment programu Plover przystosowujący go do użytkowania z PSS, autorstwa autora podręcznika), a następnie wejść w opcję Configure i w zakładce system wybrać PSS
-	\item Konfiguracja klawiatury --- należy podłączyć klawiaturę do komputera, wejść w opcję Machine, wybrać odpowiedni protokół (dla standardowych klawiatur Keyboard, dla pozostałych zależy od producenta, najczęściej GeminiPR), a następnie wybrać port COM, do którego została podłączona klawiatura. Następnie upewnić się, że klawiatura ma status Connected
-	\item Przetestowanie --- aby sprawdzić, czy wszystko działa, można otworzyć narzędzie Paper Tape i zacząć przyciskać różne klawisze --- jeżeli zaczną pokazywać się znaki, oznacza to, że konfiguracja się udała
+	\item Uruchomienie i pobranie pluginu --- po uruchomieniu programu należy otworzyć zakładkę Plugins Manager, i zainstalować z listy plugin plover-polish-pss (jest to dodatkowy fragment programu Plover przystosowujący go do użytkowania z PSS, autorstwa autora podręcznika), zrestartować program, a następnie wejść w opcję Configure i w zakładce system wybrać PSS.
+	\item Konfiguracja klawiatury --- należy podłączyć klawiaturę do komputera, wejść w opcję Configure i zakładkę Machine, wybrać odpowiedni protokół (dla standardowych klawiatur Keyboard, dla pozostałych zależy od producenta, najczęściej GeminiPR), a następnie wybrać port COM, do którego została podłączona klawiatura. Następnie upewnić się, że klawiatura ma status Connected
+	\item Przetestowanie --- aby sprawdzić, czy wszystko działa, można otworzyć narzędzie Paper Tape i zacząć przyciskać różne klawisze --- jeżeli zaczną pokazywać się znaki, oznacza to, że konfiguracja się udała (w razie potrzeby można wspomóc się diagramem na kolejnej stronie).
 \end{enumerate}
 
 % ==============================================================================
@@ -260,7 +260,7 @@ Ten diagram jest bardzo ważny, i należy znać go z pamięci, gdyż klawiatury 
 Można zauważyć, że na przedstawionym schemacie nie znajdują się wszystkie litery występujące w języku polskim. O tym, jak uzyskiwać brakujące znaki, opowiada dalsza część kursu.
 
 \subsection*{Porządek stenotypiczny i konwencje zapisu}
-Podczas korzystania ze stenotypii, bardzo często wciskane klawisze (grupa kalwiszy naciśnięta jednocześnie nazywana jest \emph{akordem}, ze względu na podobieństwo do akordów na fortepianie) zapisuje się tekstem. Aby uniknąć zamieszania, przyjęło się stosować pewne konwencje.
+Podczas korzystania ze stenotypii, bardzo często wciskane klawisze (grupa klawiszy naciśnięta jednocześnie nazywana jest \emph{akordem}, ze względu na podobieństwo do akordów na fortepianie) zapisuje się tekstem. Aby uniknąć zamieszania, przyjęło się stosować pewne konwencje.
 \begin{enumerate}
 	\item Porządek stenotypiczny --- klawisze zawsze zapisuje się w odpowiedniej kolejności: najpierw lewa ręka, potem lewy kciuk, następnie środek, prawy kciuk i prawa ręka. W przypadku Polskiego Systemu Stenotypii daje to następujący porządek:\\
 	\steno{X F Z S K T P V L R J E I \# * Y A U Z R M N C L K W V D}\\
@@ -268,6 +268,8 @@ Podczas korzystania ze stenotypii, bardzo często wciskane klawisze (grupa kalwi
 	\item Myślniki --- gdy akord nie zawiera klawiszy zawartych w części kciuków i środkowej (\steno{J, E, I, \#, *, Y, A, U}), należy dodać w ich miejscu myślnik. Pozwala to uniknąć niejednoznaczności --- każdy z tych akordów \steno{Z-K}, \steno{ZK-}, \steno{-ZK} jest inny, a wprowadzenie myślnika pozwala określić, o które klawisze K i Z chodzi.
 \end{enumerate}
 Nie stosowanie się do powyższych konwencji prowadzi w najlepszym wypadku do niezrozumiałego zapisu, w najgorszym wprost błędnego.
+
+\newpage
 
 Oprócz tego, w tej książce przyjęto kilka graficznych konwencji zapisu; choć nie są standardem, pozwalają ułatwić odczytywanie podręcznika.
 
@@ -299,7 +301,7 @@ Każda grupa klawiszy ma przypisane sobie palce, i nie należy ich zmieniać.
 	Kciuk & \steno{J E I} & Kciuk & \steno{Y A U} \\ \hline
 \end{tabular}
 
-Podczas stenografowania każdy z palców będzie maksymalnie dwa klawisze naraz. Oznacza to, że pewne grupy klawiszy nigdy nie wystąpią razem. Przykładowo, są to \stenoErr{JEI}, \stenoErr{XFZS-} lub \stenoErr{YAU}.
+Podczas stenografowania każdy z palców będzie naciskał maksymalnie dwa klawisze naraz. Oznacza to, że pewne grupy klawiszy nigdy nie wystąpią razem. Przykładowo, są to \stenoErr{JEI}, \stenoErr{XFZS-} lub \stenoErr{YAU}.
 
 Warto również zauważyć, że pewne kombinacje będą po prostu fizycznie niemożliwe do uzyskania. Są to \stenoErr{JI}, \stenoErr{YU} dla kciuków (ponieważ nie da się nacisnąć tych przycisków jednym palcem jednocześnie), jak też \stenoErr{XS-}, \stenoErr{FZ}, \stenoErr{-KD} oraz \stenoErr{-WV} dla małych palców.
 
@@ -310,7 +312,7 @@ W ramach części praktycznej należy skonfigurować klawiaturę oraz wykonać p
 Należy upewnić się, że wszystkie klawisze działają w sposób zgodny z układem klawiatury przedstawionym w tej lekcji. Należy po kolei je naciskać, i jeżeli nie zachowują się zgodnie z układem, należy wejść w zakładkę Configure, zakładkę Machine i zmienić przypisania klawiszy.\footnote{W przypadku klawiatur Polyglot najprawdopodobniej konieczne będzie dokonanie zmiany oprogramowania samej klawiatury. Jest to możliwe do zrobienia w dość łatwy sposób - o pomoc należy zwrócić się na Discordzie lub mail projektu.}
 
 \subsubsection{Które akordy są poprawne?}
-Wskaż, które z pokazanych poniżej akordów są poprawne, oraz podaj poprawną formę, jeżeli to możliwe:
+Wskaż, które z pokazanych poniżej akordów są poprawnie zapisane (biorąc pod uwagę możliwe akordy oraz konwencje zapisu), oraz podaj poprawną formę, jeżeli to możliwe:
 
 \begin{tabular}{c c c c c c c c}
 	a - & \steno{KYM} & b - & \steno{KV} & c - & \steno{KAUND} & d - & \steno{E} \\
@@ -320,7 +322,7 @@ Wskaż, które z pokazanych poniżej akordów są poprawne, oraz podaj poprawną
 \hyperref[odp:2]{Odpowiedzi} znajdują się na końcu książki.
 
 \subsubsection{Ćwiczenie}
-Uwaga - do tego ćwiczenia należy wyłączyć tłumaczenie akordów na tekst. Robi się to wyłączając wszystkie ściągnięte słowniki.
+Uwaga - to ćwiczenie należy wykonywać w ramach narzędzia Paper Tape programu Plover.
 
 Ćwiczenie polega na przepisaniu poniżej przedstawionych sekwencji bez sprawdzania na diagramie. Należy pamiętać o używaniu odpowiednich palców.
 
