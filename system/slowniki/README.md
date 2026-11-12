@@ -1,5 +1,8 @@
 # Słowniki
 W tym katalogu są zgromadzone słowniki dla PSS. Słowniki są zgrupowane w różne poziomy. 
+Do korzystania z kursu potrzebne są słowniki z folderów Poziom 0 oraz robocze.
+
+*Uwaga - katalog robocze jest w użyciu tylko do czasu opublikowania wszystkich słowwników poziomu 0 i będzie się zmieniał. Zawsze należy sprawdzić najnowszą wersję*
 
 ## Jak korzystać
 Aby korzystać ze słowników z wykorzystaniem programu Plover, należy:
@@ -11,6 +14,7 @@ Aby korzystać ze słowników z wykorzystaniem programu Plover, należy:
 Zaleca się utrzymywać hierarchię słowników zgodną z zamieszczoną poniżej.
 
 ## Hierarchia słowników
+*Poniższe informacje są istotne dla osób tworzących nowe słowniki*
 Przy tworzeniu nowych słowników zaleca się unikanie konfliktów ze słownikami na poziomach równym lub niższym.
 W razie potrzeby zawsze zaleca się pierwszeństwo słowników niższego poziomu (bliższych podstawie).
 Wszystkie materiały dotyczące PSS zakładają używanie słowników poziomu 0, a materiały zaawansowane również poziomu 1.
@@ -18,15 +22,14 @@ Wszystkie materiały dotyczące PSS zakładają używanie słowników poziomu 0,
 ### Poziom 0
 Na poziom 0 składają się słowniki, które są uważane za niezbędne do korzystania z PSS w najbardziej podstawowym zakresie.
 Poziom 0 zawiera następujące słowniki:
-* pss-rdzenie-bazowe.json - rdzenie słów uzyskane na podstawie listy 10000 najczęściej używanych słów Jerzego Kazojcia
-(https://pl.wiktionary.org/wiki/Indeks:Polski_-_Najpopularniejsze_s%C5%82owa_1-10000_wersja_Jerzego_Kazojcia), jak również niektóre inne rdzenie
+* pss-rdzenie-bazowe.json - rdzenie słów uzyskane na podstawie [listy 10000 najczęściej używanych słów Jerzego Kazojcia](https://pl.wiktionary.org/wiki/Indeks:Polski_-_Najpopularniejsze_s%C5%82owa_1-10000_wersja_Jerzego_Kazojcia), jak również niektóre inne rdzenie
 występujace w pospolitych, często występujących słowach
 * pss-przyrostki-bazowe.json - proste przyrostki fleksyjne i przyrostki morfologiczne na podstawie listy Jerzego Kazojcia
 * pss-przedrostki-bazowe.json - proste przedrostki na podstawie listy Jerzego Kazojcia
-* [](pss-skroty-gramatyczne.json) - zaimki (w tym wersje skrócone dla złożonych zaimków), spójniki, przyimki, partykuły
-* [https://github.com/bspat/Stenotypia-polska/blob/main/system/slowniki/poziom%200/pss-interpunkcja.json](pss-interpunkcja.json) - znaki iterpunkcyjne i formatujące tekst
-* [https://github.com/bspat/Stenotypia-polska/blob/main/system/slowniki/poziom%200/pss-komputer.json](pss-komputer.json) - emulacja klawiatury komputera
-* [https://github.com/bspat/Stenotypia-polska/blob/main/system/slowniki/poziom%200/pss-plover.json](pss-plover.json) - obsługa programu Plover
+* pss-skroty-gramatyczne.json - zaimki (w tym wersje skrócone dla złożonych zaimków), spójniki, przyimki, partykuły
+* [pss-interpunkcja.json](https://github.com/bspat/Stenotypia-polska/blob/main/system/slowniki/poziom%200/pss-interpunkcja.json) - znaki iterpunkcyjne i formatujące tekst
+* [pss-komputer.json](https://github.com/bspat/Stenotypia-polska/blob/main/system/slowniki/poziom%200/pss-komputer.json) - emulacja klawiatury komputera
+* [pss-plover.json](https://github.com/bspat/Stenotypia-polska/blob/main/system/slowniki/poziom%200/pss-plover.json) - obsługa programu Plover
 
 ### Poziom 1
 Na poziom 1 składają się słowniki, które są uważane za niezbędne do korzystania z PSS w sposób wydajny, jednakże nie wychodzą one poza słownictwo
