@@ -23,13 +23,13 @@ Charakteryzuje się następującymi cechami:
 
 ## Zawartość repozytorium
 
+### [Podręcznik](https://github.com/bspat/Stenotypia-polska/blob/main/podrecznik/podrecznik.pdf)
+
+Podręcznik do Polskiego Systemu Stenotypii, nowego i jedynego aktywnie utrzymywanego systemu stenotypii dla języka polskiego.
+
 ### [System](https://github.com/bspat/Stenotypia-polska/blob/main/system/README.md)
 
 W ramach tej części dostępny jest funkcjonalny plugin do systemu. W przyszłości znajdą się tam tworzone słowniki.
-
-### [Podręcznik](https://github.com/bspat/Stenotypia-polska/blob/main/podrecznik/podrecznik.pdf)
-
-Podręcznik do Polskiego Systemu Stenotypii (trwa reorganizacja materiałów).
 
 ### [Podręcznik do systemu Trillo](https://github.com/bspat/Stenotypia-polska/tree/main/podrecznik/Trillo)
 
@@ -38,10 +38,10 @@ W tej części repozytorium znajdują się tłumaczenia podręczników p. Prisci
 ## Stopień ukończenia
 
 Stopień ukończenia poszczególnych elementów:
-* podrecznik --- rozpoczęto, ok. 30%, prace trwają
+* podrecznik --- rozpoczęto, ok. 50%, prace trwają
 * plugin --- zakończono
-* słowniki --- rozpoczęto, prace trwają, gotowe niektóre słowniki poziomu 0
-* ćwiczenia --- czeka na rozpoczęcie
+* słowniki --- rozpoczęto, gotowe niektóre słowniki poziomu 0 oraz słowniki ćwiczebne dla opublikowanych fragmentów podręcznika
+* ćwiczenia --- rozpoczęto
 * tlumaczenieErrata --- czeka na rozpoczęcie
 * tlumaczenie --- rozpoczęte, ok. 10%
 
