@@ -2,13 +2,13 @@
 W tym katalogu są zgromadzone słowniki dla PSS. Słowniki są zgrupowane w różne poziomy. 
 Do korzystania z kursu potrzebne są słowniki z folderów Poziom 0 oraz robocze.
 
-*Uwaga - katalog robocze jest w użyciu tylko do czasu opublikowania wszystkich słowwników poziomu 0 i będzie się zmieniał. Zawsze należy sprawdzić najnowszą wersję*
+*Uwaga - katalog robocze jest w użyciu tylko do czasu opublikowania wszystkich słowników poziomu 0 i będzie się zmieniał. Zawsze należy sprawdzić najnowszą wersję*
 
 ## Jak korzystać
 Aby korzystać ze słowników z wykorzystaniem programu Plover, należy:
 1. Pobrać wybrany słownik
-2. Przenieść go do wybranego katalogu, gdzie przechowuje się słowniki
-3. Z programu Plover wybrać opcję "Dodaj słownik" ("Add dictionary"), a następnie "Załaduj słownik" ("Load dictionary")
+2. Przenieść go do wybranego katalogu, gdzie przechowuje się słowniki (opcjonalne)
+3. Z programu Plover wybrać opcję "Dodaj słownik" ("Add dictionary") - duży zielony plus na dole ekranu, a następnie "Załaduj słownik" ("Load dictionary")
 4. Wskazać pobrany słownik w oknie wyboru.
 
 Zaleca się utrzymywać hierarchię słowników zgodną z zamieszczoną poniżej.
