@@ -173,7 +173,547 @@ Z poważaniem
 autor
 
 \chapter{Kurs}
+<<<<<<< Updated upstream
 Już wkrótce
+=======
+
+\section{1. Wstęp do stenotypii}
+
+\textit{W tej lekcji pokazane zostaje czym jest stenotypia, oraz przeprowadzona jest konfiguracja programu Plover do działania z PSS.}
+
+Bardzo miło mi przywitać Czytelnika w niniejszym kursie stenotypii poświęconym Polskiemu Systemowi Stenotypicznemu. Choć z samego faktu, że ta książka znalazła się w Czytelnika rękach można wnioskować, że jest wstępnie zaznajomiony z przedstawionymi tutaj technikami, to uważam, że nadal dobrze byłoby rozpocząć od odpowiedzenia sobie na pytanie, o co tak naprawdę tutaj będzie chodzić.
+
+\subsection*{Czym jest stenotypia?}
+
+Stenotypia, zwana również przez niektórych stenografią maszynową, jest sztuką pisania na przeznaczonej do tego klawiaturze w tempie dorównującym, a nawet przewyższającym ludzką mowę.
+
+Próby ułatwienia sobie pracy przez ludzi postawionych wobec zadania zapisywania większych ilości informacji są praktycznie tak stare jak sama umiejętność pisania. Wystarczy spojrzeć na systematyczne upraszczanie się na przestrzeni czasu pisma egipskiego (od hieroglifów do demotyki), rzymskie noty tyrońskie, czy też wysiłki średniowiecznych skrybów, skracających praktycznie każdy często występujący wyraz. Nie bez znaczenia był również fakt, że mniejsza ilość tekstu do zapisania pozwalała rejestrować informację znacznie szybciej i mniejszym kosztem pracy.
+
+Jednym z najnowszych i najbardziej obiecujących pod tym kątem wynalazków jest właśnie stenografia maszynowa. Na świecie jest wykorzystywana przede wszystkim w Stanach Zjednoczonych do rejestrowania przebiegu rozpraw sądowych. W Polsce na razie pozostaje jeszcze nieobecna --- jednakże niniejsza książka ma na celu to zmienić.
+
+\subsection*{Jak to działa?}
+W dużym skrócie (gdyż szczegółowemu wyjaśnieniu jest poświęcona cała reszta tej książki) --- osoba stenotypująca, z wykorzystaniem przystosowanego do tego urządzenia, naciska jednocześnie kolejne grupy klawiszy, którym są przypisane odpowiednie fragmenty słów, całe słowa, lub nawet frazy. Zasady, według których grupy klawiszy są zamieniane na tekst nazywa się po polsku \emph{systemem}, a po angielsku \emph{theory} - teorią.
+
+\subsection*{Jak zacząć?}
+Do praktykowania stenotypii, niezbędne są następujące elementy:
+\begin{itemize}
+	\item System stenotypii
+	\item Maszyna stenotypiczna
+	\item Chęć nauki
+\end{itemize}
+
+\subsubsection{System stenotypii}
+Ten kurs jest poświęcony Polskiemu Systemowi Stenotypii. Jest to sposób zaprojektowany przez autora niniejszego podręcznika, ze szczególną uwagą poświęconą wygodnemu używaniu w języku polskim. Każdy system stenografii maszynowej ze swej natury jest przeznaczony do używania tylko z jednym, wybranym językiem (lub wąską, spokrewnioną między sobą grupą).
+
+Warto zaznaczyć, że PSS to nie jedyny istniejący system; dla języka polskiego istnieje również "Zachodniosłowiańska Stenografia Maszynowa", przeznaczona do użytku po polsku, czesku, oraz słowacku, autorstwa pani Priscilli Trillo (będący w pewnym stopniu pierwowzorem dla PSS). Dla języków obcych istnieje bardzo duża liczba rozmaitych systemów, z których na szczególną uwagę zasługuje angielskojęzyczny Lapwing.
+
+Rozbudowaną listę darmowo dostępnych systemów dla różnych języków można znaleźć pod \href{https://plover.wiki/index.php/Steno_layouts_and_supported_languages}{tym linkiem}.
+
+\subsubsection{Maszyna stenotypiczna}
+Do stenotypowania konieczne jest dostosowane do tego urządzenie. Takie urządzenia są najczęściej klasyfikowane w następujący sposób:
+\begin{itemize}
+	\item profesjonalna maszyna stenograficzna
+	\item hobbystyczna klawiatura stenograficzna
+	\item standardowa klawiatura komputerowa
+\end{itemize}
+
+Profesjonalni (tj. pracujący w ten sposób zaawodowo) stenografowie w Stanach Zjednoczonych najczęściej posługują się profesjonalnymi maszynami stenograficzymi. Są to urządzenia, które nie potrzebują żadnego dodatkowego zewnętrznego oprogramowania do działania. Najczęściej są bardzo dobrze dostosowane do potrzeb stenografów --- ich głównym minusem jest bardzo wysoki koszt (w momencie pisania tych słów koszt pojedynczego używanego, ale sprawnego urządzenia zaczyna się od kilku tysięcy złotych) oraz z polskiej perspektywy -- niska dostępność.
+
+Dużo łatwiejsze do dostania są hobbystyczne klawiatury stenograficzne. Są to klawiatury, które zostały zaprojektowane z myślą o wykorzystaniu w celu stenotypowania. Tak jak profesjonalne maszyny, ich klawiatury są rozłożone w sposób ułatwiający naciskanie kombinacji wykorzystywanych w stenografii. Do działania wymagają one zewnętrznego oprogramowania (takiego jak Plover)tłumaczącego znaczenie poszczególnych grup przycisków na docelowy tekst. Ich ceny oscylują w okolicach kilkuset złotych; dla osób obeznanych z elektroniką, wykonanie takiej klawiatury na podstawie dostępnych w sieci materiałów nie powinno stanowić dużego wyzwania.
+
+Co do zasady, stenotypowanie jest możliwe nawet na standardowej klawiaturze. Jest to dobra opcja dla osób, które chcą spróbować tej sztuki bez większych kosztów w wypadku szybkiej rezygnacji. Aby dowiedzieć się, czy dana klawiatura nadaje się do stenograficznego wykorzystania, warto mieć na uwadze następujące cechy:
+\begin{itemize}
+	\item NKRO --- z angielskiego N-Key Rollover; pojęcie to oznacza, że dana klawiatura będzie w stanie zarejestrować wszystkie naciśnięte naraz klawisze, niezależnie od ich liczby. Większość klawiatur biurowych nie jest niestety wykonana w taki sposób, i będzie występować na nich zjawisko nie rejestrowania naciśnięć niektórych klawiszy, tzw. ghosting. Uwaga - choć technicznie rzecz biorąc, możliwe jest stenografowanie na klawiaturze ghostującej (z wykorzystaniem funkcji tzw. arpeggio), jest to bardzo wolne oraz niewygodne, a zatem odradzane.
+	\item Ortogonalność --- niektóre klawiatury ergonomiczne mają ustawione klawisze w równych rzędach, bez charakterystycznego przesunięcia. Nadają się one dużo lepiej do stenografii niż te klasyczne, gdyż klasyczny układ klawiatury wymusza trzymanie rąk skosem w lewo i bardzo przeszkadza podczas stenotypowania. Pewnym sposobem na ominięcie tego problemu są stenograficzne nakładki na klawiaturę, któych wzory można za darmo znaleźć w internecie i wydrukować na drukarce 3D lub niskim kosztem nabyć.
+\end{itemize}
+
+Niniejszy kurs został napisany z założeniem, że Czytelnik dysponuje klawiaturą hobbystyczną lub klasyczną klawiaturą bez zjawiska ghostowania, oraz wykorzystuje oprogramowanie open-source Plover.
+
+\subsubsection{Chęć nauki}
+Stenografia maszynowa to ten rodzaj umiejętności, która \emph{KONIECZNIE} wymaga regularnego ćwiczenia. Największe zyski przychodzą nie z wielogodzinnych, acz rzadkich, punktowych sesji, a z regularnego powtarzania i przyswajania materiału w swoim tempie. Wynika to z faktu, że podobnie jak w bezwzrokowym pisaniu na klasycznej klawiaturze, największy nacisk jest położony na pamięć mięśniową, a ona wymaga czasu na wykształcenie.
+
+Ten kurs jest zorganizowany w taki sposób, aby kolejne lekcje serwowały małe porcje nowego materiału i korzystały z informacji już wcześniej przedstawionych. Powinno to pozwolić na szybkie przejście przez podręcznik. Zaleca się nie rozpoczynać kolejnej lekcji przed opanowaniem wcześniejszego materiału w stopniu wystarczającym na ćwiczenie bez sprawdzania dobrej odpowiedzi w podręczniku (dobrym wskaźnikiem gotowości na nowy materiał jest uzyskiwanie poprawności powyżej 90\% przy prędkości pisania nie mniejszej niż w lekcji bezpośrednio wcześniejszej).
+
+\subsection*{Praktyka}
+W tej lekcji częścią praktyczną jest ściągnięcie oraz skonfigurowanie programu Plover, jak również przetestowanie klawiatury.
+
+W razie potrzeby, zawsze można poprosić o pomoc z programem Plover na serwerze Discord wokół projektu OpenSteno (\url{https://discord.gg/Gzsdjn8BMq}). Większość komunikacji na serwerze odbywa się w języku angielskim, jednakże istnieje kanał przeznaczony dla języka polskiego.
+
+\begin{enumerate}
+	\item Pobranie i instalacja programu --- należy pobrać najnowszą wersję programu Plover (dostępny na stronie projektu Open Steno --- do znalezienia przez wyszukiwarkę internetową lub pod \href{https://opensteno.org/plover/}{tym linkiem}) a następnie zainstalować go zgodnie z instrukcją i sposobem właściwym dla systemu operacyjnego
+	\item Uruchomienie i pobranie pluginu --- po uruchomieniu programu należy otworzyć zakładkę Plugins Manager, i zainstalować z listy plugin plover-polish-pss (jest to dodatkowy fragment programu Plover przystosowujący go do użytkowania z PSS, stworzony przez autora tego podręcznika), zrestartować program, a następnie wejść w opcję Configure i w zakładce system wybrać PSS.
+	\item Konfiguracja klawiatury --- należy podłączyć klawiaturę do komputera, wejść w opcję Configure i zakładkę Machine, wybrać odpowiedni protokół (dla standardowych klawiatur Keyboard, dla pozostałych zależy od producenta, najczęściej GeminiPR), a następnie wybrać port COM, do którego została podłączona klawiatura. Następnie upewnić się, że klawiatura ma status Connected
+	\item Przetestowanie --- aby sprawdzić, czy wszystko działa, można otworzyć narzędzie Paper Tape i zacząć przyciskać różne klawisze --- jeżeli zaczną pokazywać się znaki, oznacza to, że konfiguracja się udała (w razie potrzeby można wspomóc się diagramem na kolejnej stronie).
+\end{enumerate}
+
+% ==============================================================================
+\newpage
+\section{2. Układ klawiatury}
+
+\textit{W tej lekcji zostaje przedstawiony układ klawiatury, ułożenie początkowe rąk, oraz konwencje dotyczące zapisu akordów}
+
+\subsection*{Układ klawiatury}
+
+Klawiatura w Polskim Systemie Stenotypii ma następujący układ klawiszy:
+
+\includegraphics[width=12cm]{grafika/klawiatura.jpg}
+
+Ten diagram jest bardzo ważny, i należy znać go z pamięci, gdyż klawiatury stenotypiczne nie mają opisanych klawiszy. Można go wydrukować i wspomagać się przez pierwsze kilka lekcji.
+
+Można zauważyć, że na przedstawionym schemacie nie znajdują się wszystkie litery występujące w języku polskim. O tym, jak uzyskiwać brakujące znaki, opowiada dalsza część kursu.
+
+\subsection*{Porządek stenotypiczny i konwencje zapisu}
+Podczas korzystania ze stenotypii, bardzo często wciskane klawisze (grupa klawiszy naciśnięta jednocześnie nazywana jest \emph{akordem}, ze względu na podobieństwo do akordów na fortepianie) zapisuje się tekstem. Aby uniknąć zamieszania, przyjęło się stosować pewne konwencje.
+\begin{enumerate}
+	\item Porządek stenotypiczny --- klawisze zawsze zapisuje się w odpowiedniej kolejności: najpierw lewa ręka, potem lewy kciuk, następnie środek, prawy kciuk i prawa ręka. W przypadku Polskiego Systemu Stenotypii daje to następujący porządek:\\
+	\steno{X F Z S K T P V L R J E I \# * Y A U Z R M N C L K W V D}\\
+	Oznacza to, że akord składający się z K w lewej ręce, A, oraz Z i R w prawej musi zostać zapisany jako \steno{KAZR}, nigdy jako \stenoErr{KARZ}, \stenoErr{KZRA} itd.
+	\item Myślniki --- gdy akord nie zawiera klawiszy zawartych w części kciuków i środkowej (\steno{J, E, I, \#, *, Y, A, U}), należy dodać w ich miejscu myślnik. Pozwala to uniknąć niejednoznaczności --- każdy z tych akordów \steno{Z-K}, \steno{ZK-}, \steno{-ZK} jest inny, a wprowadzenie myślnika pozwala określić, o które klawisze K i Z chodzi.
+\end{enumerate}
+Nie stosowanie się do powyższych konwencji prowadzi w najlepszym wypadku do niezrozumiałego zapisu, w najgorszym wprost błędnego.
+
+\newpage
+
+Oprócz tego, w tej książce przyjęto kilka graficznych konwencji zapisu; choć nie są standardem, pozwalają ułatwić odczytywanie podręcznika.
+
+\begin{tabular}{|c|c|}
+	\hline
+	Zapis & Znaczenie \\ \hline
+	\steno{AKORD} & Poprawne akordy \\ \hline
+	\stenoErr{ZŁY\_AKORD} & Błędne akordy \\ \hline
+	\stenoExc{DZIWNY\_AKORD} & Akordy będące wyjątkami \\ \hline
+	kot / -a & Pseudosteno, zapis cząstkami, które mają \\ & bezpośrednie odpowiedniki w akordach \\ \hline
+	\steno{KAUND} / \steno{ZKPLA} & Zapis akordami \\ \hline
+\end{tabular}
+
+\subsection*{Ręce na klawiaturze}
+
+Na poniższym diagramie przedstawione kropkami są pozycje początkowe palców podczas korzystania z klawiatury.
+
+\includegraphics[width=12cm]{grafika/pozycjepoczatkowe.jpg}
+
+Każda grupa klawiszy ma przypisane sobie palce, i nie należy ich zmieniać.
+
+\begin{tabular}{|c|c||c|c|}
+	\hline
+	Lewa ręka & Klawisze & Prawa ręka & Klawisze \\ \hline
+	Mały palec & \steno{X- F- Z- S-} & Mały palec & \steno{-K -W -V -D} \\ \hline
+	Serdeczny & \steno{K- T-} & Serdeczny & \steno{-C -L} \\ \hline
+	Środkowy & \steno{P- W-} & Środkowy & \steno{-M -N} \\ \hline
+	Wskazujący & \steno{L- R- \# *} & Wskazujący & \steno{\# * -Z -R} \\ \hline
+	Kciuk & \steno{J E I} & Kciuk & \steno{Y A U} \\ \hline
+\end{tabular}
+
+Podczas stenografowania każdy z palców będzie naciskał maksymalnie dwa klawisze naraz. Oznacza to, że pewne grupy klawiszy nigdy nie wystąpią razem. Przykładowo, są to \stenoErr{JEI}, \stenoErr{XFZS-} lub \stenoErr{YAU}.
+
+Warto również zauważyć, że pewne kombinacje będą po prostu fizycznie niemożliwe do uzyskania. Są to \stenoErr{JI}, \stenoErr{YU} dla kciuków (ponieważ nie da się nacisnąć tych przycisków jednym palcem jednocześnie), jak też \stenoErr{XS-}, \stenoErr{FZ}, \stenoErr{-KD} oraz \stenoErr{-WV} dla małych palców.
+
+\subsection*{Praktyka}
+\label{prakt:2}
+W ramach części praktycznej należy skonfigurować klawiaturę oraz wykonać przedstawione poniżej ćwiczenia.
+
+\subsubsection{Konfiguracja klawiatury}
+Należy upewnić się, że wszystkie klawisze działają w sposób zgodny z układem klawiatury przedstawionym w tej lekcji. Należy po kolei je naciskać, i jeżeli nie zachowują się zgodnie z układem, należy wejść w zakładkę Configure, zakładkę Machine i zmienić przypisania klawiszy.\footnote{W przypadku klawiatur Polyglot najprawdopodobniej konieczne będzie dokonanie zmiany oprogramowania samej klawiatury. Jest to możliwe do zrobienia w dość łatwy sposób - o pomoc należy zwrócić się na Discordzie lub mail projektu.}
+
+\subsubsection{Które akordy są poprawne?}
+Wskaż, które z pokazanych poniżej akordów są poprawnie zapisane (biorąc pod uwagę możliwe akordy oraz konwencje zapisu), oraz podaj poprawną formę, jeżeli to możliwe:
+
+\begin{tabular}{c c c c c c c c}
+	a - & \steno{KYM} & b - & \steno{KV} & c - & \steno{KAUND} & d - & \steno{E} \\
+	e - & \steno{RLIN} & f - & \steno{JEICLKW} & g - & \steno{NYAR} & h - & \steno{PREYAD} \\
+\end{tabular}
+
+\hyperref[odp:2]{Odpowiedzi} znajdują się na końcu książki.
+
+\subsubsection{Ćwiczenie}
+Uwaga - to ćwiczenie należy wykonywać w ramach narzędzia Paper Tape dostępnego wewnątrz programu Plover.
+
+Ćwiczenie polega na przepisaniu poniżej przedstawionych sekwencji (w miarę możliwości bez sprawdzania pozycji poszczególnych klawiszy na diagramie z początku lekcji). Należy pamiętać o używaniu odpowiednich palców.
+
+\steno{
+	\LARGE
+	\begin{tabular}{c c c c c c c c c c}
+		X- & F- & Z- & S- & K- & W- & L- & R- & \# & *  \\
+		\# & J  & E  & I  & Y  & A  & U  & -Z & -R & -M \\
+		-N & -C & -L & -K & -W & -V & -D & -C & -N & -R \\
+		S- & F- & E  & W- & T- & -R & X- & Y  & S- & \# \\
+		W- & -C & U  & J  & F- & -W & -D & A  & -V & S- \\
+		Z- & -N & R- & *  & K- & -D & -N & I  & *  & -M \\
+		-Z & L- & P- & -L & T- & E  & A  & X- & -N & F- \\
+		L- & E  & K- & -K & L- & -N & R- & S- & -L & T- \\
+		\# & -Z & -C & -V & R- & T- & P- & -M & W- & I  \\
+		W- & -Z & U  & S- & X- & -C & E  & -W & J  & Y  \\
+		Z- & J  & L- & U  & *  & \# & -M & -N & T- & -V \\
+	\end{tabular}
+}
+% ==============================================================================
+\newpage
+\section{3. Budowa akordu i narzędzia do ćwiczeń}
+
+\emph{W tej lekcji zostaje przybliżona budowa akordu, usuwanie akordów, narzędzia do nauki stenotypowania oraz instalacja słowników}
+
+\subsection*{Budowa akordu}
+W najbardziej podstawowej formie (a od niej myślę, że wypadałoby zacząć ten kurs) wszystkie akordy (czyli grupy klawiszy nacikanych jednocześnie) odpowiadają mniej więcej jednej sylabie. Są zbudowane według pewnych stałych zasad. Przede wszystkim, każdy akord składa się z trzech części:
+\begin{itemize}
+	\item nagłos --- spółgłoski rozpoczynające akord, naciskane palcami lewej ręki
+	\item samogłoski --- samogłoski, wciskane kciukami
+	\item wygłos --- spółgłoski kończące akord, naciskane palcami prawej ręki
+\end{itemize}
+Oprócz tego część klawiszy (\steno{X-, *, \#, J} pełni pewne specjalne funkcje i nie wpasowuje się ściśle w ten podział. O ich zadaniach będzie mowa w odpowiednim dla każdego miejscu.
+
+Wszystkie klawisze, z wyjątkiem \steno{X-} oraz \steno{-V}, służą do uzyskiwania w kombinacjach głosek, jakimi są opisane.
+
+Przykładowo, aby zapisać słowo pad, palce lewej ręki muszą nacisnąć klawisz \steno{P-}, kciuki \steno{A}, a palce prawej ręki \steno{-D}, dając akord \steno{PAD}.
+
+W ten sam sposób działa to w przypadku głosek, jakie nie mają przypisanego pojedynczego klawisza --- chrząszcz również zostanie podzielony na "chrz" po lewej stronie, "ą" na środku, i "szcz" po prawej; w jaki sposób uzyskiwać takie głoski zostanie przedstawione w późniejszych lekcjach.
+
+\subsection*{Usuwanie akordów}
+
+W przypadku naciśnięcia błędnego akordu, można cofnąć ten ruch, z wykorzystaniem akordu \steno{*}. Warto jednak starać się, by ten akord wykorzystywany był jak najrzadziej -- napisanie akordu trochę wolniej, ale od razu poprawnie zawsze będzie szybsze niż szybkie wybranie błędnego, poprawka, i podanie poprawnego.
+
+\subsection*{Narzędzia do nauki}
+
+Stenotypię można ćwiczyć na kilka sposobów. Najistotniejsze z nich to:
+\begin{itemize}
+	\item przepisywanie ćwiczeń
+	\item komputerowe narzędzia do nauki
+	\item pisanie ze słuchu
+	\item teksty dowolne
+\end{itemize}
+
+Przepisywanie ćwiczeń z podręcznika w standardowym edytorze tekstu\footnote{Z wyjątkiem domyślnego Notatnika w systemie Windows -- z niewyjaśnionych powodów nie współpracuje on z oporogramowaniem Plover} jest najprostszym do wykonania sposobem na ćwiczenie się w sztuce stenotypii. Jego główną wadą jest fakt, że nieustannie przenosi się wzrok tam i z powrotem między tekstem źródłowym a tekstem właśnie pisanym, jak również relatywnie niski wgląd w parametry pisania. Jednakże, nie wymaga żadnych specjalnych przygotowań.
+
+Korzystanie z komputerowych programów przeznaczonych do nauki szybkiego pisania oraz stenotypowania jest bardzo popularne pośród osób zajmujących się stenografią maszynową. Te programy często oferują takie możliwości jak mierzenie prędkości pisania, czy też poprawności pisania. Na szczególną uwagę zasługują dwa najpopularniejsze narzędzia:
+\begin{itemize}
+	\item \href{https://monkeytype.com/}{Monkeytype} --- narzędzie przeznaczone do nauki szybkiego pisania, niezależnie od metody. Jego głównymi zaletami są: łatwy w obsłudze interfejs, wbudowana obsługa języka polskiego, z kolei wadami -- dostosowanie przede wszystkim do klasycznego szybkiego pisania (co lekko zniekształca niektóre statystyki).
+	\item \href{https://didoesdigital.com/typey-type/}{Typey type} --- narzędzie przeznaczone specjalnie do nauki stenografowania, co stanowi jego główną zaletę. Nie ma problemów ze zmianą dotychczas napisanego tekstu pod wpływem nowych akordów, oraz oferuje wiele narzędzi bardzo użytecznych dla stenotypistów. Główną wadą jest to, że nie ma wsparcia dla języka polskiego, i w związku z tym niektóre spośród tych użytecznych narzędzi nie będą działać prawidłowo.
+\end{itemize}
+W przypadku obu tych programów, aby móc wykonywać ćwiczenia, konieczne będzie tworzenie lekcji specjalnych (custom lessons). W \href{https://github.com/bspat/Stenotypia-polska/tree/main/podrecznik/cwiczenia}{repozytorium projektu} znajduje się zakładka z ćwiczeniami z podręcznika w formacie gotowym do przeklejenia do tych dwóch programów. W przypadku Monkeytype możliwe jest korzystanie z przygotowanych przez autorów lekcji po dojściu do etapu pisania tekstów dowolnych.
+
+Pisanie ze słuchu jest bardzo dobrym ćwiczeniem dla każdego stenotypisty. Pozwala skupić się na pisanym tekście, oraz dostosowywać tempo do potrzeb. Wymaga jednak drugiej osoby chętnej do pomocy.\footnote{Ta metoda jest szczególnie polecana dla osób, które uczą się w większej grupie.}
+
+Pisanie tekstów dowolnych jest najtrudniejszym, choć najbardziej owocnym rodzajem ćwiczenia. Polega na pisaniu dowolnego tekstu (nie ćwiczeń z podręcznika) w jeden z wyżej wymienionych sposobów. Choć ten podręcznik ma na celu jak najszybsze umożliwienie posługiwania się tą metodą, nie należy jej zaczynać przedwcześnie, gdyż będzie to trudne oraz bardzo frustrujące.
+
+\subsection*{Praktyka}
+\label{prakt:3}
+
+\subsubsection{Instalacja słowników}
+
+W ramach części praktycznej, należy zainstalować słowniki dla PSS. Są one dostępne pod \href{https://github.com/bspat/Stenotypia-polska/tree/main/system/slowniki}{tym linikiem}. Należy się tam udać i ścignąć wszystkie słowniki z folderu oznaczonego jako Poziom 0. Są one niezbędne do dalszego udziału w kursie.
+
+\subsubsection{Ćwiczenia}
+
+Począwszy od tej lekcji, ćwiczenia należy przepisywać w dowolnym edytorze tekstu (z wyłączeniem domyślnego Notatnika w Windows), lub z wykorzystaniem zaprezentowanych w tej lekcji stron do nauki stenotypii.
+
+\emph{Przed rozpoczęciem stenotypowania należy upewnić się, że włączone jest korzystanie ze słowników - Enabled po prawej stronie okna programu.}
+
+\LARGE
+\begin{tabular}{c c c c c c}
+	pad & rum & a & ar & jak & lin \\
+	er & tur & lew & ser & i & zew \\
+	tym & pal & wir & syn & tir & wiz \\
+	sum & te & win & ty & paw & ja \\
+	wy & tak & ryz & kaw & kur & jar \\
+	tu & ze & we & ku & wam & pan \\
+	tan & lud & pic & lic & kac & rym \\
+	wal & fal & faz & fan & fur & kir \\
+	luk & lec & lur & lir & len & law \\
+\end{tabular}
+\normalsize
+
+\hyperref[odp:3]{Odpowiedzi}
+
+% ==============================================================================
+\newpage
+\section{4. Samogłoski podstawowe}
+\emph{W tej lekcji zostaną przedstawione samogłoski podstawowe w formie prostej i zmiękczającej oraz pierwsze znaki interpunkcyjne.}
+
+Jak można zauważyć, na klawiaturze stenotypicznej brakuje wielu samogłosek -- zarówno w wariantach podstawowych, jak i "jotowanych" (np. ia). Aby je uzyskać, trzeba będzie zacząć tworzyć kombinacje.
+
+\subsection*{Samogłoski podstawowe}
+
+W wariantach podstawowych 5 z 9 samogłosek języka polskiego (a, e, i, u, y) jest dostępnych bezpośrednio z klawiatury. Pozostałe to:
+
+\begin{center}
+	\Large
+	\begin{tabular}{| c | c | c |}
+		\hline
+		Głoska & Akord & Wygląd \\ \hline
+		o & \steno{AU} & \includegraphics[height=12pt]{grafika/kciuki/AU.jpg} \\ \hline
+		ą & \steno{EAU} & \includegraphics[height=12pt]{grafika/kciuki/EAU.jpg} \\ \hline
+		ę & \steno{EYA} & \includegraphics[height=12pt]{grafika/kciuki/EYA.jpg} \\ \hline
+		ó & \steno{EY} & \includegraphics[height=12pt]{grafika/kciuki/EY.jpg} \\ \hline
+	\end{tabular}
+\end{center}
+
+Przykładowo, oznacza to, że aby zapisać słowo "kod" trzeba będzie nacisnąć akord \steno{KAUD}, "pąk" zostanie zapisany jako \steno{PEAUK}, "lęk" jako \steno{LEYAK}, a "lód" jako \steno{LEYD}.
+
+\subsection*{Samogłoski zmiękczające}
+
+Oprócz prostych samogłosek, w języku polskim bardzo często są połączenia z głoską i - "ie" w "bieg", "ia" w "biały", "ią" w "piątek" etc. W PSS takie zbitki nazywane są, ze względu na swoje zachowanie, samogłoskami zmiękczającymi. W większości przypadków zyskuje się je w bardzo prosty sposób: do zwykłego akordu dodaje się klawisz I.
+\begin{center}
+	\Large 
+	\begin{tabular}{| c | c | c |}
+		\hline
+		Głoska & Akord & Wygląd \\ \hline
+		ia & \steno{IA} & \includegraphics[height=12pt]{grafika/kciuki/IA.jpg} \\ \hline
+		ie & \steno{EI} & \includegraphics[height=12pt]{grafika/kciuki/EI.jpg} \\ \hline 
+		iu & \steno{IU} & \includegraphics[height=12pt]{grafika/kciuki/IU.jpg} \\ \hline 
+		io & \steno{IAU} & \includegraphics[height=12pt]{grafika/kciuki/IAU.jpg} \\ \hline 
+	\end{tabular}
+\end{center}
+
+Wyjątek stanowią "ió", "ią" oraz "ię", które ze względów wyjaśnionych w kolejnej lekcji mają postać następującą:
+
+\begin{center}
+	\Large
+	\begin{tabular}{| c | c | c |}
+		\hline
+		Głoska & Akord & Wygląd \\ \hline 
+		ią & \stenoExc{YA} & \includegraphics[height=12pt]{grafika/kciuki/YA.jpg} \\ \hline
+		ię & \stenoExc{EIA} & \includegraphics[height=12pt]{grafika/kciuki/EIA.jpg} \\ \hline
+		ió & \stenoExc{E\#Y} & \includegraphics[height=12pt]{grafika/kciuki/EhY.jpg} \\ \hline
+	\end{tabular}
+\end{center}
+
+\subsection*{Dyftongi}
+
+W ramach lekcji poświęconej samogłoskom, konieczne jest wspomnienie o dyftongach. W języku polskim (a co za tym idzie, w PSS) wyróżnia się dwa dyftongi:
+
+\begin{center}
+	\Large
+	\begin{tabular}{| c | c | c |}
+		\hline
+		Głoska & Akord & Wygląd \\ \hline 
+		au & \stenoExc{EA} & \includegraphics[height=12pt]{grafika/kciuki/EA.jpg} \\ \hline
+		eu & \steno{EU} & \includegraphics[height=12pt]{grafika/kciuki/EU.jpg} \\ \hline
+	\end{tabular}
+\end{center}
+
+Akord dla "au" jest nieituicyjny ze względu na konfliktowanie z akordem dla "o" (które jest znacznie częstsze).
+
+\subsection*{Podsumowanie samogłosek prostych}
+
+Akordy dla wszystkich samogłosek poznanych do tej pory wyglądają następująco:
+
+\begin{center}
+	\Large
+	\begin{tabular}{| c | c | c | c | c | c |}
+		\hline
+		Głoska & Akord & Wygląd & Głoska & Akord & Wygląd \\ \hline
+		a & \steno{A} & \includegraphics[height=12pt]{grafika/kciuki/A.jpg} & ia & \steno{IA} & \includegraphics[height=12pt]{grafika/kciuki/IA.jpg} \\ \hline
+		ą & \steno{EAU} & \includegraphics[height=12pt]{grafika/kciuki/EAU.jpg} & ią & \stenoExc{YA} & \includegraphics[height=12pt]{grafika/kciuki/YA.jpg} \\ \hline
+		e & \steno{E} & \includegraphics[height=12pt]{grafika/kciuki/E.jpg} & ie & \steno{EI} & \includegraphics[height=12pt]{grafika/kciuki/EI.jpg} \\ \hline
+		ę & \steno{EYA} & \includegraphics[height=12pt]{grafika/kciuki/EYA.jpg} & ię & \stenoExc{EIA} & \includegraphics[height=12pt]{grafika/kciuki/EIA.jpg} \\ \hline
+		i & \steno{I} & \includegraphics[height=12pt]{grafika/kciuki/I.jpg} & --- & --- & --- \\ \hline
+		o & \steno{AU} & \includegraphics[height=12pt]{grafika/kciuki/AU.jpg} & io & \steno{IAU} & \includegraphics[height=12pt]{grafika/kciuki/IAU.jpg} \\ \hline
+		ó & \steno{EY} & \includegraphics[height=12pt]{grafika/kciuki/EY.jpg} & ió & \stenoExc{E\#Y} & \includegraphics[height=12pt]{grafika/kciuki/EhY.jpg} \\ \hline
+		u & \steno{U} & \includegraphics[height=12pt]{grafika/kciuki/U.jpg} & iu & \steno{IU} & \includegraphics[height=12pt]{grafika/kciuki/IU.jpg} \\ \hline
+		y & \steno{Y} & \includegraphics[height=12pt]{grafika/kciuki/Y.jpg} & --- & --- & --- \\ \hline
+		au & \stenoExc{EA} & \includegraphics[height=12pt]{grafika/kciuki/EA.jpg} & eu & \steno{EU} & \includegraphics[height=12pt]{grafika/kciuki/EU.jpg} \\ \hline
+	\end{tabular}
+\end{center}
+
+
+\emph{UWAGA --- o tym, jak uzyskiwać samogłosek spoza klawiatury oraz zmiękczonych w połączeniu z akordami wykorzystującymi klawisz J (spośród poznanych dotychczas jest to wyłącznie j) będzie oddzielna lekcja! Do tego czasu należy powstrzymać się od tworzenia słów łączących j z tymi głoskami.}
+
+\subsection*{Dodatek --- Kropka i przecinek}
+
+\emph{Od tego momentu na końcu części teoretycznej będą przedstawiane akordy specjalne, bardzo użyteczne, ale wyprzedzające materiał. Są one przeznaczone dla osób chcących szybko zacząć pisać teksty; jeżeli ktoś nie chce z tej części korzystać, nic nie traci --- cały przedstawiony tutaj materiał będzie również przedstawiony w standardowy sposób, w specjalnie poświęconych mu lekcjach.}
+
+Poniżej przedstawione są akordy dla dwóch najczęściej występujących znaków interpunkcyjnych: kropki oraz przecinka.
+
+\begin{center}
+	\Large
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Znaczenie & Akord & Wygląd \\ \hline
+		kropka . & \steno{P-M} & \includegraphics[height=20pt]{grafika/pelna/P-M.jpg} \\ \hline
+		przecinek , & \steno{W-N} & \includegraphics[height=20pt]{grafika/pelna/W-N.jpg} \\ \hline
+	\end{tabular}
+\end{center}
+
+Przy użyciu kropki, automatycznie rozpoczyna ona kolejne słowo dużą literą.
+
+\subsection*{Praktyka}
+\label{prakt:4}
+
+\subsubsection{Ćwiczenie --- głoski}
+\LARGE
+\begin{tabular}{c c c c c c}
+	a & ia & ą & ią & e & ie \\
+	ę & ię & i & o & io & y \\
+	ó & ió & u & iu & au & eu \\
+\end{tabular}
+
+\subsubsection{Ćwiczenie --- słowa}
+
+\begin{tabular}{c c c c c c}
+	to & on & koc & od & ów & sów \\
+	kod & więc & piór & wiąz & wór & siec \\
+	rąk & sęk & się & ziem & siad & tiul \\
+	siew & sąd & pion & pąk & lęk & rów \\
+\end{tabular}
+\normalsize
+
+\subsubsection{* Zdania}
+\emph{Zadania z kropką są przeznaczone dla osób zaznajomionych z materiałem przedstawionym w dodatkach.}
+
+\Large
+To ja, a to ty. On wie jak, więc je. Tu koc, a tam sum i lin. A więc i on, i ty tam. Ten i ów pan pion je piór od sów.
+\normalsize
+
+\hyperref[odp:4]{Odpowiedzi}
+
+\newpage
+
+\section{5. Przedrostek, rdzeń, przyrostek - przedrostki i przyrostki samogłoskowe}
+
+\emph{W tej lekcji przybliżone zostanie pojęcie rdzenia, przyrostka, przedrostka, skrótu, oraz akordu specjalnego. Zostaną zaprezentowane przedrostki będące samogłoskami oraz przyrostki zaczynające się od samogłosek}
+
+\subsection*{Podział akordów}
+
+W Polskim Systemie Stenotypicznym, pewne grupy akordów różnią się między sobą funkcjami. Funkcje te są dość intuicyjne, aczkolwiek warto je dobrze zrozumieć, gdyż każda z tych grup rządzi się swoimi prawami co do budowy akordów.
+
+\begin{itemize}
+	\item rdzenie --- najbardziej podstawowy rodzaj akordu. Są to semantyczne (tj. znaczeniowe) rdzenie słów, a także całe słowa jednosylabowe. Wszystkie dotychczas poznane słowa wpadają w tę kategorię. Rdzenie charakteryzują się tym, że domyślnie nie dążą do łączenia się z innymi wpisywanymi cząstkami (pomiędzy nimi automatycznie zostanie wstawiona spacja).  \\
+	Przykładowo: \textbf{kot}, \textbf{pies}, \textbf{żółt}y, roz\textbf{koch}ać 
+	\item przyrostki --- drugi najbardziej rozpowszechniony rodzaj akordu. Są to między innymi końcówki gramatyczne. Po wpisaniu automatycznie "kleją się" do cząstek występujących bezpośrednio przed nimi. \\
+	Przykładowo: widz\textbf{ą}, lek\textbf{arz}, rozkoch\textbf{ać}, kur\textbf{a}
+	\item przedrostki --- są to cząstki rozszerzające znaczenie, które są "doklejane" przed wyrazem, oraz pojedyncze samogłoski. Ich znajdowanie potrafi być podchwytliwe, więc PSS stara się używać ich tylko w sytuacjach oczywistych dla użytkownika. \\
+	Przykładowo: \textbf{roz}kochać, \textbf{przy}brać, \textbf{u}brać, \textbf{a}fazja
+	\item specjalne --- są to akordy, które pełnią funkcje wykraczające poza zapisywanie wyrazów. Są to akordy odpowiedzialne za interpunkcję, liczby, czy też obsługę komputera. Spośród specjalnych można wydzielić oddzielną kategorię:
+	\item skróty --- są to akordy i zespoły akordów, będące łatwiejszym sposobem na uzyskiwanie częstych wyrazów, wykraczające poza \emph{standardowe} zasady ukazane w tym kursie (oczywiście, istnieją zasady dotyczące sposobów na tworzenie skrótów, i zostają one przedstawione w odpowiedniej lekcji, aczkowlwiek jest to temat zaawansowany).
+\end{itemize}
+
+Akordy specjalne i skróty zostaną omówione w bardziej zaawansowanej fazie kursu; ta lekcja będzie dotyczyć rdzeni, przedrostków i przyrostków.
+
+\subsection*{Kiedy się łączą?}
+
+Poniższa tabela przedstawia w sposób skrócony, kiedy dwa akordy się połączą, a kiedy wystąpią osobno.
+
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	& \multicolumn{3}{|c|}{Akord drugi} \\ \hline
+	Akord pierwszy & Przedrostek & Rdzeń & Przyrostek \\ \hline
+	Przedrostek & razem & razem & razem \\ \hline
+	Rdzeń & osobno & osobno & razem \\ \hline
+	Przyrostek & osobno & osobno & razem \\ \hline
+\end{tabular}
+
+Jak można zauważyć, przedrostek połączy się z każdą występującą \emph{po} nim cząstką, a przyrostek połączy się z każdą występującą \emph{przed} nim cząstką.
+
+\emph{Uwaga --- najbliższe trzy sekcje mają na celu pokazać ogólne mechanizmy; nie trzeba ich na ten moment zapamiętywać szczegółowo -- istotne jest zrozumienie tematu. Praktyczne wykorzystanie poniższych treści będzie dokładnie tłumaczone razem z biegiem kursu.}
+
+\subsection*{Rdzenie}
+
+Rdzenie to podstawowa forma akordu. Ich budowa jest zgodna z tą przedstawioną w lekcji 3. Występują jako ośrodek (czyli centrum) każdego zapisywanego słowa.
+
+Przy zapisie pseudostenograficznym (małymi literami, z użyciem ukośników) rdzenie są zapisywane w taki sposób, w jaki są tłumaczone, np. \textbf{kot} / -a.
+
+\subsection*{Przedrostki}
+
+Przedrostki doklejają się do innych elementów występujących \emph{po} nich. Są budowane w taki sam sposób jak rdzenie (nagłos w lewej ręce, samogłoska, wygłos w prawej ręce), a następnie, celem odróżnienia od rdzeni o takim samym brzmieniu, dodaje się do nich \steno{*}.
+
+W zapisie pseudostenograficznym przedrostki zapisuje sie z myślnikiem na końcu: \textbf{przed-} / rost / -ek.
+
+\subsection*{Przyrostki}
+
+Przyrostki doklejają się do innych elementó występujących \emph{przed} nimi. Ich budowa bardzo mocno zależy od tego, od jakiej głoski się zaczynają. W większości przypominają budową rdzenie, ale nie zawsze.
+
+W zapisie pseudostenograficznym przyrostki zapisuje się z myślnikiem na początku: got / \textbf{-ow} / \textbf{-ać}.
+
+\subsection*{Przedrostki i przyrostki samogłoskowe}
+
+W części praktycznej tej lekcji ćwiczone będą przedrostki i przyrostki zaczynające się od samogłosek.
+
+\subsubsection{Przedrostki}
+
+Jeżeli wyraz jest kilkusylabowy, i zaczyna się od samogłoski, prawdopodobnie można ją zapisać jako oddzielny przedrostek. Należy się przy tym kierować własną intuicją i rozsądkiem\footnote{Jakkkolwiek dziwnie to sformułowanie nie brzmi w podręczniku, należy pamiętać, że stenotypia jest wtedy najskuteczniejsza, gdy jest najbardziej "intuicyjnie" rozumiana przez użytkownika.}, gdyż wiele z tych wyrazów można zapisać na dwa sposoby --- z wykorzystaniem przedrostka lub z wykorzystaniem przyrostka.
+
+W poniższej tabeli są przedstawione przykładowe takie sytuacje (pogrubiona jest zalecana, ale obie są dopuszczalne).
+
+\begin{tabular}{|c|c|c|}
+	\hline
+	Słowo & Rozkład 1 & Rozkład 2 \\ \hline
+	okoń & \textbf{o- / koń} & ok / -oń \\ \hline
+	atak & a- / tak & \textbf{at / -ak} \\ \hline
+	upór & \textbf{u- / pór} & up / -ór \\ \hline
+\end{tabular}
+
+Wybór jednego lub drugiego wariantu zależy od osobistych preferencji.
+
+Przedrostki złożone z samej samogłoski są tworzone przez dodanie do akordu \steno{*}.
+
+\subsubsection{Przyrostki}
+
+Przyrostki zaczynające się od samogłoski są jednymi z najczęściej występujących (należy do nich np. większość przyrostków gramatycznych). Następują one 
+
+Przyrostki zaczynające się od samogłoski buduje się w następujący sposób: samogłoskę pisze się w dolnej części klawiatury, następujące po niej głoski w prawej, a w lewej dodaje się \steno{ZKPL}.
+
+\subsubsection{Podsumowanie przyrostków i przedrostków samogłoskowych}
+
+W poniższej tabeli przedstawione są przykładowe akordy dla różnych, przykładowych samogłosek.\footnote{Poniższa tabela nie jest kompletna i ma na celu ukazanie zasady tworzenia tych akordów.}
+
+\large
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	Głoska & Przedrostek & Rdzeń & Przyrostek \\
+	& & (f. podstawowa) & \\ \hline
+	a & \steno{*A} & \steno{A} & \steno{ZKPLA} \\ \hline
+	ia & \steno{I*A} & \steno{IA} & \steno{ZKPLIA} \\ \hline
+	ią & \steno{*YA} & \steno{YA} & \steno{ZKPLYA} \\ \hline
+	e & \steno{E*} & \steno{E} & \steno{ZKPLE} \\ \hline
+	iu & \steno{I*U} & \steno{IU} & \steno{ZKPLIU} \\ \hline
+\end{tabular}
+\normalsize
+
+\newpage
+\subsection*{Praktyka}
+\label{prakt:5}
+
+\subsubsection{Ćwiczenie --- przyrostki}
+
+\LARGE
+\begin{tabular}{c c c c c c}
+	jada & jadą & jadę & wodo & jadu & koce \\ 
+	konia & folią & arię & polio & koniu & kocie \\
+	wada & wady & wozu & woli & woda & zewu \\
+	rumu & ryza & liny & ery & era & tura \\
+	lewe & lewą & sery & palą & palę & wiry \\
+	synu & syna & wizę & sumy & winią & pawie \\
+	kawa & kawy & kury & kurę & kurą & jary \\
+	panu & panie & tanie & tanio & ludy & picie \\
+	licu & lica & kaca & rymy & wali & walę \\
+	walą & falę & falą & fazie & fazę & fazy \\
+	fani & furie & furię & furia & kuria & luka \\
+	luki & lecę & lecie & lura & lira & liry \\
+	lawa & koce & sowa & sowy & kody & pióro \\
+	pióra & wiązy & wory & sieci & siecią & ręce \\
+	ręka & ręką & sądy & pąki & lęka & kawia \\
+\end{tabular}
+
+\subsubsection{Ćwiczenie --- przedrostki}
+
+\begin{tabular}{c c c c c c}
+	upada & opada & osiądę & usiądę & afera & epoka \\
+\end{tabular}
+
+\subsubsection{* Zdania}
+\Large
+On jada tanie kury z sieci. Lecę w wiru furię. Pan i panie wolą rymy. Wiozę sowie pióra, ty pal wiązy.
+\normalsize
+
+\hyperref[odp:5]{Odpowiedzi}
+
+\newpage
+\section{Kolejne lekcje już wkrótce}
+
+Prace nad podręcznikiem trwają cały czas - kolejne wersje, poszerzone o dalszy materiał będą wydawane co jakiś czas.
+
+Ta kopia została wydana: \today
+
+>>>>>>> Stashed changes
 
 \chapter{Pełny opis systemu}
 \section{Klawiatura}
@@ -1279,4 +1819,133 @@ Państw / Człon / -kowsk / -ich / , / jak / też / po- / śród / lud / -ów / 
 -yt / -or / -iów / znajd / -uj / -ąc / -ych / się / pod / ich / jur / -ysd /
 -yk / -cją / . 
 
+<<<<<<< Updated upstream
+=======
+\section{Przykład 2 --- Ojcze nasz, tradycyjna próbka stenograficzna}
+
+\subsection{Tekst}
+Ojcze nasz, któryś jest w niebie, święć się Imię Twoje, przyjdź Królestwo Twoje, bądź wola Twoja, jako w niebie tak i na ziemi. Chleba naszego powszedniego daj nam dzisiaj i odpuść nam nasze winy jako i my odpuszczamy naszym winowajcom, i nie wódź nas na pokuszenie, ale nas zbaw ode złego.
+
+\subsection{Podział na akordy --- podstawowy}
+
+Ojcz / -e / nasz / , / któr/ -yś / jest / w / nieb/ -ie / , / święć / się / Im / -ię / Twoj / -e / , / przyjdź / Król / -estw / -o / Twoj / -e / , / bądź / wol / -a / Twoj / -a / , / jak / -o / w / nieb / -ie / tak / i / na / ziem / -i / . / Chleb / -a / nasz / -eg / -o / po- / wszed / -nieg / -o / daj / nam / dzis / -iaj / i / od- / puść / nam / nasz / -e / win / -y / jak / -o / i / my / od- / puszcz / -am / -y / nasz / -ym / win / -ow / -ajc / -om / , / i / nie / wódź / nas / na / po- / kusz / -en / -ie / , / al / -e / nas / zbaw / od / -e / złeg / -o / .
+
+\chapter{Odpowiedzi do zadań}
+\section{Lekcja 2}
+\hyperref[prakt:2]{Do lekcji}
+\label{odp:2}
+\subsection*{Wybór prawidłowych akordów}
+\begin{tabular}{c p{9cm}}
+	a & OK \\
+	b & brak myślnika - poprawne wersje: \steno{K-V} lub \steno{-KV}, zależnie od znaczenia \\
+	c & OK \\
+	d & OK \\
+	e & zamienione L oraz R - poprawna wersja: \steno{LRIN} \\
+	f & grupa, która nie może wystąpić - \stenoErr{JEI} \\
+	g & N nie występuje po lewej stronie klawiatury \\
+	h & OK
+\end{tabular}
+
+\section{Lekcja 3}
+
+\hyperref[prakt:3]{Do lekcji}
+
+
+\label{odp:3}
+\begin{tabular}{|c c|c c|c c|c c|c c|c c|}
+	\hline
+	pad & \steno{PAD} & rum & \steno{RUM} & a & \steno{A} & ar & \steno{AR} & jak & \steno{JAK} & lin & \steno{LIN} \\ \hline
+	er & \steno{ER} & tur & \steno{TUR} & lew & \steno{LEW} & ser & \steno{SER} & i & \steno{I} & zew & \steno{ZEW} \\ \hline
+	tym & \steno{TYM} & pal & \steno{PAL} & wir & \steno{WIR} & syn & \steno{SYN} & tir & \steno{TIR} & wiz & \steno{WIZ} \\ \hline
+	sum & \steno{SUM} & te & \steno{TE} & win & \steno{WIN} & ty & \steno{TY} & paw & \steno{PAW} & ja & \steno{JA} \\ \hline
+	wy & \steno{WY} & tak & \steno{TAK} & ryz & \steno{RYZ} & kaw & \steno{KAW} & kur & \steno{KUR} & jar & \steno{JAR} \\ \hline
+	tu & \steno{TU} & ze & \steno{ZE} & we & \steno{WE} & ku & \steno{KU} & wam & \steno{WAM} & pan & \steno{PAN} \\ \hline
+	tan & \steno{TAN} & lud & \steno{LUD} & pic & \steno{PIC} & lic & \steno{LIC} & kac & \steno{KAC} & rym & \steno{RYM} \\ \hline
+	wal & \steno{WAL} & fal & \steno{FAL} & faz & \steno{FAZ} & fan & \steno{FAN} & fur & \steno{FUR} & kir & \steno{KIR} \\ \hline
+	luk & \steno{LUK} & lec & \steno{LEC} & lur & \steno{LUR} & lir & \steno{LIR} & len & \steno{LEN} & law & \steno{LAW} \\ \hline
+\end{tabular}
+
+\section{Lekcja 4}
+\hyperref[prakt:4]{Do lekcji}
+
+\label{odp:4}
+\subsection{Głoski}
+\begin{tabular}{|c c|c c|c c|c c|c c|c c|}
+	\hline
+	a & \steno{A} & ia & \steno{IA} & ą & \steno{EAU} & ią & \steno{YA} & e & \steno{E} & ie & \steno{EI} \\ \hline
+	ę & \steno{EYA} & ię & \steno{EIA} & i & \steno{I} & o & \steno{AU} & io & \steno{IAU} & y & \steno{Y} \\ \hline
+	ó & \steno{EY} & ió & \steno{E\#Y} & u & \steno{U} & iu & \steno{IU} & au & \steno{EA} & eu & \steno{EU} \\ \hline
+\end{tabular}
+
+\subsection{Słowa}
+\begin{tabular}{|c c|c c|c c|c c|c c|c c|}
+	\hline
+	to & \steno{TAU} & on & \steno{AUN} & koc & \steno{KAUC} & od & \steno{AUD} & ów & \steno{EYW} & sów & \steno{SEYW} \\ \hline
+	kod & \steno{KAUD} & więc & \steno{WEIAC} & piór & \steno{PE\#YR} & wiąz & \steno{WYAZ} & wór & \steno{WEYR} & siec & \steno{SEIC} \\ \hline
+	rąk & \steno{REAUK} & sęk & \steno{SEYAK} & się & \steno{SEIA} & ziem & \steno{ZEIM} & siad & \steno{SIAD} & tiul & \steno{TIUL} \\ \hline
+	siew & \steno{SEIW} & sąd & \steno{SEAUD} & pion & \steno{PIAUN} & pąk & \steno{PEAUK} & lęk & \steno{LEYAK} & rów & \steno{REYW} \\ \hline
+\end{tabular}
+
+\subsection{Zdania}
+
+\steno{TAU / JA / W-N / A / TAU / TY / P-M } \\
+\steno{AUN / WEI / JAK / W-N / WEIAC / JE / P-M } \\
+\steno{TU / KAUC / W-N / A / TAM / SUM / I / LIN / P-M } \\
+\steno{A / WEIAC / I / AUN / W-N / I / TY / TAM / P-M } \\
+\steno{TEN / I / EYW / PAN / PIAUN / JE / PE\#YR / AUD / SEYW / P-M }
+
+\section{Lekcja 5}
+\hyperref[prakt:5]{Do lekcji}
+\label{odp:5}
+
+\subsection{Przedrostki}
+\begin{longtable}{|c c|c c|c c|}
+	\hline
+	jada & \steno{JAD/ZKPLA} & jadą & \steno{JAD/ZKPLEAU} & jadę & \steno{JAD/ZKPLEYA} \\ \hline
+	wodo & \steno{WAUD/ZKPLAU} & jadu & \steno{JAD/ZKPLU} & koce & \steno{KAUC/ZKPLE} \\ \hline
+	konia & \steno{KAUN/ZKPLIA} & folią & \steno{FAUL/ZKPLYA} & arię & \steno{AR/ZKPLEIA} \\ \hline
+	polio & \steno{PAUL/ZKPLIAU} & koniu & \steno{KAUN/ZKPLIU} & kocie & \steno{KAUC/ZKPLIE} \\ \hline
+	wada & \steno{WAD/ZKPLA} & wady & \steno{WAD/ZKPLY} & wozu & \steno{WAUZ/ZKPLU} \\ \hline
+	woli & \steno{WAUL/ZKPLI} & woda & \steno{WAUD/ZKPLA} & zewu & \steno{ZEW/ZKPLU} \\ \hline
+	rumu & \steno{RUM/ZKPLU} & ryza & \steno{RYZ/ZKPLA} & liny & \steno{LIN/ZKPLY} \\ \hline
+	ery & \steno{ER/ZKPLY} & era & \steno{ER/ZKPLA} & tura & \steno{TUR/ZKPLA} \\ \hline
+	lewe & \steno{LEW/ZKPLE} & lewą & \steno{LEW/ZKPLEAU} & sery & \steno{SER/ZKPLY} \\ \hline
+	palą & \steno{PAL/ZKPLEAU} & palę & \steno{PAL/ZKPLEYA} & wiry & \steno{WIR/ZKPLY} \\ \hline
+	synu & \steno{SYN/ZKPLU} & syna & \steno{SYN/ZKPLA} & wizę & \steno{WIZ/ZKPLEYA} \\ \hline
+	sumy & \steno{SUM/ZKPLY} & winią & \steno{WIN/ZKPLYA} & pawie & \steno{PAW/ZKPLEI} \\ \hline
+	kawa & \steno{KAW/ZKPLA} & kawy & \steno{KAW/ZKPLY} & kury & \steno{KUR/ZKPLY} \\ \hline
+	kurę & \steno{KUR/ZKPLEYA} & kurą & \steno{KUR/ZKPLEAU} & jary & \steno{JAR/ZKPLY} \\ \hline
+	panu & \steno{PAN/ZKPLU} & panie & \steno{PAN/ZKPLEI} & tanie & \steno{TAN/ZKPLEI} \\ \hline
+	tanio & \steno{TAN/ZKPLIAU} & ludy & \steno{LUD/ZKPLY} & picie & \steno{PIC/ZKPLEI} \\ \hline
+	licu & \steno{LIC/ZKPLU} & lica & \steno{LIC/ZKPLA} & kaca & \steno{KAC/ZKPLA} \\ \hline
+	rymy & \steno{RYM/ZKPLY} & wali & \steno{WAL/ZKPLI} & walę & \steno{WAL/ZKPLEYA} \\ \hline
+	walą & \steno{WAL/ZKPLEAU} & falę & \steno{FAL/ZKPLEYA} & falą & \steno{FAL/ZKPLEAU} \\ \hline
+	fazie & \steno{FAZ/ZKPLEI} & fazę & \steno{FAZ/ZKPLEYA} & fazy & \steno{FAZ/ZKPLY} \\ \hline
+	fani & \steno{FAN/ZKPLI} & furie & \steno{FUR/ZKPLEI} & furię & \steno{FUR/ZKPLEIA} \\ \hline
+	furia & \steno{FUR/ZKPLIA} & kuria & \steno{KUR/ZKPLIA} & luka & \steno{LUK/ZKPLA} \\ \hline
+	luki & \steno{LUK/ZKPLI} & lecę & \steno{LEC/ZKPLEYA} & lecie & \steno{LEC/ZKPLEI} \\ \hline
+	lura & \steno{LUR/ZKPLA} & lira & \steno{LIR/ZKPLA} & liry & \steno{LIR/ZKPLY} \\ \hline
+	lawa & \steno{LAW/ZKPLA} & koce & \steno{KAUC/ZKPLE} & sowa & \steno{SAUW/ZKPLA} \\ \hline
+	sowy & \steno{SAUW/ZKPLY} & kody & \steno{KAUD/ZKPLY} & pióro & \steno{PE\#YR/ZKPLAU} \\ \hline
+	pióra & \steno{PE\#YR/ZKPLA} & wiązy & \steno{WYAZ/ZKPLY} & wory & \steno{WAUR/ZKPLY} \\ \hline
+	sieci & \steno{SEIC/ZKPLI} & siecią & \steno{SEIC/ZKPLYA} & ręce & \steno{REYAC/ZKPLE} \\ \hline 
+	ręka & \steno{REYAK/ZKPLA} & ręką & \steno{REYAK/ZKPLEAU} & sądy & \steno{SEAUD/ZKPLY} \\ \hline
+	pąki & \steno{PEAUK/ZKPLI} & lęka & \steno{LEYAK/ZKPLA} & kawia & \steno{KAW/ZKPLIA} \\ \hline 
+\end{longtable}
+
+\subsection{Przyrostki}
+\begin{longtable}{|c c|c c|c c|}
+	\hline
+	upada & \steno{*U/PAD/ZKPLA} & opada & \steno{*AU/PAD/ZKPLA} & osiądę & \steno{*AU/SYAD/ZKPLEYA} \\ \hline
+	usiądę & \steno{*U/SYAD/ZKPLEYA} & afera & \steno{*A/FER/ZKPLA} & epoka & \steno{E*/PAUK/ZKPLA} \\ \hline
+\end{longtable}
+
+\subsection{Zdania}
+
+\steno{AUN / JAD / ZKPLA / TAN / ZKPLEI / KUR / ZKPLY / -Z / SEIC / ZKPLI / P-M} \\
+\steno{LEC / ZKPLEYA / W- / WIR / ZKPLU / FUR / ZKPLEIA / P-M} \\
+\steno{PAN / I / PAN / ZKPLEI / WAUL / ZKPLEAU / RYM / ZKPLY / P-M} \\
+\steno{WIAUZ / ZKPLEYA / SAUW / ZKPLEI / PE\#YR / ZKPLA / W-N / TY / PAL / WYAZ / ZKPLY / P-M}
+
+>>>>>>> Stashed changes
 \end{document}
