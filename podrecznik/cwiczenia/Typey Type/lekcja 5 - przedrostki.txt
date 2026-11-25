@@ -1,6 +1,0 @@
-upada	*U/PAD/ZKPLA
-opada	*AU/PAD/ZKPLA
-osiądę	*AU/SYAD/ZKPLEYA
-usiądę	*U/SYAD/ZKPLEYA
-afera	*A/FER/ZKPLA
-epoka	E*/PAUK/ZKPLA
