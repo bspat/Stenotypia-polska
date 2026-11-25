@@ -1,0 +1,2 @@
+pdflatex .\podrecznik.tex
+pause

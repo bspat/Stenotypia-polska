@@ -78,8 +78,8 @@ szereg problemów związanych z nauką.
 		rzeczy znajdują się w niej błędy - prowadzi to do częstych
 		konfliktów i niejednoznaczności
 	\item Ujednolicenie z językiem czeskim i słowackim - pomimo iż te języki
-		są bardzo zbliżone do języka polskiego, to jednak charakteryzują
-		się dużo większą regularnością zasad. Ponieważ dotychczasowy
+		są bardzo zbliżone do języka polskiego, charakteryzują
+		się jednak dużo większą regularnością zasad. Ponieważ dotychczasowy
 		system obejmuje trzy języki, prowadzi to do powstania bardzo
 		dużej ilości zasad specjalnych dla języka polskiego, oraz
 		rozwiązań, które w języku polskim mają sens tylko i wyłącznie
@@ -173,9 +173,403 @@ Z poważaniem
 autor
 
 \chapter{Kurs}
-Już wkrótce
+
+\section{1. Wstęp do stenotypii}
+
+\textit{W tej lekcji pokazane zostaje czym jest stenotypia, oraz przeprowadzona jest konfiguracja programu Plover do działania z PSS.}
+
+Bardzo miło mi przywitać Czytelnika w niniejszym kursie stenotypii poświęconym Polskiemu Systemowi Stenotypicznemu. Choć z samego faktu, że ta książka znalazła się w Czytelnika rękach można wnioskować, że jest wstępnie zaznajomiony z przedstawionymi tutaj technikami, to uważam, że nadal dobrze byłoby rozpocząć od odpowiedzenia sobie na pytanie, o co tak naprawdę tutaj będzie chodzić.
+
+\subsection*{Czym jest stenotypia?}
+
+Stenotypia, zwana również przez niektórych stenografią maszynową, jest sztuką pisania na przeznaczonej do tego klawiaturze w tempie dorównującym, a nawet przewyższającym ludzką mowę.
+
+Próby ułatwienia sobie pracy przez ludzi postawionych wobec zadania zapisywania większych ilości informacji są praktycznie tak stare jak sama umiejętność pisania. Wystarczy spojrzeć na systematyczne upraszczanie się na przestrzeni czasu pisma egipskiego (od hieroglifów do demotyki), rzymskie noty tyrońskie, czy też wysiłki średniowiecznych skrybów, skracających praktycznie każdy często występujący wyraz. Nie bez znaczenia był również fakt, że mniejsza ilość tekstu do zapisania pozwalała rejestrować informację znacznie szybciej i mniejszym kosztem pracy.
+
+Jednym z najnowszych i najbardziej obiecujących pod tym kątem wynalazków jest właśnie stenografia maszynowa. Na świecie jest wykorzystywana przede wszystkim w Stanach Zjednoczonych do rejestrowania przebiegu rozpraw sądowych. W Polsce na razie pozostaje jeszcze nieobecna --- jednakże niniejsza książka ma na celu to zmienić.
+
+\subsection*{Jak to działa?}
+W dużym skrócie (gdyż szczegółowemu wyjaśnieniu jest poświęcona cała reszta tej książki) --- osoba stenotypująca, z wykorzystaniem przystosowanego do tego urządzenia, naciska jednocześnie kolejne grupy klawiszy, którym są przypisane odpowiednie fragmenty słów, całe słowa, lub nawet frazy. Zasady, według których grupy klawiszy są zamieniane na tekst nazywa się po polsku \emph{systemem}, a po angielsku \emph{theory} - teorią.
+
+\subsection*{Jak zacząć?}
+Do praktykowania stenotypii, niezbędne są następujące elementy:
+\begin{itemize}
+	\item System stenotypii
+	\item Maszyna stenotypiczna
+	\item Chęć nauki
+\end{itemize}
+
+\subsubsection{System stenotypii}
+Ten kurs jest poświęcony Polskiemu Systemowi Stenotypii. Jest to sposób zaprojektowany przez autora niniejszego podręcznika, ze szczególną uwagą poświęconą wygodnemu używaniu w języku polskim. Każdy system stenografii maszynowej ze swej natury jest przeznaczony do używania tylko z jednym, wybranym językiem (lub wąską, spokrewnioną między sobą grupą).
+
+Warto zaznaczyć, że PSS to nie jedyny istniejący system; dla języka polskiego istnieje również "Zachodniosłowiańska Stenografia Maszynowa", przeznaczona do użytku po polsku, czesku, oraz słowacku, autorstwa pani Priscilli Trillo (będący w pewnym stopniu pierwowzorem dla PSS). Dla języków obcych istnieje bardzo duża liczba rozmaitych systemów, z których na szczególną uwagę zasługuje angielskojęzyczny Lapwing.
+
+Rozbudowaną listę darmowo dostępnych systemów dla różnych języków można znaleźć pod \href{https://plover.wiki/index.php/Steno_layouts_and_supported_languages}{tym linkiem}.
+
+\subsubsection{Maszyna stenotypiczna}
+Do stenotypowania konieczne jest dostosowane do tego urządzenie. Takie urządzenia są najczęściej klasyfikowane w następujący sposób:
+\begin{itemize}
+	\item profesjonalna maszyna stenograficzna
+	\item hobbystyczna klawiatura stenograficzna
+	\item standardowa klawiatura komputerowa
+\end{itemize}
+
+Profesjonalni (tj. pracujący w ten sposób zaawodowo) stenografowie w Stanach Zjednoczonych najczęściej posługują się profesjonalnymi maszynami stenograficzymi. Są to urządzenia, które nie potrzebują żadnego dodatkowego zewnętrznego oprogramowania do działania. Najczęściej są bardzo dobrze dostosowane do potrzeb stenografów --- ich głównym minusem jest bardzo wysoki koszt (w momencie pisania tych słów koszt pojedynczego używanego, ale sprawnego urządzenia zaczyna się od kilku tysięcy złotych) oraz z polskiej perspektywy -- niska dostępność.
+
+Dużo łatwiejsze do dostania są hobbystyczne klawiatury stenograficzne. Są to klawiatury, które zostały zaprojektowane z myślą o wykorzystaniu w celu stenotypowania. Tak jak profesjonalne maszyny, ich klawiatury są rozłożone w sposób ułatwiający naciskanie kombinacji wykorzystywanych w stenografii. Do działania wymagają one zewnętrznego oprogramowania (takiego jak Plover)tłumaczącego znaczenie poszczególnych grup przycisków na docelowy tekst. Ich ceny oscylują w okolicach kilkuset złotych; dla osób obeznanych z elektroniką, wykonanie takiej klawiatury na podstawie dostępnych w sieci materiałów nie powinno stanowić dużego wyzwania.
+
+Co do zasady, stenotypowanie jest możliwe nawet na standardowej klawiaturze. Jest to dobra opcja dla osób, które chcą spróbować tej sztuki bez większych kosztów w wypadku szybkiej rezygnacji. Aby dowiedzieć się, czy dana klawiatura nadaje się do stenograficznego wykorzystania, warto mieć na uwadze następujące cechy:
+\begin{itemize}
+	\item NKRO --- z angielskiego N-Key Rollover; pojęcie to oznacza, że dana klawiatura będzie w stanie zarejestrować wszystkie naciśnięte naraz klawisze, niezależnie od ich liczby. Większość klawiatur biurowych nie jest niestety wykonana w taki sposób, i będzie występować na nich zjawisko nie rejestrowania naciśnięć niektórych klawiszy, tzw. ghosting. Uwaga - choć technicznie rzecz biorąc, możliwe jest stenografowanie na klawiaturze ghostującej (z wykorzystaniem funkcji tzw. arpeggio), jest to bardzo wolne oraz niewygodne, a zatem odradzane.
+	\item Ortogonalność --- niektóre klawiatury ergonomiczne mają ustawione klawisze w równych rzędach, bez charakterystycznego przesunięcia. Nadają się one dużo lepiej do stenografii niż te klasyczne, gdyż klasyczny układ klawiatury wymusza trzymanie rąk skosem w lewo i bardzo przeszkadza podczas stenotypowania. Pewnym sposobem na ominięcie tego problemu są stenograficzne nakładki na klawiaturę, któych wzory można za darmo znaleźć w internecie i wydrukować na drukarce 3D lub niskim kosztem nabyć.
+\end{itemize}
+
+Niniejszy kurs został napisany z założeniem, że Czytelnik dysponuje klawiaturą hobbystyczną lub klasyczną klawiaturą bez zjawiska ghostowania, oraz wykorzystuje oprogramowanie open-source Plover.
+
+\subsubsection{Chęć nauki}
+Stenografia maszynowa to ten rodzaj umiejętności, która \emph{KONIECZNIE} wymaga regularnego ćwiczenia. Największe zyski przychodzą nie z wielogodzinnych, acz rzadkich, punktowych sesji, a z regularnego powtarzania i przyswajania materiału w swoim tempie. Wynika to z faktu, że podobnie jak w bezwzrokowym pisaniu na klasycznej klawiaturze, największy nacisk jest położony na pamięć mięśniową, a ona wymaga czasu na wykształcenie.
+
+Ten kurs jest zorganizowany w taki sposób, aby kolejne lekcje serwowały małe porcje nowego materiału i korzystały z informacji już wcześniej przedstawionych. Powinno to pozwolić na szybkie przejście przez podręcznik. Zaleca się nie rozpoczynać kolejnej lekcji przed opanowaniem wcześniejszego materiału w stopniu wystarczającym na ćwiczenie bez sprawdzania dobrej odpowiedzi w podręczniku (dobrym wskaźnikiem gotowości na nowy materiał jest uzyskiwanie poprawności powyżej 90\% przy prędkości pisania nie mniejszej niż w lekcji bezpośrednio wcześniejszej).
+
+\subsection*{Praktyka}
+W tej lekcji częścią praktyczną jest ściągnięcie oraz skonfigurowanie programu Plover, jak również przetestowanie klawiatury.
+
+W razie potrzeby, zawsze można poprosić o pomoc z programem Plover na serwerze Discord wokół projektu OpenSteno (\url{https://discord.gg/Gzsdjn8BMq}). Większość komunikacji na serwerze odbywa się w języku angielskim, jednakże istnieje kanał przeznaczony dla języka polskiego.
+
+\begin{enumerate}
+	\item Pobranie i instalacja programu --- należy pobrać najnowszą wersję programu Plover (dostępny na stronie projektu Open Steno --- do znalezienia przez wyszukiwarkę internetową lub pod \href{https://opensteno.org/plover/}{tym linkiem}) a następnie zainstalować go zgodnie z instrukcją i sposobem właściwym dla systemu operacyjnego
+	\item Uruchomienie i pobranie pluginu --- po uruchomieniu programu należy otworzyć zakładkę Plugins Manager, i zainstalować z listy plugin plover-polish-pss (jest to dodatkowy fragment programu Plover przystosowujący go do użytkowania z PSS, stworzony przez autora tego podręcznika), zrestartować program, a następnie wejść w opcję Configure i w zakładce system wybrać PSS.
+	\item Konfiguracja klawiatury --- należy podłączyć klawiaturę do komputera, wejść w opcję Configure i zakładkę Machine, wybrać odpowiedni protokół (dla standardowych klawiatur Keyboard, dla pozostałych zależy od producenta, najczęściej GeminiPR), a następnie wybrać port COM, do którego została podłączona klawiatura. Następnie upewnić się, że klawiatura ma status Connected
+	\item Przetestowanie --- aby sprawdzić, czy wszystko działa, można otworzyć narzędzie Paper Tape i zacząć przyciskać różne klawisze --- jeżeli zaczną pokazywać się znaki, oznacza to, że konfiguracja się udała (w razie potrzeby można wspomóc się diagramem na kolejnej stronie).
+\end{enumerate}
+
+% ==============================================================================
+\newpage
+\section{2. Układ klawiatury}
+
+\textit{W tej lekcji zostaje przedstawiony układ klawiatury, ułożenie początkowe rąk, oraz konwencje dotyczące zapisu akordów}
+
+\subsection*{Układ klawiatury}
+
+Klawiatura w Polskim Systemie Stenotypii ma następujący układ klawiszy:
+
+\includegraphics[width=12cm]{grafika/klawiatura.jpg}
+
+Ten diagram jest bardzo ważny, i należy znać go z pamięci, gdyż klawiatury stenotypiczne nie mają opisanych klawiszy. Można go wydrukować i wspomagać się przez pierwsze kilka lekcji.
+
+Można zauważyć, że na przedstawionym schemacie nie znajdują się wszystkie litery występujące w języku polskim. O tym, jak uzyskiwać brakujące znaki, opowiada dalsza część kursu.
+
+\subsection*{Porządek stenotypiczny i konwencje zapisu}
+Podczas korzystania ze stenotypii, bardzo często wciskane klawisze (grupa klawiszy naciśnięta jednocześnie nazywana jest \emph{akordem}, ze względu na podobieństwo do akordów na fortepianie) zapisuje się tekstem. Aby uniknąć zamieszania, przyjęło się stosować pewne konwencje.
+\begin{enumerate}
+	\item Porządek stenotypiczny --- klawisze zawsze zapisuje się w odpowiedniej kolejności: najpierw lewa ręka, potem lewy kciuk, następnie środek, prawy kciuk i prawa ręka. W przypadku Polskiego Systemu Stenotypii daje to następujący porządek:\\
+	\steno{X F Z S K T P V L R J E I \# * Y A U Z R M N C L K W V D}\\
+	Oznacza to, że akord składający się z K w lewej ręce, A, oraz Z i R w prawej musi zostać zapisany jako \steno{KAZR}, nigdy jako \stenoErr{KARZ}, \stenoErr{KZRA} itd.
+	\item Myślniki --- gdy akord nie zawiera klawiszy zawartych w części kciuków i środkowej (\steno{J, E, I, \#, *, Y, A, U}), należy dodać w ich miejscu myślnik. Pozwala to uniknąć niejednoznaczności --- każdy z tych akordów \steno{Z-K}, \steno{ZK-}, \steno{-ZK} jest inny, a wprowadzenie myślnika pozwala określić, o które klawisze K i Z chodzi.
+\end{enumerate}
+Nie stosowanie się do powyższych konwencji prowadzi w najlepszym wypadku do niezrozumiałego zapisu, w najgorszym wprost błędnego.
+
+\newpage
+
+Oprócz tego, w tej książce przyjęto kilka graficznych konwencji zapisu; choć nie są standardem, pozwalają ułatwić odczytywanie podręcznika.
+
+\begin{tabular}{|c|c|}
+	\hline
+	Zapis & Znaczenie \\ \hline
+	\steno{AKORD} & Poprawne akordy \\ \hline
+	\stenoErr{ZŁY\_AKORD} & Błędne akordy \\ \hline
+	\stenoExc{DZIWNY\_AKORD} & Akordy będące wyjątkami \\ \hline
+	kot / -a & Pseudosteno, zapis cząstkami, które mają \\ & bezpośrednie odpowiedniki w akordach \\ \hline
+	\steno{KAUND} / \steno{ZKPLA} & Zapis akordami \\ \hline
+\end{tabular}
+
+\subsection*{Ręce na klawiaturze}
+
+Na poniższym diagramie przedstawione kropkami są pozycje początkowe palców podczas korzystania z klawiatury.
+
+\includegraphics[width=12cm]{grafika/pozycjepoczatkowe.jpg}
+
+Każda grupa klawiszy ma przypisane sobie palce, i nie należy ich zmieniać.
+
+\begin{tabular}{|c|c||c|c|}
+	\hline
+	Lewa ręka & Klawisze & Prawa ręka & Klawisze \\ \hline
+	Mały palec & \steno{X- F- Z- S-} & Mały palec & \steno{-K -W -V -D} \\ \hline
+	Serdeczny & \steno{K- T-} & Serdeczny & \steno{-C -L} \\ \hline
+	Środkowy & \steno{P- W-} & Środkowy & \steno{-M -N} \\ \hline
+	Wskazujący & \steno{L- R- \# *} & Wskazujący & \steno{\# * -Z -R} \\ \hline
+	Kciuk & \steno{J E I} & Kciuk & \steno{Y A U} \\ \hline
+\end{tabular}
+
+Podczas stenografowania każdy z palców będzie naciskał maksymalnie dwa klawisze naraz. Oznacza to, że pewne grupy klawiszy nigdy nie wystąpią razem. Przykładowo, są to \stenoErr{JEI}, \stenoErr{XFZS-} lub \stenoErr{YAU}.
+
+Warto również zauważyć, że pewne kombinacje będą po prostu fizycznie niemożliwe do uzyskania. Są to \stenoErr{JI}, \stenoErr{YU} dla kciuków (ponieważ nie da się nacisnąć tych przycisków jednym palcem jednocześnie), jak też \stenoErr{XS-}, \stenoErr{FZ}, \stenoErr{-KD} oraz \stenoErr{-WV} dla małych palców.
+
+\subsection*{Praktyka}
+W ramach części praktycznej należy skonfigurować klawiaturę oraz wykonać przedstawione poniżej ćwiczenia.
+
+\subsubsection{Konfiguracja klawiatury}
+Należy upewnić się, że wszystkie klawisze działają w sposób zgodny z układem klawiatury przedstawionym w tej lekcji. Należy po kolei je naciskać, i jeżeli nie zachowują się zgodnie z układem, należy wejść w zakładkę Configure, zakładkę Machine i zmienić przypisania klawiszy.\footnote{W przypadku klawiatur Polyglot najprawdopodobniej konieczne będzie dokonanie zmiany oprogramowania samej klawiatury. Jest to możliwe do zrobienia w dość łatwy sposób - o pomoc należy zwrócić się na Discordzie lub mail projektu.}
+
+\subsubsection{Które akordy są poprawne?}
+Wskaż, które z pokazanych poniżej akordów są poprawnie zapisane (biorąc pod uwagę możliwe akordy oraz konwencje zapisu), oraz podaj poprawną formę, jeżeli to możliwe:
+
+\begin{tabular}{c c c c c c c c}
+	a - & \steno{KYM} & b - & \steno{KV} & c - & \steno{KAUND} & d - & \steno{E} \\
+	e - & \steno{RLIN} & f - & \steno{JEICLKW} & g - & \steno{NYAR} & h - & \steno{PREYAD} \\
+\end{tabular}
+
+\hyperref[odp:2]{Odpowiedzi} znajdują się na końcu książki.
+
+\subsubsection{Ćwiczenie}
+Uwaga - to ćwiczenie należy wykonywać w ramach narzędzia Paper Tape dostępnego wewnątrz programu Plover.
+
+Ćwiczenie polega na przepisaniu poniżej przedstawionych sekwencji (w miarę możliwości bez sprawdzania pozycji poszczególnych klawiszy na diagramie z początku lekcji). Należy pamiętać o używaniu odpowiednich palców.
+
+\steno{
+	\LARGE
+	\begin{tabular}{c c c c c c c c c c}
+		X- & F- & Z- & S- & K- & W- & L- & R- & \# & *  \\
+		\# & J  & E  & I  & Y  & A  & U  & -Z & -R & -M \\
+		-N & -C & -L & -K & -W & -V & -D & -C & -N & -R \\
+		S- & F- & E  & W- & T- & -R & X- & Y  & S- & \# \\
+		W- & -C & U  & J  & F- & -W & -D & A  & -V & S- \\
+		Z- & -N & R- & *  & K- & -D & -N & I  & *  & -M \\
+		-Z & L- & P- & -L & T- & E  & A  & X- & -N & F- \\
+		L- & E  & K- & -K & L- & -N & R- & S- & -L & T- \\
+		\# & -Z & -C & -V & R- & T- & P- & -M & W- & I  \\
+		W- & -Z & U  & S- & X- & -C & E  & -W & J  & Y  \\
+		Z- & J  & L- & U  & *  & \# & -M & -N & T- & -V \\
+	\end{tabular}
+}
+% ==============================================================================
+\newpage
+\section{3. Budowa akordu i narzędzia do ćwiczeń}
+
+\emph{W tej lekcji zostaje przybliżona budowa akordu, usuwanie akordów, narzędzia do nauki stenotypowania oraz instalacja słowników}
+
+\subsection*{Budowa akordu}
+W najbardziej podstawowej formie (a od niej myślę, że wypadałoby zacząć ten kurs) wszystkie akordy (czyli grupy klawiszy nacikanych jednocześnie) odpowiadają mniej więcej jednej sylabie. Są zbudowane według pewnych stałych zasad. Przede wszystkim, każdy akord składa się z trzech części:
+\begin{itemize}
+	\item nagłos --- spółgłoski rozpoczynające akord, naciskane palcami lewej ręki
+	\item samogłoski --- samogłoski, wciskane kciukami
+	\item wygłos --- spółgłoski kończące akord, naciskane palcami prawej ręki
+\end{itemize}
+Oprócz tego część klawiszy (\steno{X-, *, \#, J} pełni pewne specjalne funkcje i nie wpasowuje się ściśle w ten podział. O ich zadaniach będzie mowa w odpowiednim dla każdego miejscu.
+
+Wszystkie klawisze, z wyjątkiem \steno{X-} oraz \steno{-V}, służą do uzyskiwania w kombinacjach głosek, jakimi są opisane.
+
+Przykładowo, aby zapisać słowo pad, palce lewej ręki muszą nacisnąć klawisz \steno{P-}, kciuki \steno{A}, a palce prawej ręki \steno{-D}, dając akord \steno{PAD}.
+
+W ten sam sposób działa to w przypadku głosek, jakie nie mają przypisanego pojedynczego klawisza --- chrząszcz również zostanie podzielony na "chrz" po lewej stronie, "ą" na środku, i "szcz" po prawej; w jaki sposób uzyskiwać takie głoski zostanie przedstawione w późniejszych lekcjach.
+
+\subsection*{Usuwanie akordów}
+
+W przypadku naciśnięcia błędnego akordu, można cofnąć ten ruch, z wykorzystaniem akordu \steno{*}. Warto jednak starać się, by ten akord wykorzystywany był jak najrzadziej -- napisanie akordu trochę wolniej, ale od razu poprawnie zawsze będzie szybsze niż szybkie wybranie błędnego, poprawka, i podanie poprawnego.
+
+\subsection*{Narzędzia do nauki}
+
+Stenotypię można ćwiczyć na kilka sposobów. Najistotniejsze z nich to:
+\begin{itemize}
+	\item przepisywanie ćwiczeń
+	\item komputerowe narzędzia do nauki
+	\item pisanie ze słuchu
+	\item teksty dowolne
+\end{itemize}
+
+Przepisywanie ćwiczeń z podręcznika w standardowym edytorze tekstu\footnote{Z wyjątkiem domyślnego Notatnika w systemie Windows -- z niewyjaśnionych powodów nie współpracuje on z oporogramowaniem Plover} jest najprostszym do wykonania sposobem na ćwiczenie się w sztuce stenotypii. Jego główną wadą jest fakt, że nieustannie przenosi się wzrok tam i z powrotem między tekstem źródłowym a tekstem właśnie pisanym, jak również relatywnie niski wgląd w parametry pisania. Jednakże, nie wymaga żadnych specjalnych przygotowań.
+
+Korzystanie z komputerowych programów przeznaczonych do nauki szybkiego pisania oraz stenotypowania jest bardzo popularne pośród osób zajmujących się stenografią maszynową. Te programy często oferują takie możliwości jak mierzenie prędkości pisania, czy też poprawności pisania. Na szczególną uwagę zasługują dwa najpopularniejsze narzędzia:
+\begin{itemize}
+	\item \href{https://monkeytype.com/}{Monkeytype} --- narzędzie przeznaczone do nauki szybkiego pisania, niezależnie od metody. Jego głównymi zaletami są: łatwy w obsłudze interfejs, wbudowana obsługa języka polskiego, z kolei wadami -- dostosowanie przede wszystkim do klasycznego szybkiego pisania (co lekko zniekształca niektóre statystyki).
+	\item \href{https://didoesdigital.com/typey-type/}{Typey type} --- narzędzie przeznaczone specjalnie do nauki stenografowania, co stanowi jego główną zaletę. Nie ma problemów ze zmianą dotychczas napisanego tekstu pod wpływem nowych akordów, oraz oferuje wiele narzędzi bardzo użytecznych dla stenotypistów. Główną wadą jest to, że nie ma wsparcia dla języka polskiego, i w związku z tym niektóre spośród tych użytecznych narzędzi nie będą działać prawidłowo.
+\end{itemize}
+W przypadku obu tych programów, aby móc wykonywać ćwiczenia, konieczne będzie tworzenie lekcji specjalnych (custom lessons). W \href{https://github.com/bspat/Stenotypia-polska/tree/main/podrecznik/cwiczenia}{repozytorium projektu} znajduje się zakładka z ćwiczeniami z podręcznika w formacie gotowym do przeklejenia do tych dwóch programów. W przypadku Monkeytype możliwe jest korzystanie z przygotowanych przez autorów lekcji po dojściu do etapu pisania tekstów dowolnych.
+
+Pisanie ze słuchu jest bardzo dobrym ćwiczeniem dla każdego stenotypisty. Pozwala skupić się na pisanym tekście, oraz dostosowywać tempo do potrzeb. Wymaga jednak drugiej osoby chętnej do pomocy.\footnote{Ta metoda jest szczególnie polecana dla osób, które uczą się w większej grupie.}
+
+Pisanie tekstów dowolnych jest najtrudniejszym, choć najbardziej owocnym rodzajem ćwiczenia. Polega na pisaniu dowolnego tekstu (nie ćwiczeń z podręcznika) w jeden z wyżej wymienionych sposobów. Choć ten podręcznik ma na celu jak najszybsze umożliwienie posługiwania się tą metodą, nie należy jej zaczynać przedwcześnie, gdyż będzie to trudne oraz bardzo frustrujące.
+
+\subsection*{Praktyka}
+
+\subsubsection{Instalacja słowników}
+
+W ramach części praktycznej, należy zainstalować słowniki dla PSS. Są one dostępne pod \href{https://github.com/bspat/Stenotypia-polska/tree/main/system/slowniki}{tym linikiem}. Należy się tam udać i ścignąć wszystkie słowniki z folderu oznaczonego jako Poziom 0. Są one niezbędne do dalszego udziału w kursie.
+
+\subsubsection{Ćwiczenia}
+
+Począwszy od tej lekcji, ćwiczenia należy przepisywać w dowolnym edytorze tekstu (z wyłączeniem domyślnego Notatnika w Windows), lub z wykorzystaniem zaprezentowanych w tej lekcji stron do nauki stenotypii.
+
+\emph{Przed rozpoczęciem stenotypowania należy upewnić się, że włączone jest korzystanie ze słowników - Enabled po prawej stronie okna programu.}
+
+\LARGE
+\begin{tabular}{c c c c c c}
+	pad & rum & a & ar & jak & lin \\
+	er & tur & lew & ser & i & zew \\
+	tym & pal & wir & syn & tir & wiz \\
+	sum & te & win & ty & paw & ja \\
+	wy & tak & ryz & kaw & kur & jar \\
+	tu & ze & we & ku & wam & pan \\
+	tan & lud & pic & lic & kac & rym \\
+	wal & fal & faz & fan & fur & kir \\
+	luk & lec & lur & lir & len & law \\
+\end{tabular}
+\normalsize
+
+% ==============================================================================
+\newpage
+\section{4. Samogłoski podstawowe}
+\emph{W tej lekcji zostaną przedstawione samogłoski podstawowe w formie prostej i zmiękczającej oraz pierwsze znaki interpunkcyjne.}
+
+Jak można zauważyć, na klawiaturze stenotypicznej brakuje wielu samogłosek -- zarówno w wariantach podstawowych, jak i "jotowanych" (np. ia). Aby je uzyskać, trzeba będzie zacząć tworzyć kombinacje.
+
+\subsection*{Samogłoski podstawowe}
+
+W wariantach podstawowych 5 z 9 samogłosek języka polskiego (a, e, i, u, y) jest dostępnych bezpośrednio z klawiatury. Pozostałe to:
+
+\begin{center}
+	\Large
+	\begin{tabular}{| c | c | c |}
+		\hline
+		Głoska & Akord & Wygląd \\ \hline
+		o & \steno{AU} & \includegraphics[height=12pt]{grafika/kciuki/AU.jpg} \\ \hline
+		ą & \steno{EAU} & \includegraphics[height=12pt]{grafika/kciuki/EAU.jpg} \\ \hline
+		ę & \steno{EYA} & \includegraphics[height=12pt]{grafika/kciuki/EYA.jpg} \\ \hline
+		ó & \steno{EY} & \includegraphics[height=12pt]{grafika/kciuki/EY.jpg} \\ \hline
+	\end{tabular}
+\end{center}
+
+Przykładowo, oznacza to, że aby zapisać słowo "kod" trzeba będzie nacisnąć akord \steno{KAUD}, "pąk" zostanie zapisany jako \steno{PEAUK}, "lęk" jako \steno{LEYAK}, a "lód" jako \steno{LEYD}.
+
+\subsection*{Samogłoski zmiękczające}
+
+Oprócz prostych samogłosek, w języku polskim bardzo często są połączenia z głoską i - "ie" w "bieg", "ia" w "biały", "ią" w "piątek" etc. W PSS takie zbitki nazywane są, ze względu na swoje zachowanie, samogłoskami zmiękczającymi. W większości przypadków zyskuje się je w bardzo prosty sposób: do zwykłego akordu dodaje się klawisz I.
+\begin{center}
+	\Large 
+	\begin{tabular}{| c | c | c |}
+		\hline
+		Głoska & Akord & Wygląd \\ \hline
+		ia & \steno{IA} & \includegraphics[height=12pt]{grafika/kciuki/IA.jpg} \\ \hline
+		ie & \steno{EI} & \includegraphics[height=12pt]{grafika/kciuki/EI.jpg} \\ \hline 
+		iu & \steno{IU} & \includegraphics[height=12pt]{grafika/kciuki/IU.jpg} \\ \hline 
+		io & \steno{IAU} & \includegraphics[height=12pt]{grafika/kciuki/IAU.jpg} \\ \hline 
+	\end{tabular}
+\end{center}
+
+Wyjątek stanowią "ió", "ią" oraz "ię", które ze względów wyjaśnionych w kolejnej lekcji mają postać następującą:
+
+\begin{center}
+	\Large
+	\begin{tabular}{| c | c | c |}
+		\hline
+		Głoska & Akord & Wygląd \\ \hline 
+		ią & \stenoExc{YA} & \includegraphics[height=12pt]{grafika/kciuki/YA.jpg} \\ \hline
+		ię & \stenoExc{EIA} & \includegraphics[height=12pt]{grafika/kciuki/EIA.jpg} \\ \hline
+		ió & \stenoExc{E\#Y} & \includegraphics[height=12pt]{grafika/kciuki/EhY.jpg} \\ \hline
+	\end{tabular}
+\end{center}
+
+\subsection*{Dyftongi}
+
+W ramach lekcji poświęconej samogłoskom, konieczne jest wspomnienie o dyftongach. W języku polskim (a co za tym idzie, w PSS) wyróżnia się dwa dyftongi:
+
+\begin{center}
+	\Large
+	\begin{tabular}{| c | c | c |}
+		\hline
+		Głoska & Akord & Wygląd \\ \hline 
+		au & \stenoExc{EA} & \includegraphics[height=12pt]{grafika/kciuki/EA.jpg} \\ \hline
+		eu & \steno{EU} & \includegraphics[height=12pt]{grafika/kciuki/EU.jpg} \\ \hline
+	\end{tabular}
+\end{center}
+
+Akord dla "au" jest nieituicyjny ze względu na konfliktowanie z akordem dla "o" (które jest znacznie częstsze).
+
+\subsection*{Podsumowanie samogłosek prostych}
+
+Akordy dla wszystkich samogłosek poznanych do tej pory wyglądają następująco:
+
+\begin{center}
+	\Large
+	\begin{tabular}{| c | c | c | c | c | c |}
+		\hline
+		Głoska & Akord & Wygląd & Głoska & Akord & Wygląd \\ \hline
+		a & \steno{A} & \includegraphics[height=12pt]{grafika/kciuki/A.jpg} & ia & \steno{IA} & \includegraphics[height=12pt]{grafika/kciuki/IA.jpg} \\ \hline
+		ą & \steno{EAU} & \includegraphics[height=12pt]{grafika/kciuki/EAU.jpg} & ią & \stenoExc{YA} & \includegraphics[height=12pt]{grafika/kciuki/YA.jpg} \\ \hline
+		e & \steno{E} & \includegraphics[height=12pt]{grafika/kciuki/E.jpg} & ie & \steno{EI} & \includegraphics[height=12pt]{grafika/kciuki/EI.jpg} \\ \hline
+		ę & \steno{EYA} & \includegraphics[height=12pt]{grafika/kciuki/EYA.jpg} & ię & \stenoExc{EIA} & \includegraphics[height=12pt]{grafika/kciuki/EIA.jpg} \\ \hline
+		i & \steno{I} & \includegraphics[height=12pt]{grafika/kciuki/I.jpg} & --- & --- & --- \\ \hline
+		o & \steno{AU} & \includegraphics[height=12pt]{grafika/kciuki/AU.jpg} & io & \steno{IAU} & \includegraphics[height=12pt]{grafika/kciuki/IAU.jpg} \\ \hline
+		ó & \steno{EY} & \includegraphics[height=12pt]{grafika/kciuki/EY.jpg} & ió & \stenoExc{E\#Y} & \includegraphics[height=12pt]{grafika/kciuki/EhY.jpg} \\ \hline
+		u & \steno{U} & \includegraphics[height=12pt]{grafika/kciuki/U.jpg} & iu & \steno{IU} & \includegraphics[height=12pt]{grafika/kciuki/IU.jpg} \\ \hline
+		y & \steno{Y} & \includegraphics[height=12pt]{grafika/kciuki/Y.jpg} & --- & --- & --- \\ \hline
+		au & \stenoExc{EA} & \includegraphics[height=12pt]{grafika/kciuki/EA.jpg} & eu & \steno{EU} & \includegraphics[height=12pt]{grafika/kciuki/EU.jpg} \\ \hline
+	\end{tabular}
+\end{center}
+
+
+\emph{UWAGA --- o tym, jak uzyskiwać samogłosek spoza klawiatury oraz zmiękczonych w połączeniu z akordami wykorzystującymi klawisz J (spośród poznanych dotychczas jest to wyłącznie j) będzie oddzielna lekcja! Do tego czasu należy powstrzymać się od tworzenia słów łączących j z tymi głoskami.}
+
+\subsection*{Dodatek --- Kropka i przecinek}
+
+\emph{Od tego momentu na końcu części teoretycznej będą przedstawiane akordy specjalne, bardzo użyteczne, ale wyprzedzające materiał. Są one przeznaczone dla osób chcących szybko zacząć pisać teksty; jeżeli ktoś nie chce z tej części korzystać, nic nie traci --- cały przedstawiony tutaj materiał będzie również przedstawiony w standardowy sposób, w specjalnie poświęconych mu lekcjach.}
+
+Poniżej przedstawione są akordy dla dwóch najczęściej występujących znaków interpunkcyjnych: kropki oraz przecinka.
+
+\begin{center}
+	\Large
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Znaczenie & Akord & Wygląd \\ \hline
+		kropka . & \steno{P-M} & \includegraphics[height=20pt]{grafika/pelna/P-M.jpg} \\ \hline
+		przecinek , & \steno{W-N} & \includegraphics[height=20pt]{grafika/pelna/W-N.jpg} \\ \hline
+	\end{tabular}
+\end{center}
+
+Przy użyciu kropki, automatycznie rozpoczyna ona kolejne słowo dużą literą.
+
+\subsection*{Praktyka}
+
+\subsubsection{Ćwiczenie --- głoski}
+\LARGE
+\begin{tabular}{c c c c c c}
+	a & ia & ą & ią & e & ie \\
+	ę & ię & i & o & io & y \\
+	ó & ió & u & iu & au & eu \\
+\end{tabular}
+
+\subsubsection{Ćwiczenie --- słowa}
+
+\begin{tabular}{c c c c c c}
+	to & on & koc & od & ów & sów \\
+	kod & więc & piór & wiąz & wór & siec \\
+	rąk & sęk & się & ziem & siad & tiul \\
+	siew & sąd & pion & pąk & lęk & rów \\
+\end{tabular}
+\normalsize
+
+\subsubsection{* Zdania}
+\emph{Zadania z kropką są przeznaczone dla osób zaznajomionych z materiałem przedstawionym w dodatkach.}
+
+\Large
+To ja, a to ty. On wie jak, więc je. Tu koc, a tam sum i lin. A więc i on, i ty tam. Ten i ów pan pion je piór od sów.
+\normalsize
+
+\newpage
+
+\section{Kolejne lekcje już wkrótce}
+
+Prace nad podręcznikiem trwają cały czas - kolejne wersje, poszerzone o dalszy materiał będą wydawane co jakiś czas.
+
+Ta kopia została wydana: \today
+
 
 \chapter{Pełny opis systemu}
+
+W tej części książki jest przedstawiony pełny, encyklopedyczny opis Polskiego Systemu Stenotypii. Jego celem jest zgromadzenie w jednym miejscu wszystkich podstawowych założeń systemu. \emph{Nie} jest zaprojektowana jako materiał służący do nauki systemu od podstaw, lecz raczej jako materiał odwoławczy dla aktywnych użytkowników w przypadku natknięcia się na jakiś problem.
+
+\newpage
+
 \section{Klawiatura}
 \includegraphics[width=12cm]{grafika/klawiatura.jpg}
 
@@ -195,8 +589,11 @@ jest podzielona na cztery części:
 \end{itemize}
 
 \includegraphics[width=12cm]{grafika/pozycjepoczatkowe.jpg}
+
 Początkowe pozycje poszczególnych palców razem z obsługiwanymi przez nie
 klawiszami.
+
+\newpage
 
 \section{Budowa akordu}
 Akord --- jednoczesne wciśnięcie i puszczenie pewnej ilości klawiszy na
@@ -245,6 +642,8 @@ Spółgłoski końcowe są zapisywane palcami prawej dłoni. Są to spółgłosk
 występujące \emph{po} samogłosce w danym akordzie. Lista poszczególnych
 kombinacji dostępna jest w rozdziale poświęconym
 \hyperref[sec:koncowe]{spółgłoskom końcowym}.
+
+\newpage
 
 \subsubsection{Skrócony opis znajdywania rdzeni w poszczególnych wyrazach}
 
@@ -348,6 +747,8 @@ użytkownika powodujące powstawanie najmniejszej ilości konfliktów).}
 przedstawiony tam sposób budowania przyrostków jest najprostszy, najwolniejszy,
 i w docelowej postaci systemu będzie jedynie początkowym stadium.}
 
+\newpage
+
 \subsection{Przyrostki}
 
 Przyrostki to akordy, których przeznaczeniem jest połączyć się z poprzednim
@@ -394,6 +795,8 @@ kot + -ie $\rightarrow$ kocie
 Wyrazy, których nie dotyczy ta zasada (sympatia, apatia etc.) są uwzględnione w
 słowniku i nie podlegają temu zjawisku automatycznie.
 
+\newpage
+
 \subsection{Przedrostki}
 \label{ssec:przedrostki}
 Przedrostki to akordy, które mają połączyć się z kolejnym podanym akordem ---
@@ -413,18 +816,27 @@ powinna być skróceniami.
 Przykładowe przedrostki to prze (prze-/pych), od (od-/raz/-a), nad
 (nad-/bud/-ów/-ka).
 
+\newpage
+
 \subsection{Specjalne}
 Istnieją akordy o specjalnym znaczeniu:
 
 \begin{tabular}{| c | p{6cm} |}
 	\hline
 	Akord & Znaczenie \\ \hline
-	\stenoExc{XF--VD} & Połączenie dwóch rdzeni bez spacji \\ \hline
-	\stenoExc{XF}\hyperref[sec:samogloski]{samogłoska}\stenoExc{VD} &
+	\stenoExc{*} & Usunięcie poprzedniego akordu \\ \hline
+	\stenoExc{X} & Powtórzenie poprzedniego akordu \\ \hline
+	\stenoExc{\#*} & Połączenie dwóch rdzeni bez spacji \\ \hline
+	\stenoExc{\#} & Wymuszenie spacji \\ \hline
+	\stenoExc{XF}\hyperref[sec:samogloski]{samogłoska} (lub inna cząstka)
+	\stenoExc{VD} &
 	Połączenie dwóch rdzeni bez spacji, ze wstawieniem odpowiedniego wrostka
 	\\ \hline
-	\stenoExc{XF*VD} & Wymuszenie spacji \\ \hline
 \end{tabular}
+
+Oprócz nich, istnieją inne akordy skonstruowane poza schematem nagłos - samogłoska - wygłos. Służą one do wpisywania \hyperref[sec:liczby]{liczb i liczebników}, \hyperref[sec:interpunkcja]{interpunkcji i formatowania} oraz \hyperref[sec:komputer]{emulacji klawiatury komputerowej}. Są one przedstawione w odpowiednich sekcjach.
+
+\newpage
 
 \section{Samogłoski}
 \label{sec:samogloski}
@@ -480,6 +892,219 @@ W poniższych przykładach wykorzystuje się spółgłoski początkowe: p ---
 	\item ba --- \steno{PJA}
 	\item bia --- \steno{PIYA}
 \end{itemize}
+
+\newpage
+
+\section{Interpunkcja i formatowanie}
+\label{sec:interpunkcja}
+
+\subsection{Interpunkcja}
+
+W poniższej tabeli są przedstawione akordy pozwalające wpisywać różne znaki 
+interpunkcyjne. Każdy ze znaków domyślnie zachowuje się jak znak 
+interpunkcyjny. Aby wymusić na nim brak wpływu na formatowanie sąsiednich 
+wyrazów oraz bezpośrednie łączenie z sąsiadami,należy dodać do akurdu klawisze 
+\steno{\#*}. W przypadku konieczności wykorzystania znaków specjalnych w 
+funkcji innej niż interpunkcja należy użyć znaków z części \hyperref
+[sec:komputer]{użytkowanie komputera}.
+
+\begin{tabular}{| c | c |}
+	\hline
+	Znak & Akord \\ \hline
+	przecinek , & \steno{W-N}\\ \hline
+	kropka . & \steno{P-M}\\ \hline
+	znak zapytania ? & \steno{W-M} \\ \hline
+	wykrzyknik ! & \steno{P-N} \\ \hline
+	dwukropek : & \steno{LR-ZM} \\ \hline
+	średnik ; & \steno{PW-MN} \\ \hline
+	apostrof ' & \steno{KT-CL} \\ \hline
+	kreska pionowa | & \steno{ZS-KW} \\ \hline
+	tylda \~ & \steno{ZKP-MCK} \\ \hline
+	małpa @ & \steno{PWLR-ZRMN} \\ \hline
+	podkreślnik \_ & \steno{STW-NLW} \\ \hline
+	myślnik --- & \steno{ST-LW} \\ \hline
+	wielokropek \ldots & \steno{ZK-CK} \\ \hline
+	prawy ukośnik / & \steno{WR-ZM} \\ \hline
+	lewy ukośnik \textbackslash & \steno{PL-MN} \\ \hline
+	nawias lewy ( & \steno{STWR-RNLW} \\ \hline
+	nawias prawy ) & \steno{ZKPL-ZMCK} \\ \hline
+	cudzysłów otwierający ,, & \steno{TWR-RNL} \\ \hline
+	cudzysłów zamykający '' & \steno{KPL-ZMC} \\ \hline
+	nawias kwadratowy lewy [ & \steno{KTPW-RNLW} \\ \hline
+	nawias kwadratowy prawy ] & \steno{KTPW-ZMCK} \\ \hline
+	nawias klamrowy lewy \{ & \steno{ZSKT-RNLW} \\ \hline
+	nawias klamrowy prawy \} & \steno{ZSKT-ZMCK} \\ \hline	
+\end{tabular}
+
+\label{znaki_liczbowe}
+
+Następujące znaki są powiązane z liczbami, i dlatego ich akordy są 
+przedstawione na schemacie w części poświęconej \hyperref[sec:liczby]{liczbom i 
+liczebnikom}.
+
+\begin{tabular}{| c | c |}
+	\hline
+	Znak & Akord \\ \hline
+	asterysk * & \steno{XJRN} \\ \hline
+	plus + & \steno{XJZM} \\ \hline
+	minus/dywiz - & \steno{XJMC} \\ \hline
+	procent \% & \steno{XJCK} \\ \hline
+	et \& & \steno{XJLW} \\ \hline
+	dolar \$ & \steno{XJKV} \\ \hline
+	kratka \# & \steno{XJ} \\ \hline
+	karetka \^ & \steno{XJWD} \\ \hline
+	znak równości = & \steno{XJVD} \\ \hline
+	znak większości > & \steno{XJV} \\ \hline
+	znak mniejszości < & \steno{XJD} \\ \hline
+\end{tabular}
+
+\subsection{Formatowanie}
+
+Niektóre z akordów, choć nie skutkują wstawieniem widocznego znaku, wpływają na 
+tekst. Są one zgromadzone w poniższej tabeli.
+
+\begin{tabular}{| c | p{5cm} |}
+	\hline
+	Akord & Działanie \\ \hline
+	\steno{R-R} & Nowy akapit (z tabulacją i rozpoczęciem wielką literą)\\ 
+	\hline
+	\steno{R*R} & Nowa linia (bez tabulacji i rozpoczęcia wielką literą)\\ 
+	\hline
+	\steno{L-Z} & Tabulacja \\ \hline
+\end{tabular}
+
+PSS przewiduje możliwość operowania specjalnymi znacznikami dla mówców. Oznaczane one są jako \steno{ZSKTPWLR} oraz odpowiedni klawisz po prawej stronie klawiatury. Aby z nich korzystać, należy odpowiednio edytować pozycje w słowniku przed każdą sesją stenografowania.
+
+\newpage
+
+\section{Liczby i liczebniki}
+\label{sec:liczby}
+Liczby (oraz \hyperref[znaki_liczbowe]{znaki interpunkcyjne powiązane z liczbami}) wpisuje się zgodnie z poniższym rysynkiem:
+
+\includegraphics[width=12cm]{grafika/liczbyPSS.jpg}
+
+Należy nacisnąć klawisze \steno{XJ} a następnie wybrać odpowiednią kombinację w prawej części klawiatury w sposób identyczny z klawiaturą numeryczną.
+
+\begin{tabular}{| c | c || c | c |}
+	\hline
+	Liczba & Akord & Liczba & Akord \\ \hline
+	1 & \steno{XJR} & 2 & \steno{XJN} \\ \hline
+	3 & \steno{XJL} & 4 & \steno{XJZR} \\ \hline
+	5 & \steno{XJMN} & 6 & \steno{XJCL} \\ \hline
+	7 & \steno{XJZ} & 8 & \steno{XJM} \\ \hline
+	9 & \steno{XJC} & 0 & \steno{XJK} \\ \hline
+	00 & \steno{XJW} & 000 & \steno{XJKW} \\ \hline
+\end{tabular}
+
+\newpage
+
+\section{Użytkowanie komputera}
+\label{sec:komputer}
+Ponieważ niektóre programy mogą wymagać wywołania skrótów klawiszowych lub 
+konkretnych klawiszy, PSS umożliwia emulację standardowej klawiatury
+komputerowej.
+
+Emulacja jest oparta na standardowym w Polsce układzie klawiatury - programisty (praktycznie identyczny z QWERTY).
+
+Wszystkie przedstawione poniżej kombinacje \emph{NIE POWINNY} być wykorzystywane do normalnego wprowadzania tekstu, z wyjątkiem sytuacji awaryjnych. Nie skutkują one bowiem wypisaniem standardowego tekstu, tylko odpowiednikiem naciśnięcia klawisza. Z tego powodu nie można ich cofnąć standardową operacją \steno{*}.
+
+Aby uzyskać klawisze zawierające litery, należy do odpowiedniego wygłosu dołożyć klawisz \steno{X}.
+
+Aby uzyskać klawisze zawierające cyfry, należy do zwykłego akordu dla liczby dołożyć \steno{X} oraz \steno{*}.
+
+Aby uzyskać klawisze zawierające znaki specjalne, w większości przypadków należy posłużyć się prawą stroną akordu oraz klawiszem \steno{Y}. Wyjątek stanowią klawisze [ oraz ].
+
+W przypadku klawiszy specjalnych przedstawione są one na poniższych schematach.
+
+\includegraphics[width=12cm]{grafika/przemieszczaniePSS.jpg}
+
+\includegraphics[width=12cm]{grafika/funkcyjnePSS.jpg}
+
+Wszystkie kombinacje są zebrane w tabeli poniżej.
+
+\begin{tabular}{|c|c||c|c||c|c||c|c|}
+	\hline
+	Klawisz & Akord & Klawisz & Akord & Klawisz & Akord & Klawisz & Akord\\ \hline
+	Q & \stenoExc{X-KV} & W & \steno{X-W} & E & \steno{XE} & R & \steno{X-R}\\ \hline
+	T & \steno{X-ND} & Y & \steno{XY} & U & \steno{XU} & I & \steno{XI} \\ \hline
+	O & \steno{XAU} & P & \steno{X-MN} & [ & \steno{XYRNLW} & ] & \steno{XYZMCK} \\ \hline
+	A & \steno{XA} & S & \steno{X-ZN} & D & \steno{X-D} & F & \steno{X-NW} \\ \hline
+	G & \steno{X-ZK} & H & \stenoExc{X-ZL} & J & \steno{X-KW} & K & \steno{X-K} \\ \hline
+	L & \steno{X-L} & ; & \steno{XYMN} & ' & \steno{XYCL} & \textbackslash & \stenoExc{XYKW} \\ \hline
+	Z & \steno{X-Z} & X & \steno{X-ZNK} & C & \steno{X-C} & V & \steno{X-V} \\ \hline
+	B & \steno{X-ZMN} & N & \steno{X-N} & M & \steno{X-M} & , & \steno{XYN} \\ \hline
+	. & \steno{XYM} & / & \steno{XYZM} & \textasciigrave & \stenoExc{XYMCK} & 1 & \steno{XJ*R} \\ \hline
+	2 & \steno{XJ*N} & 3 & \steno{XJ*L} & 4 & \steno{XJ*ZR} & 5 & \steno{XJ*MN} \\ \hline
+	6 & \steno{XJ*CL} & 7 & \steno{XJ*Z} & 8 & \steno{XJ*M} & 9 & \steno{XJ*C} \\ \hline
+	0 & \steno{XJ*K} & Insert & \steno{XJEZ} & Delete & \steno{XJEK} & Tab & \steno{XJEW}\\ \hline
+	F1 & \steno{XJAR} & F2 & \steno{XJAN} & F3 & \steno{XJAL} & F4 & \steno{XJAZR} \\ \hline
+	F5 & \steno{XJAMN} & F6 & \steno{XJACL} & F7 & \steno{XJAZ} & F8 & \steno{XJAM} \\ \hline
+	F9 & \steno{XJAC} & F10 & \steno{XJAK} & F11 & \steno{XJAW} & F12 & \steno{XJAKW} \\ \hline
+	spacja & \steno{X\#} & Escape & \steno{XJE} & Backspace & \steno{XJEC} & Enter & \steno{XYR} \\ \hline
+	$\leftarrow$ & \steno{XJER} & $\uparrow$ & \steno{XJEM} & $\downarrow$ & \steno{XJEN} & $\rightarrow$ & \steno{XJEL} \\ \hline
+	Home & \steno{XJEZR} & End & \steno{XJECL} & Page Up & \steno{XJEV} & Page Down & \steno{XJED} \\ \hline
+	PrtScr & \steno{XJARN} & ScrLk & \steno{XJANL} & Pause & \steno{XJALW} & Num Lock & \steno{XJAWD} \\ \hline
+\end{tabular} 
+
+\subsection{Modyfikatory}
+
+\includegraphics[width=10cm]{grafika/modyfikatoryPSS.jpg}
+
+Aby uzyskać efekt naciśnięcia klawisza z modyfikatorem (takim jak klawisz Ctrl, Win, Alt lub Shift) należy do akordu emulowanego klawisza dołożyć znaki zgodnie z poniższą tabelą.
+
+\begin{tabular}{| c | c |}
+	\hline
+	Modyfikator & Akord \\ \hline
+	Shift & + \steno{K-} \\ \hline
+	Alt & + \steno{P-} \\ \hline
+	Ctrl & + \steno{L-} \\ \hline
+	Windows & + \steno{R-} \\ \hline
+\end{tabular}
+
+W przypadku klawiszy z liczbami użycie modyfikatora oznacza opuszczenie klawisza \steno{*}.
+
+\subsection{Przykłady wykorzystania}
+
+\begin{tabular}{| c | c |}
+	\hline
+	Skrót klawiszowy & Akord \\ \hline
+	CTRL + C & \steno{XL-C} \\ \hline
+	CTRL + V & \steno{Xl-V} \\ \hline
+	CTRL + S & \steno{XL-ZN} \\ \hline
+	Win + L & \steno{XR-L} \\ \hline
+	Ctrl + Shift + 1 & \steno{XKLJR} \\ \hline
+\end{tabular}
+
+\newpage
+
+\section{Użytkowanie programu Plover}
+Ponieważ PSS jest przeznaczony do użytkowania z wykorzystaniem programu Plover,
+istnieje grupa komend dotyczących bezpośredno  tego oprogramowania.
+Celem ułatwienia zapamiętania, wszystkie zaczynają się od \steno{PWLR}, 
+przypominajacego wymowę nazwy programu.
+
+\begin{tabular}{| c | c | c | p{5cm} |}
+\hline
+Akord & Mnemonika & Angielska nazwa & Opis działania \\ \hline
+ \steno{PWLR-Z} & Zawieś & Suspend & Zatrzymuje wypisywanie znaków przez
+ Plovera.\\ \hline
+ \steno{PWLR-R} & Rozpocznij & Resume & Przywraca działanie Plovera. Działa
+ również wtedy, kiedy Plover jest zatrzymany.\\ \hline
+ \steno{PWLR-M} & Migaj & Toggle & Przełącza między zatrzymaniem a działaniem
+ Plovera. Działa również wtedy, kiedy Plover jest zatrzymany. \\ \hline
+ \steno{PWLR-N} & Nowe & Add Translation & Otwiera okno pozwalające na wpisanie
+ nowej pozycji do słowników. \\ \hline
+ \steno{PWLR-C} & Co? & Suggestions & Otwiera okno sugestii z możliwymi
+ zamiennikami dla ostatnio wpisanych akordów. \\ \hline
+ \steno{PWLR-L} & Lupa & Lookup & Otwiera okno dialogowe pozwalające
+ przeszukiwać słowniki. \\ \hline
+ \steno{PWLR-K} & Konfiguracja & Configure & Otwiera okno konfiguracji Plovera.
+ \\ \hline
+ \steno{PWLR-W} & Wyjdź & Quit & Zamyka i wyłącza program Plover. \\ \hline
+ \steno{PWLR-D} & Do okna & Focus & Przełącza na okno programu Plover. \\ \hline
+\end{tabular}
+
+\newpage
 
 \newgeometry{left=2cm}
 
@@ -544,13 +1169,13 @@ chc & \steno{ZSKT} & \includegraphics[height=12pt]{grafika/lewa/ZSKT.jpg} & \tex
 \mylabel{tabelalewa:chl/chł}
 chl/chł & \steno{KTL} & \includegraphics[height=12pt]{grafika/lewa/KTL.jpg} & \textcolor{gray}{chl/chł} & \hyperref[tabelalewa:tkl]{tkl} & \hyperref[tabelalewa:hl/hł]{hl/hł} & ---& --- \\ \hline 
 \mylabel{tabelalewa:chm}
-chm & \steno{ZKTPV} & \includegraphics[height=12pt]{grafika/lewa/ZKTPV.jpg} & \textcolor{gray}{chm} & \hyperref[tabelalewa:mch]{mch} & \hyperref[tabelalewa:szm]{szm} & \hyperref[tabelalewa:msz]{msz}& przen \steno{KTP} \\ \hline 
+chm & \steno{ZKTPW} & \includegraphics[height=12pt]{grafika/lewa/ZKTPW.jpg} & \textcolor{gray}{chm} & \hyperref[tabelalewa:mch]{mch} & \hyperref[tabelalewa:szm]{szm} & \hyperref[tabelalewa:msz]{msz}& przen \steno{KTP} \\ \hline 
 \mylabel{tabelalewa:chn}
 chn & \steno{KTLR} & \includegraphics[height=12pt]{grafika/lewa/KTLR.jpg} & \textcolor{gray}{chn} \hyperref[tabelalewa:tkn]{tkn} & \hyperref[tabelalewa:tchn]{tchn} & \hyperref[tabelalewa:dźgn]{dźgn} \hyperref[tabelalewa:hn]{hn} & ---& --- \\ \hline 
 \mylabel{tabelalewa:chr/chrz}
 chr/chrz & \steno{KTR} & \includegraphics[height=12pt]{grafika/lewa/KTR.jpg} & \textcolor{gray}{chr/chrz} & --- & \hyperref[tabelalewa:hr]{hr} & ---& --- \\ \hline 
 \mylabel{tabelalewa:chw}
-chw & \steno{KTV} & \includegraphics[height=12pt]{grafika/lewa/KTV.jpg} & \textcolor{gray}{chw} \hyperref[tabelalewa:tch]{tch} & \hyperref[tabelalewa:tkw]{tkw} & \hyperref[tabelalewa:hw]{hw} & ---& --- \\ \hline 
+chw & \steno{KTW} & \includegraphics[height=12pt]{grafika/lewa/KTW.jpg} & \textcolor{gray}{chw} \hyperref[tabelalewa:tch]{tch} & \hyperref[tabelalewa:tkw]{tkw} & \hyperref[tabelalewa:hw]{hw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:ckl}
 ckl & \steno{ZSKL} & \includegraphics[height=12pt]{grafika/lewa/ZSKL.jpg} & \textcolor{gray}{ckl} & --- & --- & ---& upr \stenoErr{ZSKL*} \\ \hline 
 \mylabel{tabelalewa:ckn}
@@ -562,31 +1187,31 @@ cm/ćm & \steno{ZSKP} & \includegraphics[height=12pt]{grafika/lewa/ZSKP.jpg} & \
 \mylabel{tabelalewa:cn}
 cn & \steno{ZSLR} & \includegraphics[height=12pt]{grafika/lewa/ZSLR.jpg} & \textcolor{gray}{cn} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:cw/ćw}
-cw/ćw & \steno{ZSV} & \includegraphics[height=12pt]{grafika/lewa/ZSV.jpg} & \textcolor{gray}{cw/ćw} & --- & \hyperref[tabelalewa:dzw/dźw]{dzw/dźw} & ---& --- \\ \hline 
+cw/ćw & \steno{ZSW} & \includegraphics[height=12pt]{grafika/lewa/ZSW.jpg} & \textcolor{gray}{cw/ćw} & --- & \hyperref[tabelalewa:dzw/dźw]{dzw/dźw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:cz}
-cz & \steno{PV} & \includegraphics[height=12pt]{grafika/lewa/PV.jpg} & \textcolor{gray}{cz} & \hyperref[tabelalewa:czcz]{czcz} & \hyperref[tabelalewa:dż]{dż} & \hyperref[tabelalewa:dżdż]{dżdż}& --- \\ \hline 
+cz & \steno{PW} & \includegraphics[height=12pt]{grafika/lewa/PW.jpg} & \textcolor{gray}{cz} & \hyperref[tabelalewa:czcz]{czcz} & \hyperref[tabelalewa:dż]{dż} & \hyperref[tabelalewa:dżdż]{dżdż}& --- \\ \hline 
 \mylabel{tabelalewa:czc}
-czc & \steno{ZSPV} & \includegraphics[height=12pt]{grafika/lewa/ZSPV.jpg} & \textcolor{gray}{czc} & --- & --- & ---& --- \\ \hline 
+czc & \steno{ZSPW} & \includegraphics[height=12pt]{grafika/lewa/ZSPW.jpg} & \textcolor{gray}{czc} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:czch}
-czch & \steno{KTPV*} & \includegraphics[height=12pt]{grafika/lewa/KTPVgwiazdka.jpg} & \hyperref[tabelalewa:mszcz]{mszcz} & \textcolor{gray}{czch} \hyperref[tabelalewa:szkw]{szkw} & --- & ---& --- \\ \hline 
+czch & \steno{KTPW*} & \includegraphics[height=12pt]{grafika/lewa/KTPWgwiazdka.jpg} & \hyperref[tabelalewa:mszcz]{mszcz} & \textcolor{gray}{czch} \hyperref[tabelalewa:szkw]{szkw} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:czchn}
-czchn & \steno{KTPVLR} & \includegraphics[height=12pt]{grafika/lewa/KTPVLR.jpg} & \textcolor{gray}{czchn} & --- & --- & ---& --- \\ \hline 
+czchn & \steno{KTPWLR} & \includegraphics[height=12pt]{grafika/lewa/KTPWLR.jpg} & \textcolor{gray}{czchn} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:czcz}
-czcz & \steno{PV*} & \includegraphics[height=12pt]{grafika/lewa/PVgwiazdka.jpg} & \hyperref[tabelalewa:cz]{cz} & \textcolor{gray}{czcz} & \hyperref[tabelalewa:dż]{dż} & \hyperref[tabelalewa:dżdż]{dżdż}& --- \\ \hline 
+czcz & \steno{PW*} & \includegraphics[height=12pt]{grafika/lewa/PWgwiazdka.jpg} & \hyperref[tabelalewa:cz]{cz} & \textcolor{gray}{czcz} & \hyperref[tabelalewa:dż]{dż} & \hyperref[tabelalewa:dżdż]{dżdż}& --- \\ \hline 
 \mylabel{tabelalewa:czk}
-czk & \steno{KPV*} & \includegraphics[height=12pt]{grafika/lewa/KPVgwiazdka.jpg} & \hyperref[tabelalewa:czm]{czm} \hyperref[tabelalewa:km]{km} & \textcolor{gray}{czk} & \hyperref[tabelalewa:gm]{gm} & \hyperref[tabelalewa:mg]{mg}& --- \\ \hline 
+czk & \steno{KPW*} & \includegraphics[height=12pt]{grafika/lewa/KPWgwiazdka.jpg} & \hyperref[tabelalewa:czm]{czm} \hyperref[tabelalewa:km]{km} & \textcolor{gray}{czk} & \hyperref[tabelalewa:gm]{gm} & \hyperref[tabelalewa:mg]{mg}& --- \\ \hline 
 \mylabel{tabelalewa:czkn}
-czkn & \steno{KPVLR} & \includegraphics[height=12pt]{grafika/lewa/KPVLR.jpg} & \textcolor{gray}{czkn} & --- & --- & ---& --- \\ \hline 
+czkn & \steno{KPWLR} & \includegraphics[height=12pt]{grafika/lewa/KPWLR.jpg} & \textcolor{gray}{czkn} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:czł}
-czł & \steno{PVL} & \includegraphics[height=12pt]{grafika/lewa/PVL.jpg} & \textcolor{gray}{czł} & --- & --- & ---& --- \\ \hline 
+czł & \steno{PWL} & \includegraphics[height=12pt]{grafika/lewa/PWL.jpg} & \textcolor{gray}{czł} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:czm}
-czm & \steno{KPV} & \includegraphics[height=12pt]{grafika/lewa/KPV.jpg} & \textcolor{gray}{czm} \hyperref[tabelalewa:km]{km} & \hyperref[tabelalewa:czk]{czk} & \hyperref[tabelalewa:gm]{gm} & \hyperref[tabelalewa:mg]{mg}& --- \\ \hline 
+czm & \steno{KPW} & \includegraphics[height=12pt]{grafika/lewa/KPW.jpg} & \textcolor{gray}{czm} \hyperref[tabelalewa:km]{km} & \hyperref[tabelalewa:czk]{czk} & \hyperref[tabelalewa:gm]{gm} & \hyperref[tabelalewa:mg]{mg}& --- \\ \hline 
 \mylabel{tabelalewa:czn}
-czn & \steno{PVLR} & \includegraphics[height=12pt]{grafika/lewa/PVLR.jpg} & \textcolor{gray}{czn} & --- & \hyperref[tabelalewa:ndż]{ndż} & ---& --- \\ \hline 
+czn & \steno{PWLR} & \includegraphics[height=12pt]{grafika/lewa/PWLR.jpg} & \textcolor{gray}{czn} & --- & \hyperref[tabelalewa:ndż]{ndż} & ---& --- \\ \hline 
 \mylabel{tabelalewa:czt}
-czt & \steno{TPV*} & \includegraphics[height=12pt]{grafika/lewa/TPVgwiazdka.jpg} & \hyperref[tabelalewa:tcz]{tcz} & \textcolor{gray}{czt} & \hyperref[tabelalewa:żw]{żw} & ---& --- \\ \hline 
+czt & \steno{TPW*} & \includegraphics[height=12pt]{grafika/lewa/TPWgwiazdka.jpg} & \hyperref[tabelalewa:tcz]{tcz} & \textcolor{gray}{czt} & \hyperref[tabelalewa:żw]{żw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:czw}
-czw & \steno{PVR} & \includegraphics[height=12pt]{grafika/lewa/PVR.jpg} & \textcolor{gray}{czw} & --- & --- & ---& upr \stenoErr{PV} \\ \hline 
+czw & \steno{PWR} & \includegraphics[height=12pt]{grafika/lewa/PWR.jpg} & \textcolor{gray}{czw} & --- & --- & ---& upr \stenoErr{PW} \\ \hline 
 \mylabel{tabelalewa:ćk}
 ćk & \steno{ZSK} & \includegraphics[height=12pt]{grafika/lewa/ZSK.jpg} & \textcolor{gray}{ćk} \hyperref[tabelalewa:kc]{kc} & --- & \hyperref[tabelalewa:dźg]{dźg} & ---& upr \stenoErr{ZSK*} \\ \hline 
 \mylabel{tabelalewa:ćp}
@@ -606,21 +1231,21 @@ dn & \steno{TLRJ} & \includegraphics[height=12pt]{grafika/lewa/TLRJ.jpg} & \hype
 \mylabel{tabelalewa:dr/drz}
 dr/drz & \steno{TRJ} & \includegraphics[height=12pt]{grafika/lewa/TRJ.jpg} & \hyperref[tabelalewa:tr]{tr} & \hyperref[tabelalewa:rt]{rt} & \textcolor{gray}{dr/drz} & \hyperref[tabelalewa:rd]{rd}& --- \\ \hline 
 \mylabel{tabelalewa:dw}
-dw & \steno{TVJ} & \includegraphics[height=12pt]{grafika/lewa/TVJ.jpg} & \hyperref[tabelalewa:tw]{tw} & --- & \textcolor{gray}{dw} & ---& --- \\ \hline 
+dw & \steno{TWJ} & \includegraphics[height=12pt]{grafika/lewa/TWJ.jpg} & \hyperref[tabelalewa:tw]{tw} & --- & \textcolor{gray}{dw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:dz}
 dz & \steno{ZSJ} & \includegraphics[height=12pt]{grafika/lewa/ZSJ.jpg} & \hyperref[tabelalewa:c]{c} & \hyperref[tabelalewa:śc]{śc} \hyperref[tabelalewa:zs]{zs} & \textcolor{gray}{dz} & ---& --- \\ \hline 
 \mylabel{tabelalewa:dzb}
 dzb & \steno{ZSPJ} & \includegraphics[height=12pt]{grafika/lewa/ZSPJ.jpg} & \hyperref[tabelalewa:ćp]{ćp} & \hyperref[tabelalewa:pć]{pć} & \textcolor{gray}{dzb} \hyperref[tabelalewa:źdźb]{źdźb} & \hyperref[tabelalewa:bźdz]{bźdz}& --- \\ \hline 
 \mylabel{tabelalewa:dzw/dźw}
-dzw/dźw & \steno{ZSVJ} & \includegraphics[height=12pt]{grafika/lewa/ZSVJ.jpg} & \hyperref[tabelalewa:cw/ćw]{cw/ćw} & --- & \textcolor{gray}{dzw/dźw} & ---& --- \\ \hline 
+dzw/dźw & \steno{ZSWJ} & \includegraphics[height=12pt]{grafika/lewa/ZSWJ.jpg} & \hyperref[tabelalewa:cw/ćw]{cw/ćw} & --- & \textcolor{gray}{dzw/dźw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:dźg}
 dźg & \steno{ZSKJ} & \includegraphics[height=12pt]{grafika/lewa/ZSKJ.jpg} & \hyperref[tabelalewa:ćk]{ćk} \hyperref[tabelalewa:kc]{kc} & --- & \textcolor{gray}{dźg} & ---& --- \\ \hline 
 \mylabel{tabelalewa:dźgn}
 dźgn & \steno{KTLRJ} & \includegraphics[height=12pt]{grafika/lewa/KTLRJ.jpg} & \hyperref[tabelalewa:chn]{chn} \hyperref[tabelalewa:tkn]{tkn} & \hyperref[tabelalewa:tchn]{tchn} & \textcolor{gray}{dźgn} \hyperref[tabelalewa:hn]{hn} & ---& --- \\ \hline 
 \mylabel{tabelalewa:dż}
-dż & \steno{PVJ} & \includegraphics[height=12pt]{grafika/lewa/PVJ.jpg} & \hyperref[tabelalewa:cz]{cz} & \hyperref[tabelalewa:czcz]{czcz} & \textcolor{gray}{dż} & \hyperref[tabelalewa:dżdż]{dżdż}& --- \\ \hline 
+dż & \steno{PWJ} & \includegraphics[height=12pt]{grafika/lewa/PWJ.jpg} & \hyperref[tabelalewa:cz]{cz} & \hyperref[tabelalewa:czcz]{czcz} & \textcolor{gray}{dż} & \hyperref[tabelalewa:dżdż]{dżdż}& --- \\ \hline 
 \mylabel{tabelalewa:dżdż}
-dżdż & \steno{PVJ*} & \includegraphics[height=12pt]{grafika/lewa/PVJgwiazdka.jpg} & \hyperref[tabelalewa:cz]{cz} & \hyperref[tabelalewa:czcz]{czcz} & \hyperref[tabelalewa:dż]{dż} & \textcolor{gray}{dżdż}& --- \\ \hline 
+dżdż & \steno{PWJ*} & \includegraphics[height=12pt]{grafika/lewa/PWJgwiazdka.jpg} & \hyperref[tabelalewa:cz]{cz} & \hyperref[tabelalewa:czcz]{czcz} & \hyperref[tabelalewa:dż]{dż} & \textcolor{gray}{dżdż}& --- \\ \hline 
 \mylabel{tabelalewa:f}
 f & \steno{F} & \includegraphics[height=12pt]{grafika/lewa/F.jpg} & \textcolor{gray}{f} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:fl}
@@ -642,15 +1267,15 @@ gj & \steno{KJ*} & \includegraphics[height=12pt]{grafika/lewa/KJgwiazdka.jpg} & 
 \mylabel{tabelalewa:gł/gł}
 gł/gł & \steno{KLJ} & \includegraphics[height=12pt]{grafika/lewa/KLJ.jpg} & \hyperref[tabelalewa:kl/kł]{kl/kł} & \hyperref[tabelalewa:łk]{łk} & \textcolor{gray}{gł/gł} & \hyperref[tabelalewa:lg]{lg}& --- \\ \hline 
 \mylabel{tabelalewa:gm}
-gm & \steno{KPVJ} & \includegraphics[height=12pt]{grafika/lewa/KPVJ.jpg} & \hyperref[tabelalewa:czm]{czm} \hyperref[tabelalewa:km]{km} & \hyperref[tabelalewa:czk]{czk} & \textcolor{gray}{gm} & \hyperref[tabelalewa:mg]{mg}& wyjątek \stenoErr{KPJ} \\ \hline 
+gm & \steno{KPWJ} & \includegraphics[height=12pt]{grafika/lewa/KPWJ.jpg} & \hyperref[tabelalewa:czm]{czm} \hyperref[tabelalewa:km]{km} & \hyperref[tabelalewa:czk]{czk} & \textcolor{gray}{gm} & \hyperref[tabelalewa:mg]{mg}& wyjątek \stenoErr{KPJ} \\ \hline 
 \mylabel{tabelalewa:gn}
 gn & \steno{KLRJ} & \includegraphics[height=12pt]{grafika/lewa/KLRJ.jpg} & \hyperref[tabelalewa:kn]{kn} & --- & \textcolor{gray}{gn} & \hyperref[tabelalewa:lgn]{lgn} \hyperref[tabelalewa:ng]{ng}& --- \\ \hline 
 \mylabel{tabelalewa:gr/grz}
 gr/grz & \steno{KRJ} & \includegraphics[height=12pt]{grafika/lewa/KRJ.jpg} & \hyperref[tabelalewa:kr/krz]{kr/krz} & --- & \textcolor{gray}{gr/grz} & ---& --- \\ \hline 
 \mylabel{tabelalewa:gw}
-gw & \steno{KVJ} & \includegraphics[height=12pt]{grafika/lewa/KVJ.jpg} & \hyperref[tabelalewa:kw]{kw} & --- & \textcolor{gray}{gw} & ---& --- \\ \hline 
+gw & \steno{KWJ} & \includegraphics[height=12pt]{grafika/lewa/KWJ.jpg} & \hyperref[tabelalewa:kw]{kw} & --- & \textcolor{gray}{gw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:gwdz}
-gwdz & \steno{ZSKV} & \includegraphics[height=12pt]{grafika/lewa/ZSKV.jpg} & \textcolor{gray}{gwdz} & --- & --- & ---& upr \stenoErr{ZSKVJ*} \\ \hline 
+gwdz & \steno{ZSKW} & \includegraphics[height=12pt]{grafika/lewa/ZSKW.jpg} & \textcolor{gray}{gwdz} & --- & --- & ---& upr \stenoErr{ZSKWJ*} \\ \hline 
 \mylabel{tabelalewa:gz}
 gz & \steno{ZKJ*} & \includegraphics[height=12pt]{grafika/lewa/ZKJgwiazdka.jpg} & --- & --- & \hyperref[tabelalewa:zg/źg]{zg/źg} & \textcolor{gray}{gz}& --- \\ \hline 
 \mylabel{tabelalewa:gż}
@@ -664,7 +1289,7 @@ hn & \steno{KTLRJ} & \includegraphics[height=12pt]{grafika/lewa/KTLRJ.jpg} & \hy
 \mylabel{tabelalewa:hr}
 hr & \steno{KTRJ} & \includegraphics[height=12pt]{grafika/lewa/KTRJ.jpg} & \hyperref[tabelalewa:chr/chrz]{chr/chrz} & --- & \textcolor{gray}{hr} & ---& --- \\ \hline 
 \mylabel{tabelalewa:hw}
-hw & \steno{KTVJ} & \includegraphics[height=12pt]{grafika/lewa/KTVJ.jpg} & \hyperref[tabelalewa:chw]{chw} \hyperref[tabelalewa:tch]{tch} & \hyperref[tabelalewa:tkw]{tkw} & \textcolor{gray}{hw} & ---& --- \\ \hline 
+hw & \steno{KTWJ} & \includegraphics[height=12pt]{grafika/lewa/KTWJ.jpg} & \hyperref[tabelalewa:chw]{chw} \hyperref[tabelalewa:tch]{tch} & \hyperref[tabelalewa:tkw]{tkw} & \textcolor{gray}{hw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:j}
 j & \steno{J} & \includegraphics[height=12pt]{grafika/lewa/J.jpg} & --- & --- & \textcolor{gray}{j} & ---& --- \\ \hline 
 \mylabel{tabelalewa:k}
@@ -674,7 +1299,7 @@ kc & \steno{ZSK} & \includegraphics[height=12pt]{grafika/lewa/ZSK.jpg} & \hyperr
 \mylabel{tabelalewa:kl/kł}
 kl/kł & \steno{KL} & \includegraphics[height=12pt]{grafika/lewa/KL.jpg} & \textcolor{gray}{kl/kł} & \hyperref[tabelalewa:łk]{łk} & \hyperref[tabelalewa:gł/gł]{gł/gł} & \hyperref[tabelalewa:lg]{lg}& --- \\ \hline 
 \mylabel{tabelalewa:km}
-km & \steno{KPV} & \includegraphics[height=12pt]{grafika/lewa/KPV.jpg} & \hyperref[tabelalewa:czm]{czm} \textcolor{gray}{km} & \hyperref[tabelalewa:czk]{czk} & \hyperref[tabelalewa:gm]{gm} & \hyperref[tabelalewa:mg]{mg}& wyjątek \stenoErr{KP} \\ \hline 
+km & \steno{KPW} & \includegraphics[height=12pt]{grafika/lewa/KPW.jpg} & \hyperref[tabelalewa:czm]{czm} \textcolor{gray}{km} & \hyperref[tabelalewa:czk]{czk} & \hyperref[tabelalewa:gm]{gm} & \hyperref[tabelalewa:mg]{mg}& wyjątek \stenoErr{KP} \\ \hline 
 \mylabel{tabelalewa:kn}
 kn & \steno{KLR} & \includegraphics[height=12pt]{grafika/lewa/KLR.jpg} & \textcolor{gray}{kn} & --- & \hyperref[tabelalewa:gn]{gn} & \hyperref[tabelalewa:lgn]{lgn} \hyperref[tabelalewa:ng]{ng}& --- \\ \hline 
 \mylabel{tabelalewa:kp}
@@ -690,7 +1315,7 @@ kszt & \steno{KTP} & \includegraphics[height=12pt]{grafika/lewa/KTP.jpg} & \hype
 \mylabel{tabelalewa:kt}
 kt & \steno{KT*} & \includegraphics[height=12pt]{grafika/lewa/KTgwiazdka.jpg} & \hyperref[tabelalewa:ch]{ch} \hyperref[tabelalewa:gdz]{gdz} & \textcolor{gray}{kt} \hyperref[tabelalewa:tk]{tk} & \hyperref[tabelalewa:h]{h} & \hyperref[tabelalewa:gd]{gd}& --- \\ \hline 
 \mylabel{tabelalewa:kw}
-kw & \steno{KV} & \includegraphics[height=12pt]{grafika/lewa/KV.jpg} & \textcolor{gray}{kw} & --- & \hyperref[tabelalewa:gw]{gw} & ---& --- \\ \hline 
+kw & \steno{KW} & \includegraphics[height=12pt]{grafika/lewa/KW.jpg} & \textcolor{gray}{kw} & --- & \hyperref[tabelalewa:gw]{gw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:l}
 l & \steno{L} & \includegraphics[height=12pt]{grafika/lewa/L.jpg} & \textcolor{gray}{l} & --- & \hyperref[tabelalewa:ł]{ł} & ---& --- \\ \hline 
 \mylabel{tabelalewa:lg}
@@ -702,9 +1327,9 @@ ln & \steno{LR*} & \includegraphics[height=12pt]{grafika/lewa/LRgwiazdka.jpg} & 
 \mylabel{tabelalewa:lskn}
 lskn & \steno{SKLR*} & \includegraphics[height=12pt]{grafika/lewa/SKLRgwiazdka.jpg} & \hyperref[tabelalewa:skn]{skn} & \textcolor{gray}{lskn} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:lśn}
-lśn & \steno{SVLR} & \includegraphics[height=12pt]{grafika/lewa/SVLR.jpg} & \textcolor{gray}{lśn} & --- & --- & ---& --- \\ \hline 
+lśn & \steno{SWLR} & \includegraphics[height=12pt]{grafika/lewa/SWLR.jpg} & \textcolor{gray}{lśn} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:lw}
-lw & \steno{VL*} & \includegraphics[height=12pt]{grafika/lewa/VLgwiazdka.jpg} & \hyperref[tabelalewa:wl/wł]{wl/wł} & \textcolor{gray}{lw} & --- & ---& --- \\ \hline 
+lw & \steno{WL*} & \includegraphics[height=12pt]{grafika/lewa/WLgwiazdka.jpg} & \hyperref[tabelalewa:wl/wł]{wl/wł} & \textcolor{gray}{lw} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:lż}
 lż & \steno{TPLJ*} & \includegraphics[height=12pt]{grafika/lewa/TPLJgwiazdka.jpg} & \hyperref[tabelalewa:szl/szł]{szl/szł} & \hyperref[tabelalewa:szpl]{szpl} & \hyperref[tabelalewa:żl/żł]{żl/żł} & \textcolor{gray}{lż}& --- \\ \hline 
 \mylabel{tabelalewa:ł}
@@ -716,11 +1341,11 @@ m & \steno{KP} & \includegraphics[height=12pt]{grafika/lewa/KP.jpg} & \textcolor
 \mylabel{tabelalewa:mb}
 mb & \steno{KPJ*} & \includegraphics[height=12pt]{grafika/lewa/KPJgwiazdka.jpg} & \hyperref[tabelalewa:m]{m} & \hyperref[tabelalewa:kp]{kp} & \hyperref[tabelalewa:gb]{gb} & \textcolor{gray}{mb}& --- \\ \hline 
 \mylabel{tabelalewa:mch}
-mch & \steno{ZKTPV*} & \includegraphics[height=12pt]{grafika/lewa/ZKTPVgwiazdka.jpg} & \hyperref[tabelalewa:chm]{chm} & \textcolor{gray}{mch} & \hyperref[tabelalewa:szm]{szm} & \hyperref[tabelalewa:msz]{msz}& przen \steno{KTP*} \\ \hline 
+mch & \steno{ZKTPW*} & \includegraphics[height=12pt]{grafika/lewa/ZKTPWgwiazdka.jpg} & \hyperref[tabelalewa:chm]{chm} & \textcolor{gray}{mch} & \hyperref[tabelalewa:szm]{szm} & \hyperref[tabelalewa:msz]{msz}& przen \steno{KTP*} \\ \hline 
 \mylabel{tabelalewa:mdl/mdł}
 mdl/mdł & \steno{KTPLJ} & \includegraphics[height=12pt]{grafika/lewa/KTPLJ.jpg} & \hyperref[tabelalewa:pchl/pchł]{pchl/pchł} & \hyperref[tabelalewa:szkl]{szkl} & \textcolor{gray}{mdl/mdł} & ---& --- \\ \hline 
 \mylabel{tabelalewa:mg}
-mg & \steno{KPVJ*} & \includegraphics[height=12pt]{grafika/lewa/KPVJgwiazdka.jpg} & \hyperref[tabelalewa:czm]{czm} \hyperref[tabelalewa:km]{km} & \hyperref[tabelalewa:czk]{czk} & \hyperref[tabelalewa:gm]{gm} & \textcolor{gray}{mg}& wyjątek \stenoErr{KPJ*} \\ \hline 
+mg & \steno{KPWJ*} & \includegraphics[height=12pt]{grafika/lewa/KPWJgwiazdka.jpg} & \hyperref[tabelalewa:czm]{czm} \hyperref[tabelalewa:km]{km} & \hyperref[tabelalewa:czk]{czk} & \hyperref[tabelalewa:gm]{gm} & \textcolor{gray}{mg}& wyjątek \stenoErr{KPJ*} \\ \hline 
 \mylabel{tabelalewa:mgl/mgł}
 mgl/mgł & \steno{KPLJ} & \includegraphics[height=12pt]{grafika/lewa/KPLJ.jpg} & \hyperref[tabelalewa:ml/mł]{ml/mł} & --- & \textcolor{gray}{mgl/mgł} & ---& --- \\ \hline 
 \mylabel{tabelalewa:mgn}
@@ -736,9 +1361,9 @@ mr/mrz & \steno{KPR} & \includegraphics[height=12pt]{grafika/lewa/KPR.jpg} & \te
 \mylabel{tabelalewa:mst}
 mst & \steno{SKTP} & \includegraphics[height=12pt]{grafika/lewa/SKTP.jpg} & \textcolor{gray}{mst} \hyperref[tabelalewa:mść]{mść} & --- & --- & ---& upr \stenoErr{SKTP*} \\ \hline 
 \mylabel{tabelalewa:msz}
-msz & \steno{ZKTPVJ*} & \includegraphics[height=12pt]{grafika/lewa/ZKTPVJgwiazdka.jpg} & \hyperref[tabelalewa:chm]{chm} & \hyperref[tabelalewa:mch]{mch} & \hyperref[tabelalewa:szm]{szm} & \textcolor{gray}{msz}& przen \steno{KTPJ*} \\ \hline 
+msz & \steno{ZKTPWJ*} & \includegraphics[height=12pt]{grafika/lewa/ZKTPWJgwiazdka.jpg} & \hyperref[tabelalewa:chm]{chm} & \hyperref[tabelalewa:mch]{mch} & \hyperref[tabelalewa:szm]{szm} & \textcolor{gray}{msz}& przen \steno{KTPJ*} \\ \hline 
 \mylabel{tabelalewa:mszcz}
-mszcz & \steno{KTPV} & \includegraphics[height=12pt]{grafika/lewa/KTPV.jpg} & \textcolor{gray}{mszcz} & \hyperref[tabelalewa:czch]{czch} \hyperref[tabelalewa:szkw]{szkw} & --- & ---& --- \\ \hline 
+mszcz & \steno{KTPW} & \includegraphics[height=12pt]{grafika/lewa/KTPW.jpg} & \textcolor{gray}{mszcz} & \hyperref[tabelalewa:czch]{czch} \hyperref[tabelalewa:szkw]{szkw} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:mść}
 mść & \steno{SKTP} & \includegraphics[height=12pt]{grafika/lewa/SKTP.jpg} & \hyperref[tabelalewa:mst]{mst} \textcolor{gray}{mść} & --- & --- & ---& upr \stenoErr{SKTP*} \\ \hline 
 \mylabel{tabelalewa:mż}
@@ -746,7 +1371,7 @@ mż & \steno{KTPJ} & \includegraphics[height=12pt]{grafika/lewa/KTPJ.jpg} & \hyp
 \mylabel{tabelalewa:n}
 n & \steno{LR} & \includegraphics[height=12pt]{grafika/lewa/LR.jpg} & \textcolor{gray}{n} & \hyperref[tabelalewa:ln]{ln} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:ndż}
-ndż & \steno{PVLRJ} & \includegraphics[height=12pt]{grafika/lewa/PVLRJ.jpg} & \hyperref[tabelalewa:czn]{czn} & --- & \textcolor{gray}{ndż} & ---& --- \\ \hline 
+ndż & \steno{PWLRJ} & \includegraphics[height=12pt]{grafika/lewa/PWLRJ.jpg} & \hyperref[tabelalewa:czn]{czn} & --- & \textcolor{gray}{ndż} & ---& --- \\ \hline 
 \mylabel{tabelalewa:ng}
 ng & \steno{KLRJ*} & \includegraphics[height=12pt]{grafika/lewa/KLRJgwiazdka.jpg} & \hyperref[tabelalewa:kn]{kn} & --- & \hyperref[tabelalewa:gn]{gn} & \hyperref[tabelalewa:lgn]{lgn} \textcolor{gray}{ng}& --- \\ \hline 
 \mylabel{tabelalewa:p}
@@ -780,7 +1405,7 @@ pstr/pstrz & \steno{STPR} & \includegraphics[height=12pt]{grafika/lewa/STPR.jpg}
 \mylabel{tabelalewa:psz}
 psz & \steno{TP*} & \includegraphics[height=12pt]{grafika/lewa/TPgwiazdka.jpg} & \hyperref[tabelalewa:sz]{sz} & \textcolor{gray}{psz} \hyperref[tabelalewa:pt]{pt} \hyperref[tabelalewa:szt]{szt} & \hyperref[tabelalewa:db]{db} \hyperref[tabelalewa:ż]{ż} \hyperref[tabelalewa:żb]{żb} \hyperref[tabelalewa:żd]{żd} & \hyperref[tabelalewa:tb]{tb}& --- \\ \hline 
 \mylabel{tabelalewa:pszcz}
-pszcz & \steno{TPVL*} & \includegraphics[height=12pt]{grafika/lewa/TPVLgwiazdka.jpg} & \hyperref[tabelalewa:szcz]{szcz} & \textcolor{gray}{pszcz} & \hyperref[tabelalewa:szw]{szw} & \hyperref[tabelalewa:szczw]{szczw}& --- \\ \hline 
+pszcz & \steno{TPWL*} & \includegraphics[height=12pt]{grafika/lewa/TPWLgwiazdka.jpg} & \hyperref[tabelalewa:szcz]{szcz} & \textcolor{gray}{pszcz} & \hyperref[tabelalewa:szw]{szw} & \hyperref[tabelalewa:szczw]{szczw}& --- \\ \hline 
 \mylabel{tabelalewa:pt}
 pt & \steno{TP*} & \includegraphics[height=12pt]{grafika/lewa/TPgwiazdka.jpg} & \hyperref[tabelalewa:sz]{sz} & \hyperref[tabelalewa:psz]{psz} \textcolor{gray}{pt} \hyperref[tabelalewa:szt]{szt} & \hyperref[tabelalewa:db]{db} \hyperref[tabelalewa:ż]{ż} \hyperref[tabelalewa:żb]{żb} \hyperref[tabelalewa:żd]{żd} & \hyperref[tabelalewa:tb]{tb}& --- \\ \hline 
 \mylabel{tabelalewa:r}
@@ -792,7 +1417,7 @@ rdz & \steno{ZSRJ} & \includegraphics[height=12pt]{grafika/lewa/ZSRJ.jpg} & --- 
 \mylabel{tabelalewa:rt}
 rt & \steno{TR*} & \includegraphics[height=12pt]{grafika/lewa/TRgwiazdka.jpg} & \hyperref[tabelalewa:tr]{tr} & \textcolor{gray}{rt} & \hyperref[tabelalewa:dr/drz]{dr/drz} & \hyperref[tabelalewa:rd]{rd}& --- \\ \hline 
 \mylabel{tabelalewa:rw}
-rw & \steno{VR*} & \includegraphics[height=12pt]{grafika/lewa/VRgwiazdka.jpg} & \hyperref[tabelalewa:wr/wrz]{wr/wrz} & \textcolor{gray}{rw} & --- & ---& --- \\ \hline 
+rw & \steno{WR*} & \includegraphics[height=12pt]{grafika/lewa/WRgwiazdka.jpg} & \hyperref[tabelalewa:wr/wrz]{wr/wrz} & \textcolor{gray}{rw} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:rz}
 rz & \steno{RJ} & \includegraphics[height=12pt]{grafika/lewa/RJ.jpg} & \hyperref[tabelalewa:r]{r} & --- & \textcolor{gray}{rz} & ---& --- \\ \hline 
 \mylabel{tabelalewa:rż}
@@ -812,19 +1437,19 @@ schn & \steno{SKTLR} & \includegraphics[height=12pt]{grafika/lewa/SKTLR.jpg} & \
 \mylabel{tabelalewa:schr/schrz}
 schr/schrz & \steno{SKTR} & \includegraphics[height=12pt]{grafika/lewa/SKTR.jpg} & \textcolor{gray}{schr/schrz} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:schw}
-schw & \steno{SKTV} & \includegraphics[height=12pt]{grafika/lewa/SKTV.jpg} & \textcolor{gray}{schw} & --- & --- & ---& --- \\ \hline 
+schw & \steno{SKTW} & \includegraphics[height=12pt]{grafika/lewa/SKTW.jpg} & \textcolor{gray}{schw} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:scj}
 scj & \steno{ZSTJ} & \includegraphics[height=12pt]{grafika/lewa/ZSTJ.jpg} & \hyperref[tabelalewa:zst]{zst} & \hyperref[tabelalewa:sc]{sc} & \textcolor{gray}{scj} \hyperref[tabelalewa:zdz/źdz]{zdz/źdz} & ---& wyjątek \stenoErr{ZSJ*} \\ \hline 
 \mylabel{tabelalewa:scl}
 scl & \steno{SKL} & \includegraphics[height=12pt]{grafika/lewa/SKL.jpg} & \textcolor{gray}{scl} \hyperref[tabelalewa:skl/skł]{skl/skł} & --- & --- & ---& wyjątek \stenoErr{ZSL*} \\ \hline 
 \mylabel{tabelalewa:scz}
-scz & \steno{SPV} & \includegraphics[height=12pt]{grafika/lewa/SPV.jpg} & \textcolor{gray}{scz} & \hyperref[tabelalewa:sps]{sps} & --- & ---& --- \\ \hline 
+scz & \steno{SPW} & \includegraphics[height=12pt]{grafika/lewa/SPW.jpg} & \textcolor{gray}{scz} & \hyperref[tabelalewa:sps]{sps} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:sf}
 sf & \steno{FS*} & \includegraphics[height=12pt]{grafika/lewa/FSgwiazdka.jpg} & \hyperref[tabelalewa:ws]{ws} & \textcolor{gray}{sf} & \hyperref[tabelalewa:wdz]{wdz} \hyperref[tabelalewa:wz]{wz} & ---& --- \\ \hline 
 \mylabel{tabelalewa:sfl}
-sfl & \steno{SVL} & \includegraphics[height=12pt]{grafika/lewa/SVL.jpg} & \textcolor{gray}{sfl} & --- & --- & ---& --- \\ \hline 
+sfl & \steno{SWL} & \includegraphics[height=12pt]{grafika/lewa/SWL.jpg} & \textcolor{gray}{sfl} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:sfr}
-sfr & \steno{SVR} & \includegraphics[height=12pt]{grafika/lewa/SVR.jpg} & \textcolor{gray}{sfr} & --- & --- & ---& --- \\ \hline 
+sfr & \steno{SWR} & \includegraphics[height=12pt]{grafika/lewa/SWR.jpg} & \textcolor{gray}{sfr} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:sg}
 sg & \steno{SKJ} & \includegraphics[height=12pt]{grafika/lewa/SKJ.jpg} & \hyperref[tabelalewa:sk]{sk} & \hyperref[tabelalewa:ks]{ks} & \textcolor{gray}{sg} & ---& --- \\ \hline 
 \mylabel{tabelalewa:sgr}
@@ -840,9 +1465,9 @@ skn & \steno{SKLR} & \includegraphics[height=12pt]{grafika/lewa/SKLR.jpg} & \tex
 \mylabel{tabelalewa:skr/skrz}
 skr/skrz & \steno{SKR} & \includegraphics[height=12pt]{grafika/lewa/SKR.jpg} & \textcolor{gray}{skr/skrz} & --- & \hyperref[tabelalewa:sgr]{sgr} & ---& --- \\ \hline 
 \mylabel{tabelalewa:sks}
-sks & \steno{SKV*} & \includegraphics[height=12pt]{grafika/lewa/SKVgwiazdka.jpg} & \hyperref[tabelalewa:skw]{skw} & \textcolor{gray}{sks} & --- & ---& --- \\ \hline 
+sks & \steno{SKW*} & \includegraphics[height=12pt]{grafika/lewa/SKWgwiazdka.jpg} & \hyperref[tabelalewa:skw]{skw} & \textcolor{gray}{sks} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:skw}
-skw & \steno{SKV} & \includegraphics[height=12pt]{grafika/lewa/SKV.jpg} & \textcolor{gray}{skw} & \hyperref[tabelalewa:sks]{sks} & --- & ---& --- \\ \hline 
+skw & \steno{SKW} & \includegraphics[height=12pt]{grafika/lewa/SKW.jpg} & \textcolor{gray}{skw} & \hyperref[tabelalewa:sks]{sks} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:sl/sł/śl}
 sl/sł/śl & \steno{SL} & \includegraphics[height=12pt]{grafika/lewa/SL.jpg} & \textcolor{gray}{sl/sł/śl} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:sm/śm}
@@ -858,7 +1483,7 @@ spl/spł & \steno{SPL} & \includegraphics[height=12pt]{grafika/lewa/SPL.jpg} & \
 \mylabel{tabelalewa:spr/sprz}
 spr/sprz & \steno{SPR} & \includegraphics[height=12pt]{grafika/lewa/SPR.jpg} & \textcolor{gray}{spr/sprz} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:sps}
-sps & \steno{SPV*} & \includegraphics[height=12pt]{grafika/lewa/SPVgwiazdka.jpg} & \hyperref[tabelalewa:scz]{scz} & \textcolor{gray}{sps} & --- & ---& --- \\ \hline 
+sps & \steno{SPW*} & \includegraphics[height=12pt]{grafika/lewa/SPWgwiazdka.jpg} & \hyperref[tabelalewa:scz]{scz} & \textcolor{gray}{sps} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:sr/śr}
 sr/śr & \steno{SR} & \includegraphics[height=12pt]{grafika/lewa/SR.jpg} & \textcolor{gray}{sr/śr} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:ss}
@@ -874,15 +1499,15 @@ stl/stł & \steno{STL} & \includegraphics[height=12pt]{grafika/lewa/STL.jpg} & \
 \mylabel{tabelalewa:str/strz}
 str/strz & \steno{STR} & \includegraphics[height=12pt]{grafika/lewa/STR.jpg} & \textcolor{gray}{str/strz} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:stw}
-stw & \steno{STV} & \includegraphics[height=12pt]{grafika/lewa/STV.jpg} & \textcolor{gray}{stw} & --- & --- & ---& --- \\ \hline 
+stw & \steno{STW} & \includegraphics[height=12pt]{grafika/lewa/STW.jpg} & \textcolor{gray}{stw} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:sw/św}
-sw/św & \steno{SV} & \includegraphics[height=12pt]{grafika/lewa/SV.jpg} & \textcolor{gray}{sw/św} & --- & --- & ---& --- \\ \hline 
+sw/św & \steno{SW} & \includegraphics[height=12pt]{grafika/lewa/SW.jpg} & \textcolor{gray}{sw/św} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:sz}
 sz & \steno{TP} & \includegraphics[height=12pt]{grafika/lewa/TP.jpg} & \textcolor{gray}{sz} & \hyperref[tabelalewa:psz]{psz} \hyperref[tabelalewa:pt]{pt} \hyperref[tabelalewa:szt]{szt} & \hyperref[tabelalewa:db]{db} \hyperref[tabelalewa:ż]{ż} \hyperref[tabelalewa:żb]{żb} \hyperref[tabelalewa:żd]{żd} & \hyperref[tabelalewa:tb]{tb}& --- \\ \hline 
 \mylabel{tabelalewa:szcz}
-szcz & \steno{TPVL} & \includegraphics[height=12pt]{grafika/lewa/TPVL.jpg} & \textcolor{gray}{szcz} & \hyperref[tabelalewa:pszcz]{pszcz} & \hyperref[tabelalewa:szw]{szw} & \hyperref[tabelalewa:szczw]{szczw}& --- \\ \hline 
+szcz & \steno{TPWL} & \includegraphics[height=12pt]{grafika/lewa/TPWL.jpg} & \textcolor{gray}{szcz} & \hyperref[tabelalewa:pszcz]{pszcz} & \hyperref[tabelalewa:szw]{szw} & \hyperref[tabelalewa:szczw]{szczw}& --- \\ \hline 
 \mylabel{tabelalewa:szczw}
-szczw & \steno{TPVLJ*} & \includegraphics[height=12pt]{grafika/lewa/TPVLJgwiazdka.jpg} & \hyperref[tabelalewa:szcz]{szcz} & \hyperref[tabelalewa:pszcz]{pszcz} & \hyperref[tabelalewa:szw]{szw} & \textcolor{gray}{szczw}& --- \\ \hline 
+szczw & \steno{TPWLJ*} & \includegraphics[height=12pt]{grafika/lewa/TPWLJgwiazdka.jpg} & \hyperref[tabelalewa:szcz]{szcz} & \hyperref[tabelalewa:pszcz]{pszcz} & \hyperref[tabelalewa:szw]{szw} & \textcolor{gray}{szczw}& --- \\ \hline 
 \mylabel{tabelalewa:szk}
 szk & \steno{KTP*} & \includegraphics[height=12pt]{grafika/lewa/KTPgwiazdka.jpg} & \hyperref[tabelalewa:ksz]{ksz} \hyperref[tabelalewa:kszt]{kszt} \hyperref[tabelalewa:szp]{szp} & \hyperref[tabelalewa:pch]{pch} \textcolor{gray}{szk} & \hyperref[tabelalewa:dm]{dm} \hyperref[tabelalewa:mż]{mż} & \hyperref[tabelalewa:gż]{gż} \hyperref[tabelalewa:żm]{żm}& --- \\ \hline 
 \mylabel{tabelalewa:szkl}
@@ -890,11 +1515,11 @@ szkl & \steno{KTPL*} & \includegraphics[height=12pt]{grafika/lewa/KTPLgwiazdka.j
 \mylabel{tabelalewa:szkr}
 szkr & \steno{KTPR} & \includegraphics[height=12pt]{grafika/lewa/KTPR.jpg} & \textcolor{gray}{szkr} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:szkw}
-szkw & \steno{KTPV*} & \includegraphics[height=12pt]{grafika/lewa/KTPVgwiazdka.jpg} & \hyperref[tabelalewa:mszcz]{mszcz} & \hyperref[tabelalewa:czch]{czch} \textcolor{gray}{szkw} & --- & ---& --- \\ \hline 
+szkw & \steno{KTPW*} & \includegraphics[height=12pt]{grafika/lewa/KTPWgwiazdka.jpg} & \hyperref[tabelalewa:mszcz]{mszcz} & \hyperref[tabelalewa:czch]{czch} \textcolor{gray}{szkw} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:szl/szł}
 szl/szł & \steno{TPL} & \includegraphics[height=12pt]{grafika/lewa/TPL.jpg} & \textcolor{gray}{szl/szł} & \hyperref[tabelalewa:szpl]{szpl} & \hyperref[tabelalewa:żl/żł]{żl/żł} & \hyperref[tabelalewa:lż]{lż}& --- \\ \hline 
 \mylabel{tabelalewa:szm}
-szm & \steno{ZKTPVJ} & \includegraphics[height=12pt]{grafika/lewa/ZKTPVJ.jpg} & \hyperref[tabelalewa:chm]{chm} & \hyperref[tabelalewa:mch]{mch} & \textcolor{gray}{szm} & \hyperref[tabelalewa:msz]{msz}& przen \steno{KTPJ} \\ \hline 
+szm & \steno{ZKTPWJ} & \includegraphics[height=12pt]{grafika/lewa/ZKTPWJ.jpg} & \hyperref[tabelalewa:chm]{chm} & \hyperref[tabelalewa:mch]{mch} & \textcolor{gray}{szm} & \hyperref[tabelalewa:msz]{msz}& przen \steno{KTPJ} \\ \hline 
 \mylabel{tabelalewa:szn}
 szn & \steno{TPLR} & \includegraphics[height=12pt]{grafika/lewa/TPLR.jpg} & \textcolor{gray}{szn} & \hyperref[tabelalewa:ćpn]{ćpn} & \hyperref[tabelalewa:żn]{żn} & \hyperref[tabelalewa:rżn]{rżn}& --- \\ \hline 
 \mylabel{tabelalewa:szp}
@@ -910,7 +1535,7 @@ szt & \steno{TP*} & \includegraphics[height=12pt]{grafika/lewa/TPgwiazdka.jpg} &
 \mylabel{tabelalewa:sztr}
 sztr & \steno{TPR*} & \includegraphics[height=12pt]{grafika/lewa/TPRgwiazdka.jpg} & \hyperref[tabelalewa:szpr]{szpr} \hyperref[tabelalewa:szr]{szr} & \textcolor{gray}{sztr} & \hyperref[tabelalewa:żr]{żr} & \hyperref[tabelalewa:rż]{rż}& --- \\ \hline 
 \mylabel{tabelalewa:szw}
-szw & \steno{TPVLJ} & \includegraphics[height=12pt]{grafika/lewa/TPVLJ.jpg} & \hyperref[tabelalewa:szcz]{szcz} & \hyperref[tabelalewa:pszcz]{pszcz} & \textcolor{gray}{szw} & \hyperref[tabelalewa:szczw]{szczw}& --- \\ \hline 
+szw & \steno{TPWLJ} & \includegraphics[height=12pt]{grafika/lewa/TPWLJ.jpg} & \hyperref[tabelalewa:szcz]{szcz} & \hyperref[tabelalewa:pszcz]{pszcz} & \textcolor{gray}{szw} & \hyperref[tabelalewa:szczw]{szczw}& --- \\ \hline 
 \mylabel{tabelalewa:śc}
 śc & \steno{ZS*} & \includegraphics[height=12pt]{grafika/lewa/ZSgwiazdka.jpg} & \hyperref[tabelalewa:c]{c} & \textcolor{gray}{śc} \hyperref[tabelalewa:zs]{zs} & \hyperref[tabelalewa:dz]{dz} & ---& --- \\ \hline 
 \mylabel{tabelalewa:t}
@@ -918,11 +1543,11 @@ t & \steno{T} & \includegraphics[height=12pt]{grafika/lewa/T.jpg} & \textcolor{g
 \mylabel{tabelalewa:tb}
 tb & \steno{TPJ*} & \includegraphics[height=12pt]{grafika/lewa/TPJgwiazdka.jpg} & \hyperref[tabelalewa:sz]{sz} & \hyperref[tabelalewa:psz]{psz} \hyperref[tabelalewa:pt]{pt} \hyperref[tabelalewa:szt]{szt} & \hyperref[tabelalewa:db]{db} \hyperref[tabelalewa:ż]{ż} \hyperref[tabelalewa:żb]{żb} \hyperref[tabelalewa:żd]{żd} & \textcolor{gray}{tb}& --- \\ \hline 
 \mylabel{tabelalewa:tch}
-tch & \steno{KTV} & \includegraphics[height=12pt]{grafika/lewa/KTV.jpg} & \hyperref[tabelalewa:chw]{chw} \textcolor{gray}{tch} & \hyperref[tabelalewa:tkw]{tkw} & \hyperref[tabelalewa:hw]{hw} & ---& --- \\ \hline 
+tch & \steno{KTW} & \includegraphics[height=12pt]{grafika/lewa/KTW.jpg} & \hyperref[tabelalewa:chw]{chw} \textcolor{gray}{tch} & \hyperref[tabelalewa:tkw]{tkw} & \hyperref[tabelalewa:hw]{hw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:tchn}
 tchn & \steno{KTLR*} & \includegraphics[height=12pt]{grafika/lewa/KTLRgwiazdka.jpg} & \hyperref[tabelalewa:chn]{chn} \hyperref[tabelalewa:tkn]{tkn} & \textcolor{gray}{tchn} & \hyperref[tabelalewa:dźgn]{dźgn} \hyperref[tabelalewa:hn]{hn} & ---& --- \\ \hline 
 \mylabel{tabelalewa:tcz}
-tcz & \steno{TPV} & \includegraphics[height=12pt]{grafika/lewa/TPV.jpg} & \textcolor{gray}{tcz} & \hyperref[tabelalewa:czt]{czt} & \hyperref[tabelalewa:żw]{żw} & ---& --- \\ \hline 
+tcz & \steno{TPW} & \includegraphics[height=12pt]{grafika/lewa/TPW.jpg} & \textcolor{gray}{tcz} & \hyperref[tabelalewa:czt]{czt} & \hyperref[tabelalewa:żw]{żw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:tj}
 tj & \steno{TJ*} & \includegraphics[height=12pt]{grafika/lewa/TJgwiazdka.jpg} & \hyperref[tabelalewa:t]{t} & --- & \hyperref[tabelalewa:d]{d} & \textcolor{gray}{tj}& --- \\ \hline 
 \mylabel{tabelalewa:tk}
@@ -932,7 +1557,7 @@ tkl & \steno{KTL*} & \includegraphics[height=12pt]{grafika/lewa/KTLgwiazdka.jpg}
 \mylabel{tabelalewa:tkn}
 tkn & \steno{KTLR} & \includegraphics[height=12pt]{grafika/lewa/KTLR.jpg} & \hyperref[tabelalewa:chn]{chn} \textcolor{gray}{tkn} & \hyperref[tabelalewa:tchn]{tchn} & \hyperref[tabelalewa:dźgn]{dźgn} \hyperref[tabelalewa:hn]{hn} & ---& --- \\ \hline 
 \mylabel{tabelalewa:tkw}
-tkw & \steno{KTV*} & \includegraphics[height=12pt]{grafika/lewa/KTVgwiazdka.jpg} & \hyperref[tabelalewa:chw]{chw} \hyperref[tabelalewa:tch]{tch} & \textcolor{gray}{tkw} & \hyperref[tabelalewa:hw]{hw} & ---& --- \\ \hline 
+tkw & \steno{KTW*} & \includegraphics[height=12pt]{grafika/lewa/KTWgwiazdka.jpg} & \hyperref[tabelalewa:chw]{chw} \hyperref[tabelalewa:tch]{tch} & \textcolor{gray}{tkw} & \hyperref[tabelalewa:hw]{hw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:tl/tł}
 tl/tł & \steno{TL} & \includegraphics[height=12pt]{grafika/lewa/TL.jpg} & \textcolor{gray}{tl/tł} & --- & \hyperref[tabelalewa:dl/dł]{dl/dł} & ---& --- \\ \hline 
 \mylabel{tabelalewa:tn}
@@ -942,11 +1567,11 @@ tr & \steno{TR} & \includegraphics[height=12pt]{grafika/lewa/TR.jpg} & \textcolo
 \mylabel{tabelalewa:ts}
 ts & \steno{ST*} & \includegraphics[height=12pt]{grafika/lewa/STgwiazdka.jpg} & \hyperref[tabelalewa:st]{st} & \textcolor{gray}{ts} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:tw}
-tw & \steno{TV} & \includegraphics[height=12pt]{grafika/lewa/TV.jpg} & \textcolor{gray}{tw} & --- & \hyperref[tabelalewa:dw]{dw} & ---& --- \\ \hline 
+tw & \steno{TW} & \includegraphics[height=12pt]{grafika/lewa/TW.jpg} & \textcolor{gray}{tw} & --- & \hyperref[tabelalewa:dw]{dw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:tz}
 tz & \steno{ZT*} & \includegraphics[height=12pt]{grafika/lewa/ZTgwiazdka.jpg} & \hyperref[tabelalewa:zd]{zd} & \textcolor{gray}{tz} & \hyperref[tabelalewa:zdj]{zdj} & ---& --- \\ \hline 
 \mylabel{tabelalewa:w}
-w & \steno{V} & \includegraphics[height=12pt]{grafika/lewa/V.jpg} & \textcolor{gray}{w} & --- & \hyperref[tabelalewa:wj]{wj} & ---& --- \\ \hline 
+w & \steno{W} & \includegraphics[height=12pt]{grafika/lewa/W.jpg} & \textcolor{gray}{w} & --- & \hyperref[tabelalewa:wj]{wj} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wb}
 wb & \steno{FPJ} & \includegraphics[height=12pt]{grafika/lewa/FPJ.jpg} & \hyperref[tabelalewa:wp]{wp} & \hyperref[tabelalewa:pf]{pf} & \textcolor{gray}{wb} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wbł}
@@ -960,7 +1585,7 @@ wch & \steno{FKT} & \includegraphics[height=12pt]{grafika/lewa/FKT.jpg} & \textc
 \mylabel{tabelalewa:wchł}
 wchł & \steno{FKTL} & \includegraphics[height=12pt]{grafika/lewa/FKTL.jpg} & \textcolor{gray}{wchł} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:wcz}
-wcz & \steno{FPV} & \includegraphics[height=12pt]{grafika/lewa/FPV.jpg} & \textcolor{gray}{wcz} & --- & --- & ---& --- \\ \hline 
+wcz & \steno{FPW} & \includegraphics[height=12pt]{grafika/lewa/FPW.jpg} & \textcolor{gray}{wcz} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:wd}
 wd & \steno{FTJ} & \includegraphics[height=12pt]{grafika/lewa/FTJ.jpg} & \hyperref[tabelalewa:ft]{ft} \hyperref[tabelalewa:wt]{wt} & --- & \textcolor{gray}{wd} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wdm}
@@ -978,7 +1603,7 @@ wgn & \steno{FKLR} & \includegraphics[height=12pt]{grafika/lewa/FKLR.jpg} & \tex
 \mylabel{tabelalewa:wgr/wgrz}
 wgr/wgrz & \steno{FKRJ} & \includegraphics[height=12pt]{grafika/lewa/FKRJ.jpg} & \hyperref[tabelalewa:wkr/wkrz]{wkr/wkrz} & --- & \textcolor{gray}{wgr/wgrz} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wj}
-wj & \steno{VJ} & \includegraphics[height=12pt]{grafika/lewa/VJ.jpg} & \hyperref[tabelalewa:w]{w} & --- & \textcolor{gray}{wj} & ---& --- \\ \hline 
+wj & \steno{WJ} & \includegraphics[height=12pt]{grafika/lewa/WJ.jpg} & \hyperref[tabelalewa:w]{w} & --- & \textcolor{gray}{wj} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wk}
 wk & \steno{FK} & \includegraphics[height=12pt]{grafika/lewa/FK.jpg} & \textcolor{gray}{wk} & --- & \hyperref[tabelalewa:wg]{wg} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wkl/wkł}
@@ -986,11 +1611,11 @@ wkl/wkł & \steno{FKL} & \includegraphics[height=12pt]{grafika/lewa/FKL.jpg} & \
 \mylabel{tabelalewa:wkr/wkrz}
 wkr/wkrz & \steno{FKR} & \includegraphics[height=12pt]{grafika/lewa/FKR.jpg} & \textcolor{gray}{wkr/wkrz} & --- & \hyperref[tabelalewa:wgr/wgrz]{wgr/wgrz} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wl/wł}
-wl/wł & \steno{VL} & \includegraphics[height=12pt]{grafika/lewa/VL.jpg} & \textcolor{gray}{wl/wł} & \hyperref[tabelalewa:lw]{lw} & --- & ---& --- \\ \hline 
+wl/wł & \steno{WL} & \includegraphics[height=12pt]{grafika/lewa/WL.jpg} & \textcolor{gray}{wl/wł} & \hyperref[tabelalewa:lw]{lw} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:wm}
 wm & \steno{FKP} & \includegraphics[height=12pt]{grafika/lewa/FKP.jpg} & \textcolor{gray}{wm} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:wn}
-wn & \steno{VLR} & \includegraphics[height=12pt]{grafika/lewa/VLR.jpg} & \textcolor{gray}{wn} & --- & --- & ---& --- \\ \hline 
+wn & \steno{WLR} & \includegraphics[height=12pt]{grafika/lewa/WLR.jpg} & \textcolor{gray}{wn} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:wp}
 wp & \steno{FP} & \includegraphics[height=12pt]{grafika/lewa/FP.jpg} & \textcolor{gray}{wp} & \hyperref[tabelalewa:pf]{pf} & \hyperref[tabelalewa:wb]{wb} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wpl/wpł}
@@ -998,7 +1623,7 @@ wpl/wpł & \steno{FPL} & \includegraphics[height=12pt]{grafika/lewa/FPL.jpg} & \
 \mylabel{tabelalewa:wpr/wprz}
 wpr/wprz & \steno{FPR} & \includegraphics[height=12pt]{grafika/lewa/FPR.jpg} & \textcolor{gray}{wpr/wprz} & --- & \hyperref[tabelalewa:wbr]{wbr} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wr/wrz}
-wr/wrz & \steno{VR} & \includegraphics[height=12pt]{grafika/lewa/VR.jpg} & \textcolor{gray}{wr/wrz} & \hyperref[tabelalewa:rw]{rw} & --- & ---& --- \\ \hline 
+wr/wrz & \steno{WR} & \includegraphics[height=12pt]{grafika/lewa/WR.jpg} & \textcolor{gray}{wr/wrz} & \hyperref[tabelalewa:rw]{rw} & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:ws}
 ws & \steno{FS} & \includegraphics[height=12pt]{grafika/lewa/FS.jpg} & \textcolor{gray}{ws} & \hyperref[tabelalewa:sf]{sf} & \hyperref[tabelalewa:wdz]{wdz} \hyperref[tabelalewa:wz]{wz} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wsch}
@@ -1024,7 +1649,7 @@ wstr/wstrz & \steno{FSTR} & \includegraphics[height=12pt]{grafika/lewa/FSTR.jpg}
 \mylabel{tabelalewa:wsz}
 wsz & \steno{FTP} & \includegraphics[height=12pt]{grafika/lewa/FTP.jpg} & \textcolor{gray}{wsz} & \hyperref[tabelalewa:wszt]{wszt} & \hyperref[tabelalewa:wż]{wż} & \hyperref[tabelalewa:wżd]{wżd}& --- \\ \hline 
 \mylabel{tabelalewa:wszcz}
-wszcz & \steno{FTPV} & \includegraphics[height=12pt]{grafika/lewa/FTPV.jpg} & \textcolor{gray}{wszcz} & --- & --- & ---& --- \\ \hline 
+wszcz & \steno{FTPW} & \includegraphics[height=12pt]{grafika/lewa/FTPW.jpg} & \textcolor{gray}{wszcz} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:wszl}
 wszl & \steno{FTPL} & \includegraphics[height=12pt]{grafika/lewa/FTPL.jpg} & \textcolor{gray}{wszl} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:wszt}
@@ -1034,7 +1659,7 @@ wść & \steno{FST} & \includegraphics[height=12pt]{grafika/lewa/FST.jpg} & \hyp
 \mylabel{tabelalewa:wśr}
 wśr & \steno{FSR} & \includegraphics[height=12pt]{grafika/lewa/FSR.jpg} & \textcolor{gray}{wśr} & --- & \hyperref[tabelalewa:wzr]{wzr} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wśw}
-wśw & \steno{FSV} & \includegraphics[height=12pt]{grafika/lewa/FSV.jpg} & \textcolor{gray}{wśw} & --- & \hyperref[tabelalewa:wzw]{wzw} & ---& --- \\ \hline 
+wśw & \steno{FSW} & \includegraphics[height=12pt]{grafika/lewa/FSW.jpg} & \textcolor{gray}{wśw} & --- & \hyperref[tabelalewa:wzw]{wzw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wt}
 wt & \steno{FT} & \includegraphics[height=12pt]{grafika/lewa/FT.jpg} & \hyperref[tabelalewa:ft]{ft} \textcolor{gray}{wt} & --- & \hyperref[tabelalewa:wd]{wd} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wtł}
@@ -1042,9 +1667,9 @@ wtł & \steno{FTL} & \includegraphics[height=12pt]{grafika/lewa/FTL.jpg} & \text
 \mylabel{tabelalewa:wtr/wstrz}
 wtr/wstrz & \steno{FTR} & \includegraphics[height=12pt]{grafika/lewa/FTR.jpg} & \textcolor{gray}{wtr/wstrz} & --- & \hyperref[tabelalewa:wdr]{wdr} & ---& --- \\ \hline 
 \mylabel{tabelalewa:ww}
-ww & \steno{FV} & \includegraphics[height=12pt]{grafika/lewa/FV.jpg} & \textcolor{gray}{ww} & --- & --- & ---& --- \\ \hline 
+ww & \steno{FW} & \includegraphics[height=12pt]{grafika/lewa/FW.jpg} & \textcolor{gray}{ww} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:wwl}
-wwl & \steno{FVL} & \includegraphics[height=12pt]{grafika/lewa/FVL.jpg} & \textcolor{gray}{wwl} & --- & --- & ---& --- \\ \hline 
+wwl & \steno{FWL} & \includegraphics[height=12pt]{grafika/lewa/FWL.jpg} & \textcolor{gray}{wwl} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:wz}
 wz & \steno{FSJ} & \includegraphics[height=12pt]{grafika/lewa/FSJ.jpg} & \hyperref[tabelalewa:ws]{ws} & \hyperref[tabelalewa:sf]{sf} & \hyperref[tabelalewa:wdz]{wdz} \textcolor{gray}{wz} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wzb}
@@ -1070,7 +1695,7 @@ wzn & \steno{FSLR} & \includegraphics[height=12pt]{grafika/lewa/FSLR.jpg} & \hyp
 \mylabel{tabelalewa:wzr}
 wzr & \steno{FSRJ} & \includegraphics[height=12pt]{grafika/lewa/FSRJ.jpg} & \hyperref[tabelalewa:wśr]{wśr} & --- & \textcolor{gray}{wzr} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wzw}
-wzw & \steno{FSVJ} & \includegraphics[height=12pt]{grafika/lewa/FSVJ.jpg} & \hyperref[tabelalewa:wśw]{wśw} & --- & \textcolor{gray}{wzw} & ---& --- \\ \hline 
+wzw & \steno{FSWJ} & \includegraphics[height=12pt]{grafika/lewa/FSWJ.jpg} & \hyperref[tabelalewa:wśw]{wśw} & --- & \textcolor{gray}{wzw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:wż}
 wż & \steno{FTPJ} & \includegraphics[height=12pt]{grafika/lewa/FTPJ.jpg} & \hyperref[tabelalewa:wsz]{wsz} & \hyperref[tabelalewa:wszt]{wszt} & \textcolor{gray}{wż} & \hyperref[tabelalewa:wżd]{wżd}& --- \\ \hline 
 \mylabel{tabelalewa:wżd}
@@ -1094,13 +1719,13 @@ zdm & \steno{ZKTP} & \includegraphics[height=12pt]{grafika/lewa/ZKTP.jpg} & \tex
 \mylabel{tabelalewa:zdr/zdrz}
 zdr/zdrz & \steno{ZTR} & \includegraphics[height=12pt]{grafika/lewa/ZTR.jpg} & \textcolor{gray}{zdr/zdrz} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:zdw}
-zdw & \steno{ZTV} & \includegraphics[height=12pt]{grafika/lewa/ZTV.jpg} & \textcolor{gray}{zdw} & --- & \hyperref[tabelalewa:zdzw]{zdzw} & ---& --- \\ \hline 
+zdw & \steno{ZTW} & \includegraphics[height=12pt]{grafika/lewa/ZTW.jpg} & \textcolor{gray}{zdw} & --- & \hyperref[tabelalewa:zdzw]{zdzw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:zdz/źdz}
 zdz/źdz & \steno{ZSTJ} & \includegraphics[height=12pt]{grafika/lewa/ZSTJ.jpg} & \hyperref[tabelalewa:zst]{zst} & \hyperref[tabelalewa:sc]{sc} & \hyperref[tabelalewa:scj]{scj} \textcolor{gray}{zdz/źdz} & ---& --- \\ \hline 
 \mylabel{tabelalewa:zdzw}
-zdzw & \steno{ZTVJ} & \includegraphics[height=12pt]{grafika/lewa/ZTVJ.jpg} & \hyperref[tabelalewa:zdw]{zdw} & --- & \textcolor{gray}{zdzw} & ---& --- \\ \hline 
+zdzw & \steno{ZTWJ} & \includegraphics[height=12pt]{grafika/lewa/ZTWJ.jpg} & \hyperref[tabelalewa:zdw]{zdw} & --- & \textcolor{gray}{zdzw} & ---& --- \\ \hline 
 \mylabel{tabelalewa:zdż}
-zdż & \steno{ZPVJ} & \includegraphics[height=12pt]{grafika/lewa/ZPVJ.jpg} & --- & --- & \textcolor{gray}{zdż} & ---& --- \\ \hline 
+zdż & \steno{ZPWJ} & \includegraphics[height=12pt]{grafika/lewa/ZPWJ.jpg} & --- & --- & \textcolor{gray}{zdż} & ---& --- \\ \hline 
 \mylabel{tabelalewa:zg/źg}
 zg/źg & \steno{ZKJ} & \includegraphics[height=12pt]{grafika/lewa/ZKJ.jpg} & --- & --- & \textcolor{gray}{zg/źg} & \hyperref[tabelalewa:gz]{gz}& --- \\ \hline 
 \mylabel{tabelalewa:zgb}
@@ -1112,7 +1737,7 @@ zgn/źgn & \steno{ZKLR} & \includegraphics[height=12pt]{grafika/lewa/ZKLR.jpg} &
 \mylabel{tabelalewa:zgr/zgrz}
 zgr/zgrz & \steno{ZKR} & \includegraphics[height=12pt]{grafika/lewa/ZKR.jpg} & \textcolor{gray}{zgr/zgrz} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:zgw}
-zgw & \steno{ZKV} & \includegraphics[height=12pt]{grafika/lewa/ZKV.jpg} & \textcolor{gray}{zgw} & --- & --- & ---& --- \\ \hline 
+zgw & \steno{ZKW} & \includegraphics[height=12pt]{grafika/lewa/ZKW.jpg} & \textcolor{gray}{zgw} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:zh}
 zh & \steno{ZKTJ} & \includegraphics[height=12pt]{grafika/lewa/ZKTJ.jpg} & --- & --- & \textcolor{gray}{zh} & ---& --- \\ \hline 
 \mylabel{tabelalewa:zj}
@@ -1138,11 +1763,11 @@ zst & \steno{ZST} & \includegraphics[height=12pt]{grafika/lewa/ZST.jpg} & \textc
 \mylabel{tabelalewa:zsz}
 zsz & \steno{ZTP} & \includegraphics[height=12pt]{grafika/lewa/ZTP.jpg} & \textcolor{gray}{zsz} & --- & \hyperref[tabelalewa:zż]{zż} & \hyperref[tabelalewa:bzd]{bzd} \hyperref[tabelalewa:bżdż]{bżdż}& --- \\ \hline 
 \mylabel{tabelalewa:zw/źw}
-zw/źw & \steno{ZV} & \includegraphics[height=12pt]{grafika/lewa/ZV.jpg} & \textcolor{gray}{zw/źw} & --- & --- & ---& --- \\ \hline 
+zw/źw & \steno{ZW} & \includegraphics[height=12pt]{grafika/lewa/ZW.jpg} & \textcolor{gray}{zw/źw} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:zwl}
-zwl & \steno{ZVL} & \includegraphics[height=12pt]{grafika/lewa/ZVL.jpg} & \textcolor{gray}{zwl} & --- & --- & ---& --- \\ \hline 
+zwl & \steno{ZWL} & \includegraphics[height=12pt]{grafika/lewa/ZWL.jpg} & \textcolor{gray}{zwl} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:zwr}
-zwr & \steno{ZVR} & \includegraphics[height=12pt]{grafika/lewa/ZVR.jpg} & \textcolor{gray}{zwr} & --- & --- & ---& --- \\ \hline 
+zwr & \steno{ZWR} & \includegraphics[height=12pt]{grafika/lewa/ZWR.jpg} & \textcolor{gray}{zwr} & --- & --- & ---& --- \\ \hline 
 \mylabel{tabelalewa:zz}
 zz & \steno{Z*} & \includegraphics[height=12pt]{grafika/lewa/Zgwiazdka.jpg} & \hyperref[tabelalewa:z]{z} & \textcolor{gray}{zz} & \hyperref[tabelalewa:zj]{zj} & ---& --- \\ \hline 
 \mylabel{tabelalewa:zż}
@@ -1168,81 +1793,53 @@ zż & \steno{ZTPJ} & \includegraphics[height=12pt]{grafika/lewa/ZTPJ.jpg} & \hyp
 \mylabel{tabelalewa:żr}
 żr & \steno{TPRJ} & \includegraphics[height=12pt]{grafika/lewa/TPRJ.jpg} & \hyperref[tabelalewa:szpr]{szpr} \hyperref[tabelalewa:szr]{szr} & \hyperref[tabelalewa:sztr]{sztr} & \textcolor{gray}{żr} & \hyperref[tabelalewa:rż]{rż}& --- \\ \hline 
 \mylabel{tabelalewa:żw}
-żw & \steno{TPVJ} & \includegraphics[height=12pt]{grafika/lewa/TPVJ.jpg} & \hyperref[tabelalewa:tcz]{tcz} & \hyperref[tabelalewa:czt]{czt} & \textcolor{gray}{żw} & ---& --- \\ \hline 
+żw & \steno{TPWJ} & \includegraphics[height=12pt]{grafika/lewa/TPWJ.jpg} & \hyperref[tabelalewa:tcz]{tcz} & \hyperref[tabelalewa:czt]{czt} & \textcolor{gray}{żw} & ---& --- \\ \hline 
 \end{longtable}
 
 \restoregeometry
 
+\newpage
 
 \section{Spółgłoski końcowe}
 \label{sec:koncowe}
-Obecnie spółgłoski końcowe nie zostały jeszcze w pełni opracowane. Ukażą się w
-przeciągu kilku tygodni.
+Obecnie spółgłoski końcowe nie zostały jeszcze w pełni opracowane. W pełnej postaci ukażą się w
+przeciągu kilku tygodni. Poniżej przedstawiona bardzo podstawowa tabela, zawierająca tylko pojedyncze głoski.
 
-\section{Interpunkcja i formatowanie}
-
-\subsection{Interpunkcja}
-
-W poniższej tabeli są przedstawione akordy pozwalające wpisywać różne znaki 
-interpunkcyjne. Każdy ze znaków domyślnie zachowuje się jak znak 
-interpunkcyjny. Aby wymusić na nim brak wpływu na formatowanie sąsiednich 
-wyrazów oraz bezpośrednie łączenie z sąsiadami,należy dodać do akurdu klawisze 
-\steno{\#*}. W przypadku konieczności wykorzystania znaków specjalnych w 
-funkcji innej niż interpunkcja należy użyć znaków z części \hyperref
-[sec:komputer]{użytkowanie komputera}.
-
-\begin{tabular}{| c | c |}
-	\hline
-	Znak & Akord \\ \hline
-	przecinek , & \steno{W-N}\\ \hline
-	kropka . & \steno{P-M}\\ \hline
-	znak zapytania ? & \steno{W-M} \\ \hline
-	wykrzyknik ! & \steno{P-N} \\ \hline
-	dwukropek : & \steno{LR-ZM} \\ \hline
-	średnik ; & \steno{PW-MN} \\ \hline
-	apostrof ' & \steno{KT-CL} \\ \hline
-	kreska pionowa | & \steno{ZS-KW} \\ \hline
-	
-\end{tabular}
-
-\subsection{Formatowanie}
-
-\section{Liczby i liczebniki}
-Liczby wpisuje się zgodnie z poniższym rysynkiem:
-
-\section{Użytkowanie komputera}
-\label{sec:komputer}
-Ponieważ niektóre programy mogą wymagać wywołania skrótów klawiszowych lub 
-konkretnych klawiszy, PSS umożliwia emulację standardowej klawiatury
-komputerowej.
-
-\section{Użytkowanie programu Plover}
-Ponieważ PSS jest przeznaczony do użytkowania z wykorzystaniem programu Plover,
-istnieje grupa komend dotyczących bezpośredno  tego oprogramowania.
-Celem ułatwienia zapamiętania, wszystkie zaczynają się od \steno{PWLR}, 
-przypominajacego wymowę nazwy programu.
-
-\begin{tabular}{| c | c | c | p{5cm} |}
-\hline
-Akord & Mnemonika & Angielska nazwa & Opis działania \\ \hline
- \steno{PWLR-Z} & Zawieś & Suspend & Zatrzymuje wypisywanie znaków przez
- Plovera.\\ \hline
- \steno{PWLR-R} & Rozpocznij & Resume & Przywraca działanie Plovera. Działa
- również wtedy, kiedy Plover jest zatrzymany.\\ \hline
- \steno{PWLR-M} & Migaj & Toggle & Przełącza między zatrzymaniem a działaniem
- Plovera. Działa również wtedy, kiedy Plover jest zatrzymany. \\ \hline
- \steno{PWLR-N} & Nowe & Add Translation & Otwiera okno pozwalające na wpisanie
- nowej pozycji do słowników. \\ \hline
- \steno{PWLR-C} & Co? & Suggestions & Otwiera okno sugestii z możliwymi
- zamiennikami dla ostatnio wpisanych akordów. \\ \hline
- \steno{PWLR-L} & Lupa & Lookup & Otwiera okno dialogowe pozwalające
- przeszukiwać słowniki. \\ \hline
- \steno{PWLR-K} & Konfiguracja & Configure & Otwiera okno konfiguracji Plovera.
- \\ \hline
- \steno{PWLR-W} & Wyjdź & Quit & Zamyka i wyłącza program Plover. \\ \hline
- \steno{PWLR-D} & Do okna & Focus & Przełącza na okno programu Plover. \\ \hline
-\end{tabular}
-
+\begin{longtable}{|c|c|}
+	\hline \hline
+	Kombinacja & Akord \\ \hline
+	\endhead
+	b & \steno{ZMN} \\ \hline
+	c & \steno{C} \\ \hline
+	ch & \steno{ZL} \\ \hline
+	cz & \steno{MC} \\ \hline
+	ć & \steno{CV} \\ \hline
+	d & \steno{D} \\ \hline
+	dz & \steno{CN} \\ \hline
+	dź & \steno{CNV} \\ \hline
+	dż & \steno{ZMC} \\ \hline
+	f & \steno{NW} \\ \hline
+	g & \steno{ZK} \\ \hline
+	h & \steno{ZRCL} \\ \hline
+	j & \steno{KW} \\ \hline
+	k & \steno{K} \\ \hline
+	l & \steno{L} \\ \hline
+	ł & \steno{NL} \\ \hline
+	m & \steno{M} \\ \hline
+	n & \steno{N} \\ \hline
+	ń & \steno{NV} \\ \hline
+	p & \steno{MN} \\ \hline
+	r & \steno{R} \\ \hline
+	rz & \steno{ZR} \\ \hline
+	s & \steno{ZN} \\ \hline
+	sz & \steno{CL} \\ \hline
+	ś & \steno{ZNV} \\ \hline
+	t & \steno{ND} \\ \hline
+	w & \steno{W} \\ \hline
+	z & \steno{Z} \\ \hline
+	ź & \steno{ZV} \\ \hline
+	ż & \steno{ZCL} \\ \hline
+\end{longtable}
 
 \chapter{Przykłady}
 Poniżej dostarczone są przykładowe teksty z proponowanym podziałem na akordym,
@@ -1279,4 +1876,27 @@ Państw / Człon / -kowsk / -ich / , / jak / też / po- / śród / lud / -ów / 
 -yt / -or / -iów / znajd / -uj / -ąc / -ych / się / pod / ich / jur / -ysd /
 -yk / -cją / . 
 
+\section{Przykład 2 --- Ojcze nasz, tradycyjna próbka stenograficzna}
+
+\subsection{Tekst}
+Ojcze nasz, któryś jest w niebie, święć się Imię Twoje, przyjdź Królestwo Twoje, bądź wola Twoja, jako w niebie tak i na ziemi. Chleba naszego powszedniego daj nam dzisiaj i odpuść nam nasze winy jako i my odpuszczamy naszym winowajcom, i nie wódź nas na pokuszenie, ale nas zbaw ode złego.
+
+\subsection{Podział na akordy --- podstawowy}
+
+Ojcz / -e / nasz / , / któr/ -yś / jest / w / nieb/ -ie / , / święć / się / Im / -ię / Twoj / -e / , / przyjdź / Król / -estw / -o / Twoj / -e / , / bądź / wol / -a / Twoj / -a / , / jak / -o / w / nieb / -ie / tak / i / na / ziem / -i / . / Chleb / -a / nasz / -eg / -o / po- / wszed / -nieg / -o / daj / nam / dzis / -iaj / i / od- / puść / nam / nasz / -e / win / -y / jak / -o / i / my / od- / puszcz / -am / -y / nasz / -ym / win / -ow / -ajc / -om / , / i / nie / wódź / nas / na / po- / kusz / -en / -ie / , / al / -e / nas / zbaw / od / -e / złeg / -o / .
+
+\chapter{Odpowiedzi do zadań}
+\section{Lekcja 2}
+\label{odp:2}
+\subsection*{Wybór prawidłowych akordów}
+\begin{tabular}{c p{9cm}}
+	a & OK \\
+	b & brak myślnika - poprawne wersje: \steno{K-V} lub \steno{-KV}, zależnie od znaczenia \\
+	c & OK \\
+	d & OK \\
+	e & zamienione L oraz R - poprawna wersja: \steno{LRIN} \\
+	f & grupa, która nie może wystąpić - \stenoErr{JEI} \\
+	g & N nie występuje po lewej stronie klawiatury \\
+	h & OK
+\end{tabular}
 \end{document}
